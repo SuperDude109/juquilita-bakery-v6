@@ -22,6 +22,13 @@ const sortOptions = [
   {key:'price_desc', label_en:'Price high', label_es:'Precio alto'},
   {key:'name', label_en:'Name', label_es:'Nombre'}
 ];
+const categoryFilterDefinitions = [
+  {key:'all', label_en:'All products', label_es:'Todo'},
+  {key:'fresh_bread', label_en:'Fresh bread', label_es:'Pan fresco', categories:['savory','oaxacan','fluffy','dense']},
+  {key:'sweet_pastries', label_en:'Sweet pastries', label_es:'Pan dulce', categories:['empanadas','pastries','donuts_churros','cookies']},
+  {key:'cakes_desserts', label_en:'Cakes & desserts', label_es:'Pasteles y postres', categories:['cakes','desserts']},
+  {key:'seasonal_items', label_en:'Seasonal', label_es:'Temporada', match:p => Boolean(p.is_seasonal) || p.category_key === 'seasonal'}
+];
 
 const copy = {
   en: {
@@ -100,17 +107,16 @@ function renderStatus(){
 
 function renderCategories(){
   const wrap = $('#categoryChips');
-  const cats = [{key:'all', name_en:'All products', name_es:'Todo'}, ...state.data.categories];
-  wrap.innerHTML = cats.map(cat => `<button class="chip ${state.category === cat.key ? 'active' : ''}" data-category="${cat.key}" type="button" aria-pressed="${state.category === cat.key}">${state.lang === 'es' ? cat.name_es : cat.name_en}</button>`).join('');
+  const cats = categoryFilterDefinitions;
+  wrap.innerHTML = cats.map(cat => `<button class="chip ${state.category === cat.key ? 'active' : ''}" data-category="${cat.key}" type="button" aria-pressed="${state.category === cat.key}">${categoryFilterLabel(cat.key)}</button>`).join('');
   $$('.chip', wrap).forEach(btn => btn.addEventListener('click', () => { state.category = btn.dataset.category; renderCategories(); renderProducts(); renderFilterSummary(); }));
 }
 
 function renderVisualChips(){
   const wrap = $('#visualChips'); if(!wrap || !state.data) return;
-  const labels = {all:'All shapes', shell:'Shells', pig:'Pigs', heart:'Hearts', ring:'Rings', filled:'Filled', flaky:'Flaky', cookie:'Cookies', slice:'Slices', cake:'Cakes', roll:'Rolls', other:'Other'};
-  const labelsEs = {all:'Todas', shell:'Conchas', pig:'Marranitos', heart:'Corazones', ring:'Roscas/aretes', filled:'Rellenos', flaky:'Hojaldres', cookie:'Galletas', slice:'Rebanadas', cake:'Pasteles', roll:'Bolillos', other:'Otros'};
-  const shapes = ['all', ...(state.data.visual_shapes || []).map(v => v.visual_shape || 'other')];
-  const unique = [...new Set(shapes)].filter(Boolean);
+  const available = new Set((state.data.visual_shapes || []).map(v => v.visual_shape || 'other'));
+  const preferred = ['all', 'filled', 'flaky', 'cookie', 'cake', 'roll'];
+  const unique = preferred.filter(shape => shape === 'all' || available.has(shape));
   wrap.innerHTML = unique.map(shape => `<button class="chip ${state.visual === shape ? 'active' : ''}" data-visual="${esc(shape)}" type="button" aria-pressed="${state.visual === shape}">${visualLabel(shape)}</button>`).join('');
   $$('[data-visual]', wrap).forEach(btn => btn.addEventListener('click', () => { state.visual = btn.dataset.visual; renderVisualChips(); renderProducts(); renderFilterSummary(); }));
 }
@@ -126,6 +132,20 @@ function categoryLabel(key){
   const cat = state.data?.categories?.find(c => c.key === key);
   if(!cat) return key;
   return state.lang === 'es' ? cat.name_es : cat.name_en;
+}
+
+function categoryFilterLabel(key){
+  const item = categoryFilterDefinitions.find(cat => cat.key === key);
+  if(item) return state.lang === 'es' ? item.label_es : item.label_en;
+  return categoryLabel(key);
+}
+
+function productMatchesCategoryFilter(product, key = state.category){
+  if(key === 'all') return true;
+  const item = categoryFilterDefinitions.find(cat => cat.key === key);
+  if(item?.categories) return item.categories.includes(product.category_key);
+  if(item?.match) return item.match(product);
+  return product.category_key === key;
 }
 
 function priceFilterLabel(key = state.price){
@@ -257,7 +277,7 @@ function cycleSort(){
 function filteredProducts(){
   const q = normalize(state.query);
   const products = state.data.products.filter(p => {
-    if(state.category !== 'all' && p.category_key !== state.category) return false;
+    if(!productMatchesCategoryFilter(p)) return false;
     if(state.visual !== 'all' && (p.visual_shape || 'other') !== state.visual) return false;
     if($('#bulkOnly')?.checked && !p.is_bulk_friendly) return false;
     if($('#orderableOnly')?.checked && !p.can_order) return false;
@@ -285,7 +305,7 @@ function renderProductSkeletons(){
 function activeFilterChips(){
   const chips = [];
   if(state.query) chips.push({key:'query', label:`"${state.query}"`});
-  if(state.category !== 'all') chips.push({key:'category', label:categoryLabel(state.category)});
+  if(state.category !== 'all') chips.push({key:'category', label:categoryFilterLabel(state.category)});
   if(state.visual !== 'all') chips.push({key:'visual', label:visualLabel(state.visual)});
   if(state.price !== 'all') chips.push({key:'price', label:priceFilterLabel()});
   if($('#bulkOnly')?.checked) chips.push({key:'bulk', label:state.lang === 'es' ? 'Mayoreo' : 'Bulk friendly'});
