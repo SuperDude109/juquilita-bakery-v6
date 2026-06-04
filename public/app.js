@@ -3,8 +3,10 @@ const state = {
   lang: localStorage.getItem('jb_lang') || 'en',
   category: 'all',
   visual: 'all',
+  price: 'all',
   sort: 'popular',
   query: '',
+  expandedSections: {},
   cart: JSON.parse(localStorage.getItem('jb_cart_v4') || '[]'),
 };
 
@@ -24,7 +26,7 @@ const sortOptions = [
 const copy = {
   en: {
     nav_menu:'Menu', nav_wholesale:'Wholesale', nav_quotes:'Cakes & seasonal', nav_partners:'Partners', nav_admin:'Admin', account:'Account',
-    eyebrow:'Oaxacan breads • cakes • pickup orders', hero_title:'Juquilita Bakery', hero_text:'Order pan dulce, cakes, desserts, and seasonal bread for pickup in Morristown.', shop_now:'Shop the case', request_quote:'Request a quote',
+    eyebrow:'Oaxacan breads • cakes • pickup orders', hero_title:'Order Mexican bread with real pickup availability.', hero_text:'Browse real bakery photos, see what is ready, and add favorites for pickup in Morristown.', shop_now:'Shop the menu', request_quote:'Request a quote',
     pain_1_title:'Find bread visually', pain_1:'Spanish and English names, aliases, shapes, and fillings.', pain_2_title:'Avoid bad pickups', pain_2:'Hours, capacity, inventory, and lead times are checked before ordering.', pain_3_title:'Wholesale built in', pain_3:'Premium pricing, applications, standing orders, and bulk bundles.', pain_4_title:'Quotes are real workflows', pain_4:'Cakes, Rosca, and Pan de Muerto collect the details staff need.',
     find_bread:'Find your bread', bulk_friendly:'Bulk friendly only', orderable_now:'Orderable now only', search_note:'Search accepts English, Spanish, visual words, and common misspellings.', catalog_eyebrow:'Expanded catalog', catalog_title:'Menu', catalog_copy:'Prices use the public menu where available. Items with variable decoration or seasonal sizing use quote requests.',
     quote_eyebrow:'Cakes and seasonal bread', quote_title:'Quote forms collect the missing details before staff call back.', quote_copy:'Custom cakes, Pan de Muerto, and Rosca de Reyes need sizes, fillings, decoration notes, event dates, and pickup timing.', start_quote:'Start quote request', cake_quote:'Custom cakes', cake_quote_desc:'Flavor, filling, inscription, reference image, budget, event date.', rosca_quote_desc:'Size, quantity, pickup window, hidden figurine planning.', muerto_quote_desc:'White sugar, pink sugar, or Oaxacan yema face style.',
@@ -33,7 +35,7 @@ const copy = {
   },
   es: {
     nav_menu:'Menú', nav_wholesale:'Mayoreo', nav_quotes:'Pasteles y temporada', nav_partners:'Negocios', nav_admin:'Admin', account:'Cuenta',
-    eyebrow:'Panes oaxaqueños • pasteles • pedidos', hero_title:'Juquilita Bakery', hero_text:'Ordena pan dulce, pasteles, postres y pan de temporada para recoger en Morristown.', shop_now:'Ver vitrina', request_quote:'Pedir cotización',
+    eyebrow:'Panes oaxaqueños • pasteles • pedidos', hero_title:'Ordena pan mexicano con disponibilidad real para recoger.', hero_text:'Mira fotos reales, revisa lo que está listo y agrega tus favoritos para recoger en Morristown.', shop_now:'Ver menú', request_quote:'Pedir cotización',
     pain_1_title:'Encuentra por forma', pain_1:'Nombres en español e inglés, alias, formas y rellenos.', pain_2_title:'Evita malos horarios', pain_2:'El sistema revisa horario, cupo, inventario y anticipación.', pain_3_title:'Mayoreo incluido', pain_3:'Precios premium, solicitudes, pedidos fijos y paquetes grandes.', pain_4_title:'Cotizaciones útiles', pain_4:'Pasteles, Rosca y Pan de Muerto capturan los datos que necesita el personal.',
     find_bread:'Busca tu pan', bulk_friendly:'Solo mayoreo', orderable_now:'Solo disponible para ordenar', search_note:'La búsqueda acepta español, inglés, palabras visuales y errores comunes.', catalog_eyebrow:'Catálogo ampliado', catalog_title:'Menú', catalog_copy:'Los precios usan el menú público cuando está disponible. Decoración variable y temporada usan cotización.',
     quote_eyebrow:'Pasteles y pan de temporada', quote_title:'Las cotizaciones reúnen los datos antes de llamar al cliente.', quote_copy:'Pasteles personalizados, Pan de Muerto y Rosca de Reyes necesitan tamaños, rellenos, decoración, fecha y hora.', start_quote:'Iniciar cotización', cake_quote:'Pasteles personalizados', cake_quote_desc:'Sabor, relleno, letrero, imagen de referencia, presupuesto y fecha.', rosca_quote_desc:'Tamaño, cantidad, horario y planeación de figuras.', muerto_quote_desc:'Azúcar blanca, azúcar rosa o pan de yema oaxaqueño con carita.',
@@ -80,6 +82,11 @@ function applyLanguage(){
   document.documentElement.lang = state.lang;
   $$('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
   $('#languageBtn').textContent = state.lang === 'en' ? 'Español' : 'English';
+  const priceFilter = $('#priceFilter');
+  if(priceFilter){
+    $$('option', priceFilter).forEach(option => { option.textContent = priceFilterLabel(option.value); });
+    priceFilter.value = state.price;
+  }
   updateSortButton();
   renderProducts(); renderCart(); renderPartners(); renderStatus(); renderAccount(); renderQuoteProducts(); renderReviewProducts(); renderCampaigns(); renderVisualChips(); renderBakeryCase(); renderCampaignCapacity(); renderFilterSummary();
 }
@@ -119,6 +126,84 @@ function categoryLabel(key){
   const cat = state.data?.categories?.find(c => c.key === key);
   if(!cat) return key;
   return state.lang === 'es' ? cat.name_es : cat.name_en;
+}
+
+function priceFilterLabel(key = state.price){
+  const labels = {
+    all: {en:'Any price', es:'Cualquier precio'},
+    under_1: {en:'Under $1', es:'Menos de $1'},
+    under_3: {en:'Under $3', es:'Menos de $3'},
+    cakes: {en:'Cakes and trays', es:'Pasteles y charolas'}
+  };
+  const label = labels[key] || labels.all;
+  return state.lang === 'es' ? label.es : label.en;
+}
+
+function hasActiveCatalogFilters(){
+  return Boolean(
+    state.query ||
+    state.category !== 'all' ||
+    state.visual !== 'all' ||
+    state.price !== 'all' ||
+    $('#bulkOnly')?.checked ||
+    $('#orderableOnly')?.checked
+  );
+}
+
+const productSectionDefinitions = [
+  {
+    key:'popular_today',
+    title_en:'Popular today',
+    title_es:'Popular hoy',
+    note_en:'Fast-moving breads and bakery staples customers ask for most.',
+    note_es:'Panes y básicos que los clientes piden con más frecuencia.',
+    limit:6,
+    match:p => ['concha','bolillo','alcatraz','empanada-manzana','banderilla','tres-leches-rebanada'].includes(p.slug) && Boolean(p.image_url)
+  },
+  {
+    key:'fresh_bread',
+    title_en:'Fresh bread',
+    title_es:'Pan fresco',
+    note_en:'Daily rolls, Oaxacan breads, conchas, and fluffy pan dulce.',
+    note_es:'Bolillos, panes oaxaqueños, conchas y pan dulce esponjado.',
+    limit:9,
+    categories:['savory','oaxacan','fluffy','dense']
+  },
+  {
+    key:'sweet_pastries',
+    title_en:'Sweet pastries',
+    title_es:'Pan dulce y hojaldres',
+    note_en:'Filled empanadas, cookies, donuts, churros, and flaky pastries.',
+    note_es:'Empanadas, galletas, donas, churros y hojaldres.',
+    limit:9,
+    categories:['empanadas','pastries','donuts_churros','cookies']
+  },
+  {
+    key:'cakes_desserts',
+    title_en:'Cakes and desserts',
+    title_es:'Pasteles y postres',
+    note_en:'Tres leches, flan, cake slices, trays, and custom cake options.',
+    note_es:'Tres leches, flan, rebanadas, charolas y opciones de pastel.',
+    limit:6,
+    categories:['cakes','desserts']
+  },
+  {
+    key:'seasonal_items',
+    title_en:'Seasonal items',
+    title_es:'Pan de temporada',
+    note_en:'Holiday breads and special-order seasonal favorites.',
+    note_es:'Panes de temporada y favoritos especiales por pedido.',
+    limit:6,
+    match:p => Boolean(p.is_seasonal) || p.category_key === 'seasonal'
+  }
+];
+
+function sectionTitle(section){
+  return state.lang === 'es' ? section.title_es : section.title_en;
+}
+
+function sectionNote(section){
+  return state.lang === 'es' ? section.note_es : section.note_en;
 }
 
 function renderBakeryCase(){
@@ -176,6 +261,10 @@ function filteredProducts(){
     if(state.visual !== 'all' && (p.visual_shape || 'other') !== state.visual) return false;
     if($('#bulkOnly')?.checked && !p.is_bulk_friendly) return false;
     if($('#orderableOnly')?.checked && !p.can_order) return false;
+    const productPrice = Number(p.effective_price ?? p.base_price ?? 0);
+    if(state.price === 'under_1' && !(productPrice > 0 && productPrice < 1)) return false;
+    if(state.price === 'under_3' && !(productPrice > 0 && productPrice < 3)) return false;
+    if(state.price === 'cakes' && !['cakes','desserts'].includes(p.category_key)) return false;
     if(q && !productSearchBlob(p).includes(q)) return false;
     return true;
   });
@@ -190,7 +279,7 @@ function filteredProducts(){
 function renderProductSkeletons(){
   const grid = $('#productGrid');
   if(!grid) return;
-  grid.innerHTML = Array.from({length:6}, (_,idx) => `<article class="product-card skeleton-card" aria-hidden="true"><div class="skeleton-lines"><span></span><span></span><span></span></div><div class="skeleton-image"></div></article>`).join('');
+  grid.innerHTML = `<section class="product-section" aria-hidden="true"><div class="product-grid">${Array.from({length:6}, () => `<article class="product-card skeleton-card"><div class="skeleton-image"></div><div class="skeleton-lines"><span></span><span></span><span></span></div></article>`).join('')}</div></section>`;
 }
 
 function activeFilterChips(){
@@ -198,6 +287,7 @@ function activeFilterChips(){
   if(state.query) chips.push({key:'query', label:`"${state.query}"`});
   if(state.category !== 'all') chips.push({key:'category', label:categoryLabel(state.category)});
   if(state.visual !== 'all') chips.push({key:'visual', label:visualLabel(state.visual)});
+  if(state.price !== 'all') chips.push({key:'price', label:priceFilterLabel()});
   if($('#bulkOnly')?.checked) chips.push({key:'bulk', label:state.lang === 'es' ? 'Mayoreo' : 'Bulk friendly'});
   if($('#orderableOnly')?.checked) chips.push({key:'orderable', label:state.lang === 'es' ? 'Disponible' : 'Orderable now'});
   return chips;
@@ -220,6 +310,7 @@ function removeFilter(key){
   if(key === 'query'){ state.query = ''; $('#searchInput').value = ''; }
   if(key === 'category'){ state.category = 'all'; renderCategories(); }
   if(key === 'visual'){ state.visual = 'all'; renderVisualChips(); }
+  if(key === 'price'){ state.price = 'all'; $('#priceFilter').value = 'all'; }
   if(key === 'bulk') $('#bulkOnly').checked = false;
   if(key === 'orderable') $('#orderableOnly').checked = false;
   renderProducts();
@@ -262,66 +353,131 @@ function setProductArt(art, p){
   }
 }
 
+function buildProductSections(products){
+  const sections = [];
+  const seen = new Set();
+  for(const definition of productSectionDefinitions){
+    const items = products.filter(product => {
+      if(seen.has(product.slug)) return false;
+      if(definition.categories) return definition.categories.includes(product.category_key);
+      return definition.match ? definition.match(product) : false;
+    });
+    if(!items.length) continue;
+    items.forEach(item => seen.add(item.slug));
+    sections.push({...definition, items});
+  }
+  const remaining = products.filter(product => !seen.has(product.slug));
+  if(remaining.length){
+    sections.push({
+      key:'more_items',
+      title_en:'More bakery items',
+      title_es:'Más productos',
+      note_en:'Additional breads and pastries from the full catalog.',
+      note_es:'Más panes y postres del catálogo completo.',
+      limit:9,
+      items:remaining
+    });
+  }
+  return sections;
+}
+
+function productAvailability(product){
+  if(product.order_mode === 'quote') return {
+    label: state.lang === 'es' ? 'Cotización requerida' : 'Quote required',
+    className:'quote'
+  };
+  if(product.stock_policy === 'track' && Number(product.stock_count) < 20) return {
+    label: state.lang === 'es' ? `Solo ${product.stock_count}` : `Only ${product.stock_count} left`,
+    className:'low'
+  };
+  if(product.stock_policy === 'track') return {
+    label: state.lang === 'es' ? 'Disponible hoy' : 'Available today',
+    className:''
+  };
+  return {
+    label: state.lang === 'es' ? 'Por pedido' : 'Made to order',
+    className:''
+  };
+}
+
+function renderProductCard(product, template){
+  const node = template.content.firstElementChild.cloneNode(true);
+  const titleId = `product-title-${String(product.slug).replace(/[^a-z0-9_-]/gi, '-')}`;
+  const descId = `product-desc-${String(product.slug).replace(/[^a-z0-9_-]/gi, '-')}`;
+  node.setAttribute('aria-labelledby', titleId);
+  node.setAttribute('aria-describedby', descId);
+  node.tabIndex = 0;
+  node.addEventListener('click', event => {
+    if(event.target.closest('button, select, input, textarea, a')) return;
+    openProductDetails(product);
+  });
+  node.addEventListener('keydown', event => {
+    if((event.key === 'Enter' || event.key === ' ') && !event.target.closest('button, select, input, textarea, a')){
+      event.preventDefault();
+      openProductDetails(product);
+    }
+  });
+
+  setProductArt($('.product-art', node), product);
+  const title = $('h3', node);
+  title.id = titleId;
+  title.textContent = currentName(product);
+  const description = $('p', node);
+  description.id = descId;
+  description.textContent = currentDescription(product);
+
+  const availability = productAvailability(product);
+  const stock = $('.stock-badge', node);
+  stock.textContent = availability.label;
+  if(availability.className) stock.classList.add(availability.className);
+  $('.category-badge', node).textContent = categoryLabel(product.category_key);
+
+  const variantBox = $('.variant-box', node);
+  const groups = groupVariants(product.variants || []);
+  variantBox.innerHTML = Object.entries(groups).map(([type, variants]) => `<select data-variant-type="${type}" aria-label="${esc(type.replace('_',' '))}"><option value="">${type.replace('_',' ')}</option>${variants.map(v => `<option value="${v.id}" ${v.is_default ? 'selected' : ''}>${state.lang === 'es' ? v.name_es : v.name_en}${Number(v.price_delta) ? ` +${money(v.price_delta)}` : ''}</option>`).join('')}</select>`).join('');
+  $$('select[data-variant-type]', variantBox).forEach(sel => sel.addEventListener('change', () => updateCardCartControl(product, node)));
+
+  $('.allergen-row', node).innerHTML = (product.allergens || []).slice(0,4).map(a => `<span>${state.lang === 'es' ? a.name_es : a.name_en}</span>`).join('');
+  $('.product-trust', node).innerHTML = `<span>${esc(product.visual_shape || 'case')}</span>`;
+  $('.favorite-btn', node).addEventListener('click', () => toggleFavorite(product));
+  $('.details-btn', node).addEventListener('click', () => openProductDetails(product));
+  updateCardCartControl(product, node);
+  $('.source-line', node).textContent = product.price_basis || '';
+  return node;
+}
+
 function renderProducts(){
   if(!state.data) return;
-  const grid = $('#productGrid');
-  const tpl = $('#productTemplate');
+  const container = $('#productGrid');
+  const template = $('#productTemplate');
   const products = filteredProducts();
+  const isFiltering = hasActiveCatalogFilters();
   $('#productCount').textContent = `${products.length}`;
   renderFilterSummary();
   if(!products.length){
-    grid.innerHTML = `<div class="empty-state"><b>${state.lang === 'es' ? 'No se encontraron productos.' : 'No products found.'}</b><button id="emptyResetFilters" class="secondary-action" type="button">${state.lang === 'es' ? 'Limpiar filtros' : 'Reset filters'}</button></div>`;
+    container.innerHTML = `<div class="empty-state"><b>${state.lang === 'es' ? 'No se encontraron productos.' : 'No products found.'}</b><button id="emptyResetFilters" class="secondary-action" type="button">${state.lang === 'es' ? 'Limpiar filtros' : 'Reset filters'}</button></div>`;
     $('#emptyResetFilters')?.addEventListener('click', resetFilters);
     return;
   }
-  grid.innerHTML = '';
-  for(const p of products){
-    const node = tpl.content.firstElementChild.cloneNode(true);
-    const titleId = `product-title-${String(p.slug).replace(/[^a-z0-9_-]/gi, '-')}`;
-    node.setAttribute('aria-labelledby', titleId);
-    node.tabIndex = 0;
-    node.addEventListener('click', event => {
-      if(event.target.closest('button, select, input, textarea, a')) return;
-      openProductDetails(p);
-    });
-    node.addEventListener('keydown', event => {
-      if((event.key === 'Enter' || event.key === ' ') && !event.target.closest('button, select, input, textarea, a')){
-        event.preventDefault();
-        openProductDetails(p);
-      }
-    });
-    const art = $('.product-art', node);
-    setProductArt(art, p);
-    $('.category-badge', node).textContent = state.lang === 'es' ? p.category_name_es : p.category_name_en;
-    const stock = $('.stock-badge', node);
-    if(p.order_mode === 'quote'){ stock.textContent = state.lang === 'es' ? 'cotización' : 'quote'; stock.classList.add('quote'); }
-    else if(p.stock_policy === 'track'){ stock.textContent = p.stock_count < 20 ? `${p.stock_count} left` : 'daily case'; if(p.stock_count < 20) stock.classList.add('low'); }
-    else { stock.textContent = state.lang === 'es' ? 'por pedido' : 'made to order'; }
-    $('h3', node).id = titleId;
-    $('h3', node).textContent = `${p.name_es} / ${p.name_en}`;
-    $('p', node).textContent = currentDescription(p);
-    const variantBox = $('.variant-box', node);
-    const groups = groupVariants(p.variants || []);
-    variantBox.innerHTML = Object.entries(groups).map(([type, variants]) => `<select data-variant-type="${type}"><option value="">${type.replace('_',' ')}</option>${variants.map(v => `<option value="${v.id}" ${v.is_default ? 'selected' : ''}>${state.lang === 'es' ? v.name_es : v.name_en}${Number(v.price_delta) ? ` +${money(v.price_delta)}` : ''}</option>`).join('')}</select>`).join('');
-    $$('select[data-variant-type]', variantBox).forEach(sel => sel.addEventListener('change', () => updateCardCartControl(p, node)));
-    const allergenRow = $('.allergen-row', node);
-    allergenRow.innerHTML = (p.allergens || []).slice(0,4).map(a => `<span>${state.lang === 'es' ? a.name_es : a.name_en}</span>`).join('');
-    const trust = $('.product-trust', node);
-    const verifyLabel = p.verification_status === 'owner_verified' ? 'owner verified' : 'needs owner check';
-    trust.innerHTML = `<span>${esc(p.visual_shape || 'case')}</span><span>${esc(verifyLabel)}</span><span>${Number(p.completeness_score || 0)}% complete</span>`;
-    const fav = $('.favorite-btn', node);
-    fav.textContent = p.is_favorite ? (state.lang === 'es' ? '♥ Guardado' : '♥ Saved') : (state.lang === 'es' ? '♡ Guardar' : '♡ Save');
-    fav.addEventListener('click', () => toggleFavorite(p));
-    $('.details-btn', node).addEventListener('click', () => openProductDetails(p));
-    updateCardCartControl(p, node);
-    const imageStatusLabel = {
-      legacyVerified: state.lang === 'es' ? 'Foto real verificada' : 'Verified real photo',
-      categoryFallback: state.lang === 'es' ? 'Foto de categoría' : 'Category photo',
-      needsOwnerPhoto: state.lang === 'es' ? 'Foto pendiente' : 'Photo coming soon'
-    }[p.product_image_status] || (state.lang === 'es' ? 'Foto pendiente' : 'Photo coming soon');
-    $('.source-line', node).textContent = `${imageStatusLabel} • ${p.price_basis}`;
-    grid.appendChild(node);
+
+  container.innerHTML = '';
+  for(const section of buildProductSections(products)){
+    const sectionNode = document.createElement('section');
+    const headingId = `section-${section.key}`;
+    const expanded = isFiltering || Boolean(state.expandedSections[section.key]);
+    const limit = section.limit || 9;
+    const visibleItems = expanded ? section.items : section.items.slice(0, limit);
+    sectionNode.className = 'product-section';
+    sectionNode.setAttribute('aria-labelledby', headingId);
+    sectionNode.innerHTML = `<div class="product-section-header"><div><h2 id="${headingId}">${esc(sectionTitle(section))}</h2><p>${esc(sectionNote(section))}</p><small>${section.items.length} ${section.items.length === 1 ? 'item' : 'items'}</small></div>${!expanded && section.items.length > limit ? `<button class="view-section-button" data-section="${section.key}" type="button">${state.lang === 'es' ? 'Ver todo' : 'View all'}</button>` : ''}</div><div class="product-grid"></div>`;
+    const grid = $('.product-grid', sectionNode);
+    visibleItems.forEach(product => grid.appendChild(renderProductCard(product, template)));
+    container.appendChild(sectionNode);
   }
+  $$('[data-section]', container).forEach(button => button.addEventListener('click', () => {
+    state.expandedSections[button.dataset.section] = true;
+    renderProducts();
+  }));
 }
 
 function selectedVariants(card){
@@ -437,7 +593,27 @@ function openCart(){ $('#cartDrawer').classList.add('open'); $('#drawerShade').c
 function closeCart(){ $('#cartDrawer').classList.remove('open'); $('#drawerShade').classList.remove('open'); $('#cartDrawer').setAttribute('aria-hidden','true'); }
 
 let filterTrigger = null;
+const desktopFiltersQuery = window.matchMedia('(min-width: 960px)');
+function syncFilterMode(){
+  const sheet = $('#filterSheet');
+  const backdrop = $('#filterSheetBackdrop');
+  if(!sheet || !backdrop) return;
+  if(desktopFiltersQuery.matches){
+    sheet.classList.remove('open');
+    sheet.setAttribute('aria-hidden', 'false');
+    sheet.setAttribute('role', 'region');
+    sheet.removeAttribute('aria-modal');
+    backdrop.hidden = true;
+    backdrop.classList.remove('open');
+    document.body.classList.remove('sheet-open');
+  } else {
+    sheet.setAttribute('role', 'dialog');
+    sheet.setAttribute('aria-modal', 'true');
+    if(!sheet.classList.contains('open')) sheet.setAttribute('aria-hidden', 'true');
+  }
+}
 function openFilters(){
+  if(desktopFiltersQuery.matches) return;
   const sheet = $('#filterSheet');
   const backdrop = $('#filterSheetBackdrop');
   filterTrigger = document.activeElement;
@@ -451,6 +627,7 @@ function openFilters(){
 function closeFilters(){
   const sheet = $('#filterSheet');
   const backdrop = $('#filterSheetBackdrop');
+  if(desktopFiltersQuery.matches){ syncFilterMode(); return; }
   sheet.classList.remove('open');
   backdrop.classList.remove('open');
   document.body.classList.remove('sheet-open');
@@ -461,8 +638,10 @@ function closeFilters(){
 function resetFilters(){
   state.category = 'all';
   state.visual = 'all';
+  state.price = 'all';
   state.query = '';
   $('#searchInput').value = '';
+  $('#priceFilter').value = 'all';
   $('#bulkOnly').checked = false;
   $('#orderableOnly').checked = false;
   renderCategories();
@@ -472,6 +651,7 @@ function resetFilters(){
 }
 function trapFilterFocus(event){
   const sheet = $('#filterSheet');
+  if(desktopFiltersQuery.matches) return;
   if(sheet.getAttribute('aria-hidden') === 'true') return;
   if(event.key === 'Escape'){ closeFilters(); return; }
   if(event.key !== 'Tab') return;
@@ -653,6 +833,7 @@ function bindEvents(){
   $('#cartButton').addEventListener('click', openCart); $('#closeCart').addEventListener('click', closeCart); $('#drawerShade').addEventListener('click', closeCart);
   $('#cartBarButton')?.addEventListener('click', openCart);
   $('#searchInput').addEventListener('input', e => { state.query = e.target.value; renderProducts(); renderFilterSummary(); });
+  $('#priceFilter')?.addEventListener('change', e => { state.price = e.target.value; renderProducts(); renderFilterSummary(); });
   $('#bulkOnly').addEventListener('change', () => { renderProducts(); renderFilterSummary(); });
   $('#orderableOnly').addEventListener('change', () => { renderProducts(); renderFilterSummary(); });
   $('#openFilters')?.addEventListener('click', openFilters);
@@ -661,6 +842,8 @@ function bindEvents(){
   $('#resetFilters')?.addEventListener('click', resetFilters);
   $('#applyFilters')?.addEventListener('click', closeFilters);
   $('#sortButton')?.addEventListener('click', cycleSort);
+  desktopFiltersQuery.addEventListener('change', syncFilterMode);
+  syncFilterMode();
   document.addEventListener('keydown', trapFilterFocus);
   $('#checkoutToggle').addEventListener('click', () => { updateCheckoutReview(); fillCheckoutFromUser(); $('#checkoutDialog').showModal(); });
   $('#checkoutForm').addEventListener('submit', e => { e.preventDefault(); submitCheckout(e.currentTarget); });

@@ -58,11 +58,11 @@
   <main id="top">
     <section class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow" data-i18n="eyebrow">Oaxacan breads • cakes • wholesale orders</p>
-        <h1 data-i18n="hero_title">Juquilita Bakery</h1>
-        <p class="hero-text" data-i18n="hero_text">Order pan dulce, cakes, desserts, and seasonal bread for pickup in Morristown.</p>
+        <p class="eyebrow" data-i18n="eyebrow">Oaxacan breads • cakes • pickup orders</p>
+        <h1 data-i18n="hero_title">Order Mexican bread with real pickup availability.</h1>
+        <p class="hero-text" data-i18n="hero_text">Browse real bakery photos, see what is ready, and add favorites for pickup in Morristown.</p>
         <div class="hero-actions">
-          <a href="#menu" class="primary-action" data-i18n="shop_now">Shop the case</a>
+          <a href="#menu" class="primary-action" data-i18n="shop_now">Shop the menu</a>
           <button id="openQuoteHero" class="secondary-action" type="button" data-i18n="request_quote">Request a quote</button>
         </div>
         <div id="storeStatus" class="status-card" aria-live="polite"></div>
@@ -103,7 +103,7 @@
         <div id="bundleRail" class="bundle-rail"></div>
         <div id="bakeryCaseRail" class="bakery-case-rail"></div>
         <div id="campaignCapacity" class="campaign-capacity"></div>
-        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        <div id="productGrid" class="product-sections" aria-live="polite"></div>
       </div>
 
       <div id="filterSheetBackdrop" class="sheet-backdrop" hidden></div>
@@ -118,13 +118,28 @@
         </div>
         <div class="filter-row">
           <div>
-            <b>Shape</b>
-            <small>Shells, cookies, filled, flaky, cakes, and more</small>
+            <b>Availability</b>
+            <small>Focus on items that can be ordered now.</small>
+          </div>
+        </div>
+        <label class="checkline"><input id="bulkOnly" type="checkbox"> <span data-i18n="bulk_friendly">Bulk friendly only</span></label>
+        <label class="checkline"><input id="orderableOnly" type="checkbox"> <span data-i18n="orderable_now">Orderable now only</span></label>
+        <label class="filter-field">
+          <span>Price</span>
+          <select id="priceFilter">
+            <option value="all">Any price</option>
+            <option value="under_1">Under $1</option>
+            <option value="under_3">Under $3</option>
+            <option value="cakes">Cakes and trays</option>
+          </select>
+        </label>
+        <div class="filter-row">
+          <div>
+            <b>Bread style</b>
+            <small>Shells, cookies, filled, flaky, cakes, and more.</small>
           </div>
         </div>
         <div id="visualChips" class="chip-grid visual-chip-grid"></div>
-        <label class="checkline"><input id="bulkOnly" type="checkbox"> <span data-i18n="bulk_friendly">Bulk friendly only</span></label>
-        <label class="checkline"><input id="orderableOnly" type="checkbox"> <span data-i18n="orderable_now">Orderable now only</span></label>
         <div class="mini-note" data-i18n="search_note">Search accepts English, Spanish, visual words, and common misspellings.</div>
         <div class="sheet-actions">
           <button id="resetFilters" class="secondary-action" type="button">Reset filters</button>
@@ -396,9 +411,9 @@
         </div>
       </div>
       <div class="product-body">
-        <div class="product-top"><span class="category-badge"></span><span class="stock-badge"></span></div>
         <h3></h3>
         <p></p>
+        <div class="product-top product-meta"><span class="stock-badge"></span><span class="category-badge"></span></div>
         <div class="variant-box"></div>
         <div class="allergen-row"></div>
         <div class="product-trust"></div>
