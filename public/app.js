@@ -7,6 +7,8 @@ const state = {
   sort: 'popular',
   query: '',
   expandedSections: {},
+  mobileSection: 'popular_today',
+  mobilePageBySection: {},
   cart: JSON.parse(localStorage.getItem('jb_cart_v4') || '[]'),
 };
 
@@ -29,6 +31,14 @@ const categoryFilterDefinitions = [
   {key:'cakes_desserts', label_en:'Cakes & desserts', label_es:'Pasteles y postres', categories:['cakes','desserts']},
   {key:'seasonal_items', label_en:'Seasonal', label_es:'Temporada', match:p => Boolean(p.is_seasonal) || p.category_key === 'seasonal'}
 ];
+const mobileSectionTabs = [
+  {key:'popular_today', label_en:'Popular', label_es:'Popular'},
+  {key:'fresh_bread', label_en:'Fresh bread', label_es:'Pan fresco'},
+  {key:'sweet_pastries', label_en:'Sweet pastries', label_es:'Pan dulce'},
+  {key:'cakes_desserts', label_en:'Cakes & desserts', label_es:'Pasteles'},
+  {key:'seasonal_items', label_en:'Seasonal', label_es:'Temporada'}
+];
+const mobileNoScrollQuery = window.matchMedia('(max-width: 699px)');
 
 const copy = {
   en: {
@@ -54,6 +64,11 @@ const copy = {
 function t(key){ return (copy[state.lang] && copy[state.lang][key]) || copy.en[key] || key; }
 function normalize(text){ return String(text || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s-]/g,' '); }
 function saveCart(){ localStorage.setItem('jb_cart_v4', JSON.stringify(state.cart)); renderCart(); }
+function isMobileNoScroll(){ return mobileNoScrollQuery.matches; }
+function resetMobilePages(sectionKey = ''){
+  if(sectionKey) state.mobilePageBySection[sectionKey] = 0;
+  else state.mobilePageBySection = {};
+}
 async function api(path, options = {}){
   const headers = {'Content-Type':'application/json'};
   if(state.data?.user?.csrf_token) headers['X-CSRF-Token'] = state.data.user.csrf_token;
@@ -107,9 +122,19 @@ function renderStatus(){
 
 function renderCategories(){
   const wrap = $('#categoryChips');
+  if(isMobileNoScroll()){
+    wrap.innerHTML = mobileSectionTabs.map(tab => `<button class="chip ${state.mobileSection === tab.key ? 'active' : ''}" data-mobile-section="${tab.key}" type="button" aria-pressed="${state.mobileSection === tab.key}">${mobileSectionLabel(tab.key)}</button>`).join('');
+    $$('[data-mobile-section]', wrap).forEach(btn => btn.addEventListener('click', () => {
+      state.mobileSection = btn.dataset.mobileSection;
+      resetMobilePages(state.mobileSection);
+      renderCategories();
+      renderProducts();
+    }));
+    return;
+  }
   const cats = categoryFilterDefinitions;
   wrap.innerHTML = cats.map(cat => `<button class="chip ${state.category === cat.key ? 'active' : ''}" data-category="${cat.key}" type="button" aria-pressed="${state.category === cat.key}">${categoryFilterLabel(cat.key)}</button>`).join('');
-  $$('.chip', wrap).forEach(btn => btn.addEventListener('click', () => { state.category = btn.dataset.category; renderCategories(); renderProducts(); renderFilterSummary(); }));
+  $$('.chip', wrap).forEach(btn => btn.addEventListener('click', () => { state.category = btn.dataset.category; resetMobilePages(); renderCategories(); renderProducts(); renderFilterSummary(); }));
 }
 
 function renderVisualChips(){
@@ -118,7 +143,7 @@ function renderVisualChips(){
   const preferred = ['all', 'filled', 'flaky', 'cookie', 'cake', 'roll'];
   const unique = preferred.filter(shape => shape === 'all' || available.has(shape));
   wrap.innerHTML = unique.map(shape => `<button class="chip ${state.visual === shape ? 'active' : ''}" data-visual="${esc(shape)}" type="button" aria-pressed="${state.visual === shape}">${visualLabel(shape)}</button>`).join('');
-  $$('[data-visual]', wrap).forEach(btn => btn.addEventListener('click', () => { state.visual = btn.dataset.visual; renderVisualChips(); renderProducts(); renderFilterSummary(); }));
+  $$('[data-visual]', wrap).forEach(btn => btn.addEventListener('click', () => { state.visual = btn.dataset.visual; resetMobilePages(); renderVisualChips(); renderProducts(); renderFilterSummary(); }));
 }
 
 function visualLabel(shape){
@@ -138,6 +163,13 @@ function categoryFilterLabel(key){
   const item = categoryFilterDefinitions.find(cat => cat.key === key);
   if(item) return state.lang === 'es' ? item.label_es : item.label_en;
   return categoryLabel(key);
+}
+
+function mobileSectionLabel(key){
+  const item = mobileSectionTabs.find(tab => tab.key === key);
+  if(item) return state.lang === 'es' ? item.label_es : item.label_en;
+  const section = productSectionDefinitions.find(def => def.key === key);
+  return section ? sectionTitle(section) : key;
 }
 
 function productMatchesCategoryFilter(product, key = state.category){
@@ -162,7 +194,7 @@ function priceFilterLabel(key = state.price){
 function hasActiveCatalogFilters(){
   return Boolean(
     state.query ||
-    state.category !== 'all' ||
+    (!isMobileNoScroll() && state.category !== 'all') ||
     state.visual !== 'all' ||
     state.price !== 'all' ||
     $('#bulkOnly')?.checked ||
@@ -270,14 +302,16 @@ function updateSortButton(){
 function cycleSort(){
   const index = Math.max(0, sortOptions.findIndex(opt => opt.key === state.sort));
   state.sort = sortOptions[(index + 1) % sortOptions.length].key;
+  resetMobilePages();
   updateSortButton();
   renderProducts();
 }
 
-function filteredProducts(){
+function filteredProducts(options = {}){
+  const includeCategory = options.includeCategory !== false;
   const q = normalize(state.query);
   const products = state.data.products.filter(p => {
-    if(!productMatchesCategoryFilter(p)) return false;
+    if(includeCategory && !productMatchesCategoryFilter(p)) return false;
     if(state.visual !== 'all' && (p.visual_shape || 'other') !== state.visual) return false;
     if($('#bulkOnly')?.checked && !p.is_bulk_friendly) return false;
     if($('#orderableOnly')?.checked && !p.can_order) return false;
@@ -299,13 +333,14 @@ function filteredProducts(){
 function renderProductSkeletons(){
   const grid = $('#productGrid');
   if(!grid) return;
-  grid.innerHTML = `<section class="product-section" aria-hidden="true"><div class="product-grid">${Array.from({length:6}, () => `<article class="product-card skeleton-card"><div class="skeleton-image"></div><div class="skeleton-lines"><span></span><span></span><span></span></div></article>`).join('')}</div></section>`;
+  const count = isMobileNoScroll() ? 2 : 6;
+  grid.innerHTML = `<section class="product-section ${isMobileNoScroll() ? 'mobile-product-page' : ''}" aria-hidden="true"><div class="product-grid ${isMobileNoScroll() ? 'mobile-product-grid' : ''}">${Array.from({length:count}, () => `<article class="product-card skeleton-card"><div class="skeleton-image"></div><div class="skeleton-lines"><span></span><span></span><span></span></div></article>`).join('')}</div></section>`;
 }
 
 function activeFilterChips(){
   const chips = [];
   if(state.query) chips.push({key:'query', label:`"${state.query}"`});
-  if(state.category !== 'all') chips.push({key:'category', label:categoryFilterLabel(state.category)});
+  if(!isMobileNoScroll() && state.category !== 'all') chips.push({key:'category', label:categoryFilterLabel(state.category)});
   if(state.visual !== 'all') chips.push({key:'visual', label:visualLabel(state.visual)});
   if(state.price !== 'all') chips.push({key:'price', label:priceFilterLabel()});
   if($('#bulkOnly')?.checked) chips.push({key:'bulk', label:state.lang === 'es' ? 'Mayoreo' : 'Bulk friendly'});
@@ -333,6 +368,7 @@ function removeFilter(key){
   if(key === 'price'){ state.price = 'all'; $('#priceFilter').value = 'all'; }
   if(key === 'bulk') $('#bulkOnly').checked = false;
   if(key === 'orderable') $('#orderableOnly').checked = false;
+  resetMobilePages();
   renderProducts();
   renderFilterSummary();
 }
@@ -373,14 +409,20 @@ function setProductArt(art, p){
   }
 }
 
+function productsForSectionDefinition(definition, products){
+  return products.filter(product => {
+    if(definition.categories) return definition.categories.includes(product.category_key);
+    return definition.match ? definition.match(product) : false;
+  });
+}
+
 function buildProductSections(products){
   const sections = [];
   const seen = new Set();
   for(const definition of productSectionDefinitions){
-    const items = products.filter(product => {
+    const items = productsForSectionDefinition(definition, products).filter(product => {
       if(seen.has(product.slug)) return false;
-      if(definition.categories) return definition.categories.includes(product.category_key);
-      return definition.match ? definition.match(product) : false;
+      return true;
     });
     if(!items.length) continue;
     items.forEach(item => seen.add(item.slug));
@@ -468,6 +510,14 @@ function renderProductCard(product, template){
 
 function renderProducts(){
   if(!state.data) return;
+  if(isMobileNoScroll()){
+    renderMobileProducts();
+    return;
+  }
+  renderDesktopProducts();
+}
+
+function renderDesktopProducts(){
   const container = $('#productGrid');
   const template = $('#productTemplate');
   const products = filteredProducts();
@@ -500,6 +550,38 @@ function renderProducts(){
   }));
 }
 
+function renderMobileProducts(){
+  const container = $('#productGrid');
+  const template = $('#productTemplate');
+  const products = filteredProducts({includeCategory:false});
+  const section = productSectionDefinitions.find(def => def.key === state.mobileSection) || productSectionDefinitions[0];
+  const items = productsForSectionDefinition(section, products);
+  const pageSize = 2;
+  const maxPage = Math.max(0, Math.ceil(items.length / pageSize) - 1);
+  const currentPage = Math.min(Math.max(Number(state.mobilePageBySection[section.key] || 0), 0), maxPage);
+  state.mobilePageBySection[section.key] = currentPage;
+  const start = currentPage * pageSize;
+  const visibleItems = items.slice(start, start + pageSize);
+  const from = items.length ? start + 1 : 0;
+  const to = Math.min(start + pageSize, items.length);
+
+  $('#productCount').textContent = `${items.length}`;
+  renderFilterSummary();
+  container.innerHTML = `<section class="product-section mobile-product-page" aria-labelledby="mobile-section-title"><div class="product-section-header mobile-product-header"><div><h2 id="mobile-section-title">${esc(sectionTitle(section))}</h2><small>${from}-${to} of ${items.length}</small></div></div><div class="product-grid mobile-product-grid"></div><div class="mobile-pager" aria-label="Product pages"><button data-mobile-page="prev" type="button" aria-label="Previous products" ${currentPage === 0 ? 'disabled' : ''}>&lsaquo;</button><span>${items.length ? `Page ${currentPage + 1} of ${maxPage + 1}` : 'No items'}</span><button data-mobile-page="next" type="button" aria-label="Next products" ${currentPage >= maxPage ? 'disabled' : ''}>&rsaquo;</button></div></section>`;
+  const grid = $('.mobile-product-grid', container);
+  if(!visibleItems.length){
+    grid.innerHTML = `<div class="empty-state mobile-empty-state"><b>${state.lang === 'es' ? 'Sin productos aqui.' : 'No items here.'}</b><button id="emptyResetFilters" class="secondary-action" type="button">${state.lang === 'es' ? 'Limpiar filtros' : 'Reset filters'}</button></div>`;
+    $('#emptyResetFilters')?.addEventListener('click', resetFilters);
+  } else {
+    visibleItems.forEach(product => grid.appendChild(renderProductCard(product, template)));
+  }
+  $$('[data-mobile-page]', container).forEach(button => button.addEventListener('click', () => {
+    const delta = button.dataset.mobilePage === 'next' ? 1 : -1;
+    state.mobilePageBySection[section.key] = Math.min(Math.max(currentPage + delta, 0), maxPage);
+    renderProducts();
+  }));
+}
+
 function selectedVariants(card){
   return $$('select[data-variant-type]', card).map(sel => Number(sel.value)).filter(Boolean);
 }
@@ -512,6 +594,7 @@ function updateCardPrice(product, card){
   $('.price', card).textContent = product.order_mode === 'quote' ? (state.lang === 'es' ? 'Cotizar' : 'Quote') : money(Number(product.effective_price || product.base_price || 0) + variantDelta(product, ids));
 }
 function keepCardControlVisible(card){
+  if(isMobileNoScroll()) return;
   requestAnimationFrame(() => {
     const control = $('.card-cart-control', card);
     if(!control) return;
@@ -655,6 +738,40 @@ function closeFilters(){
   backdrop.hidden = true;
   if(filterTrigger && typeof filterTrigger.focus === 'function') filterTrigger.focus();
 }
+
+let mobileMoreTrigger = null;
+function openMobileMore(){
+  const sheet = $('#mobileMoreSheet');
+  const backdrop = $('#mobileMoreBackdrop');
+  if(!sheet || !backdrop) return;
+  mobileMoreTrigger = document.activeElement;
+  backdrop.hidden = false;
+  sheet.setAttribute('aria-hidden', 'false');
+  sheet.classList.add('open');
+  backdrop.classList.add('open');
+  document.body.classList.add('sheet-open');
+  $('#closeMobileMore')?.focus();
+}
+function closeMobileMore(){
+  const sheet = $('#mobileMoreSheet');
+  const backdrop = $('#mobileMoreBackdrop');
+  if(!sheet || !backdrop) return;
+  sheet.classList.remove('open');
+  backdrop.classList.remove('open');
+  document.body.classList.remove('sheet-open');
+  sheet.setAttribute('aria-hidden', 'true');
+  backdrop.hidden = true;
+  if(mobileMoreTrigger && typeof mobileMoreTrigger.focus === 'function') mobileMoreTrigger.focus();
+}
+function handleMobileMoreAction(action){
+  closeMobileMore();
+  requestAnimationFrame(() => {
+    if(action === 'quote') openQuote();
+    if(action === 'track') $('#mobileTrackDialog')?.showModal();
+    if(action === 'wholesale') $('#mobileWholesaleDialog')?.showModal();
+    if(action === 'account') $('#accountDialog')?.showModal();
+  });
+}
 function resetFilters(){
   state.category = 'all';
   state.visual = 'all';
@@ -664,23 +781,33 @@ function resetFilters(){
   $('#priceFilter').value = 'all';
   $('#bulkOnly').checked = false;
   $('#orderableOnly').checked = false;
+  resetMobilePages();
   renderCategories();
   renderVisualChips();
   renderProducts();
   renderFilterSummary();
 }
+function trapFocusWithin(container, event, closeFn){
+  if(event.key === 'Escape'){ closeFn(); return true; }
+  if(event.key !== 'Tab') return false;
+  const focusable = $$('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])', container).filter(el => !el.disabled && el.offsetParent !== null);
+  if(!focusable.length) return false;
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  if(event.shiftKey && document.activeElement === first){ event.preventDefault(); last.focus(); return true; }
+  if(!event.shiftKey && document.activeElement === last){ event.preventDefault(); first.focus(); return true; }
+  return false;
+}
 function trapFilterFocus(event){
+  const more = $('#mobileMoreSheet');
+  if(more && more.getAttribute('aria-hidden') === 'false'){
+    trapFocusWithin(more, event, closeMobileMore);
+    return;
+  }
   const sheet = $('#filterSheet');
   if(desktopFiltersQuery.matches) return;
   if(sheet.getAttribute('aria-hidden') === 'true') return;
-  if(event.key === 'Escape'){ closeFilters(); return; }
-  if(event.key !== 'Tab') return;
-  const focusable = $$('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])', sheet).filter(el => !el.disabled && el.offsetParent !== null);
-  if(!focusable.length) return;
-  const first = focusable[0];
-  const last = focusable[focusable.length - 1];
-  if(event.shiftKey && document.activeElement === first){ event.preventDefault(); last.focus(); }
-  else if(!event.shiftKey && document.activeElement === last){ event.preventDefault(); first.focus(); }
+  trapFocusWithin(sheet, event, closeFilters);
 }
 
 function renderPartners(){
@@ -823,8 +950,8 @@ async function submitQuote(form){
   try{ const data = Object.fromEntries(new FormData(form).entries()); const res = await api('/api/quote', {method:'POST', body:JSON.stringify(data)}); msg.textContent = `${state.lang === 'es' ? 'Cotización recibida' : 'Quote received'}: ${res.quote_code}`; form.reset(); }
   catch(err){ msg.className = 'form-message error'; msg.textContent = err.message; }
 }
-async function submitWholesale(form){
-  const msg = $('#wholesaleMessage'); msg.className = 'form-message'; msg.textContent='';
+async function submitWholesale(form, messageSelector = '#wholesaleMessage'){
+  const msg = $(messageSelector); msg.className = 'form-message'; msg.textContent='';
   try{ const data = Object.fromEntries(new FormData(form).entries()); const res = await api('/api/wholesale/apply', {method:'POST', body:JSON.stringify(data)}); msg.textContent = `${state.lang === 'es' ? 'Solicitud recibida' : 'Application received'}: ${res.status}`; form.reset(); }
   catch(err){ msg.className='form-message error'; msg.textContent=err.message; }
 }
@@ -832,8 +959,8 @@ async function submitStandingOrder(form){
   const msg = $('#standingOrderMessage'); msg.className='form-message'; msg.textContent='';
   try{ const fd = new FormData(form); const payload = {name:fd.get('name'), weekday:fd.get('weekday'), pickup_time:fd.get('pickup_time'), business_name:fd.get('business_name'), notes:fd.get('notes'), items:[{slug:fd.get('product_slug'), quantity:fd.get('quantity')}]} ; const res = await api('/api/account/standing-orders',{method:'POST', body:JSON.stringify(payload)}); msg.textContent = `Standing order saved #${res.standing_order_id}`; form.reset(); state.data = await api('/api/bootstrap'); renderStandingOutside(); renderAccount(); }catch(err){ msg.className='form-message error'; msg.textContent=err.message; }
 }
-async function trackOrder(form){
-  const out = $('#trackOrderResult'); out.className='form-message'; out.textContent='';
+async function trackOrder(form, resultSelector = '#trackOrderResult'){
+  const out = $(resultSelector); out.className='form-message'; out.textContent='';
   try{ const fd = new FormData(form); const res = await api(`/api/order/track?code=${encodeURIComponent(fd.get('code'))}&email=${encodeURIComponent(fd.get('email'))}`); const o=res.order; out.innerHTML = `<b>${o.order_code}</b> • ${o.pickup_date} ${o.pickup_time} • ${o.status} • ${money(o.total)} • <a href="${esc(o.receipt_url || '#')}" target="_blank">receipt</a>`; }catch(err){ out.className='form-message error'; out.textContent=err.message; }
 }
 async function login(form){
@@ -852,10 +979,10 @@ function bindEvents(){
   $('#languageBtn').addEventListener('click', () => { state.lang = state.lang === 'en' ? 'es' : 'en'; localStorage.setItem('jb_lang', state.lang); applyLanguage(); renderCategories(); renderVisualChips(); });
   $('#cartButton').addEventListener('click', openCart); $('#closeCart').addEventListener('click', closeCart); $('#drawerShade').addEventListener('click', closeCart);
   $('#cartBarButton')?.addEventListener('click', openCart);
-  $('#searchInput').addEventListener('input', e => { state.query = e.target.value; renderProducts(); renderFilterSummary(); });
-  $('#priceFilter')?.addEventListener('change', e => { state.price = e.target.value; renderProducts(); renderFilterSummary(); });
-  $('#bulkOnly').addEventListener('change', () => { renderProducts(); renderFilterSummary(); });
-  $('#orderableOnly').addEventListener('change', () => { renderProducts(); renderFilterSummary(); });
+  $('#searchInput').addEventListener('input', e => { state.query = e.target.value; resetMobilePages(); renderProducts(); renderFilterSummary(); });
+  $('#priceFilter')?.addEventListener('change', e => { state.price = e.target.value; resetMobilePages(); renderProducts(); renderFilterSummary(); });
+  $('#bulkOnly').addEventListener('change', () => { resetMobilePages(); renderProducts(); renderFilterSummary(); });
+  $('#orderableOnly').addEventListener('change', () => { resetMobilePages(); renderProducts(); renderFilterSummary(); });
   $('#openFilters')?.addEventListener('click', openFilters);
   $('#closeFilters')?.addEventListener('click', closeFilters);
   $('#filterSheetBackdrop')?.addEventListener('click', closeFilters);
@@ -863,14 +990,21 @@ function bindEvents(){
   $('#applyFilters')?.addEventListener('click', closeFilters);
   $('#sortButton')?.addEventListener('click', cycleSort);
   desktopFiltersQuery.addEventListener('change', syncFilterMode);
+  mobileNoScrollQuery.addEventListener('change', () => { closeMobileMore(); renderCategories(); renderProducts(); renderFilterSummary(); syncFilterMode(); });
   syncFilterMode();
   document.addEventListener('keydown', trapFilterFocus);
+  $('#mobileMoreBtn')?.addEventListener('click', openMobileMore);
+  $('#closeMobileMore')?.addEventListener('click', closeMobileMore);
+  $('#mobileMoreBackdrop')?.addEventListener('click', closeMobileMore);
+  $$('[data-mobile-more-action]').forEach(btn => btn.addEventListener('click', () => handleMobileMoreAction(btn.dataset.mobileMoreAction)));
   $('#checkoutToggle').addEventListener('click', () => { updateCheckoutReview(); fillCheckoutFromUser(); $('#checkoutDialog').showModal(); });
   $('#checkoutForm').addEventListener('submit', e => { e.preventDefault(); submitCheckout(e.currentTarget); });
   $('#quoteForm').addEventListener('submit', e => { e.preventDefault(); submitQuote(e.currentTarget); });
   $('#wholesaleForm').addEventListener('submit', e => { e.preventDefault(); submitWholesale(e.currentTarget); });
+  $('#mobileWholesaleForm')?.addEventListener('submit', e => { e.preventDefault(); submitWholesale(e.currentTarget, '#mobileWholesaleMessage'); });
   $('#standingOrderForm')?.addEventListener('submit', e => { e.preventDefault(); submitStandingOrder(e.currentTarget); });
   $('#trackOrderForm')?.addEventListener('submit', e => { e.preventDefault(); trackOrder(e.currentTarget); });
+  $('#mobileTrackOrderForm')?.addEventListener('submit', e => { e.preventDefault(); trackOrder(e.currentTarget, '#mobileTrackOrderResult'); });
   $('#openQuoteHero').addEventListener('click', () => openQuote()); $('#openQuoteSection').addEventListener('click', () => openQuote());
   $('#accountBtn').addEventListener('click', () => $('#accountDialog').showModal());
   $('#loginForm').addEventListener('submit', e => { e.preventDefault(); login(e.currentTarget); });
