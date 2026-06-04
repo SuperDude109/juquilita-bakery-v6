@@ -3,6 +3,7 @@ const state = {
   lang: localStorage.getItem('jb_lang') || 'en',
   category: 'all',
   visual: 'all',
+  sort: 'popular',
   query: '',
   cart: JSON.parse(localStorage.getItem('jb_cart_v4') || '[]'),
 };
@@ -13,22 +14,28 @@ const money = value => value == null ? 'Quote' : `$${Number(value).toFixed(2)}`;
 const esc = s => String(s ?? '').replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
 const currentName = item => state.lang === 'es' ? item.name_es : item.name_en;
 const currentDescription = item => state.lang === 'es' ? item.description_es : item.description_en;
+const sortOptions = [
+  {key:'popular', label_en:'Popular', label_es:'Popular'},
+  {key:'price_asc', label_en:'Price', label_es:'Precio'},
+  {key:'price_desc', label_en:'Price high', label_es:'Precio alto'},
+  {key:'name', label_en:'Name', label_es:'Nombre'}
+];
 
 const copy = {
   en: {
     nav_menu:'Menu', nav_wholesale:'Wholesale', nav_quotes:'Cakes & seasonal', nav_partners:'Partners', nav_admin:'Admin', account:'Account',
-    eyebrow:'Oaxacan breads • cakes • wholesale orders', hero_title:'Order Mexican bread without guessing what is available.', hero_text:'Browse by the way the bread looks, see real pickup windows, submit cake quotes, and create recurring shop orders.', shop_now:'Shop the case', request_quote:'Request a quote',
+    eyebrow:'Oaxacan breads • cakes • pickup orders', hero_title:'Juquilita Bakery', hero_text:'Order pan dulce, cakes, desserts, and seasonal bread for pickup in Morristown.', shop_now:'Shop the case', request_quote:'Request a quote',
     pain_1_title:'Find bread visually', pain_1:'Spanish and English names, aliases, shapes, and fillings.', pain_2_title:'Avoid bad pickups', pain_2:'Hours, capacity, inventory, and lead times are checked before ordering.', pain_3_title:'Wholesale built in', pain_3:'Premium pricing, applications, standing orders, and bulk bundles.', pain_4_title:'Quotes are real workflows', pain_4:'Cakes, Rosca, and Pan de Muerto collect the details staff need.',
-    find_bread:'Find your bread', bulk_friendly:'Bulk friendly only', orderable_now:'Orderable now only', search_note:'Search accepts English, Spanish, visual words, and common misspellings.', catalog_eyebrow:'Expanded catalog', catalog_title:'Specific products, variants, and quote-only items', catalog_copy:'Prices use the public menu where available. Items with variable decoration or seasonal sizing use quote requests.',
+    find_bread:'Find your bread', bulk_friendly:'Bulk friendly only', orderable_now:'Orderable now only', search_note:'Search accepts English, Spanish, visual words, and common misspellings.', catalog_eyebrow:'Expanded catalog', catalog_title:'Menu', catalog_copy:'Prices use the public menu where available. Items with variable decoration or seasonal sizing use quote requests.',
     quote_eyebrow:'Cakes and seasonal bread', quote_title:'Quote forms collect the missing details before staff call back.', quote_copy:'Custom cakes, Pan de Muerto, and Rosca de Reyes need sizes, fillings, decoration notes, event dates, and pickup timing.', start_quote:'Start quote request', cake_quote:'Custom cakes', cake_quote_desc:'Flavor, filling, inscription, reference image, budget, event date.', rosca_quote_desc:'Size, quantity, pickup window, hidden figurine planning.', muerto_quote_desc:'White sugar, pink sugar, or Oaxacan yema face style.',
     wholesale_eyebrow:'Premium customer flow', wholesale_title:'For shops that buy bread every week', wholesale_copy:'Apply for premium pricing, save standing orders, and reorder bulk bread without rebuilding the basket.', apply_wholesale:'Apply for wholesale', submit_application:'Submit application', standing_orders:'Standing orders', standing_copy:'Approved premium accounts can save recurring orders such as “60 bolillos every Friday at 7:30 AM.”',
     partners_eyebrow:'Community shelf', partners_title:'Businesses buying from the bakery can be promoted here.', partners_copy:'The app requires consent before publishing real partner cards. Demo cards remain marked until replaced.', basket:'Basket', promo_code:'Promo code', subtotal:'Subtotal', checkout:'Checkout', login:'Login', register:'Register', login_title:'Login', login_note:'Demo credentials are in the README. Passwords are intentionally not prefilled.', register_title:'Create customer account', create_account:'Create account', checkout_title:'Pickup checkout', contact_info:'Contact', pickup_info:'Pickup', pay_pickup:'Pay at pickup', deposit_pending:'Deposit to be collected', place_order:'Place pickup order', quote_dialog_title:'Quote request', quote_item:'Item', details:'Details', submit_quote:'Submit quote request'
   },
   es: {
     nav_menu:'Menú', nav_wholesale:'Mayoreo', nav_quotes:'Pasteles y temporada', nav_partners:'Negocios', nav_admin:'Admin', account:'Cuenta',
-    eyebrow:'Panes oaxaqueños • pasteles • mayoreo', hero_title:'Ordena pan mexicano sin adivinar qué está disponible.', hero_text:'Busca por cómo se ve el pan, revisa horarios reales, pide cotizaciones y guarda pedidos recurrentes para negocios.', shop_now:'Ver vitrina', request_quote:'Pedir cotización',
+    eyebrow:'Panes oaxaqueños • pasteles • pedidos', hero_title:'Juquilita Bakery', hero_text:'Ordena pan dulce, pasteles, postres y pan de temporada para recoger en Morristown.', shop_now:'Ver vitrina', request_quote:'Pedir cotización',
     pain_1_title:'Encuentra por forma', pain_1:'Nombres en español e inglés, alias, formas y rellenos.', pain_2_title:'Evita malos horarios', pain_2:'El sistema revisa horario, cupo, inventario y anticipación.', pain_3_title:'Mayoreo incluido', pain_3:'Precios premium, solicitudes, pedidos fijos y paquetes grandes.', pain_4_title:'Cotizaciones útiles', pain_4:'Pasteles, Rosca y Pan de Muerto capturan los datos que necesita el personal.',
-    find_bread:'Busca tu pan', bulk_friendly:'Solo mayoreo', orderable_now:'Solo disponible para ordenar', search_note:'La búsqueda acepta español, inglés, palabras visuales y errores comunes.', catalog_eyebrow:'Catálogo ampliado', catalog_title:'Productos específicos, variantes y artículos con cotización', catalog_copy:'Los precios usan el menú público cuando está disponible. Decoración variable y temporada usan cotización.',
+    find_bread:'Busca tu pan', bulk_friendly:'Solo mayoreo', orderable_now:'Solo disponible para ordenar', search_note:'La búsqueda acepta español, inglés, palabras visuales y errores comunes.', catalog_eyebrow:'Catálogo ampliado', catalog_title:'Menú', catalog_copy:'Los precios usan el menú público cuando está disponible. Decoración variable y temporada usan cotización.',
     quote_eyebrow:'Pasteles y pan de temporada', quote_title:'Las cotizaciones reúnen los datos antes de llamar al cliente.', quote_copy:'Pasteles personalizados, Pan de Muerto y Rosca de Reyes necesitan tamaños, rellenos, decoración, fecha y hora.', start_quote:'Iniciar cotización', cake_quote:'Pasteles personalizados', cake_quote_desc:'Sabor, relleno, letrero, imagen de referencia, presupuesto y fecha.', rosca_quote_desc:'Tamaño, cantidad, horario y planeación de figuras.', muerto_quote_desc:'Azúcar blanca, azúcar rosa o pan de yema oaxaqueño con carita.',
     wholesale_eyebrow:'Flujo premium', wholesale_title:'Para negocios que compran pan cada semana', wholesale_copy:'Solicita precio premium, guarda pedidos fijos y repite pedidos grandes sin rehacer la canasta.', apply_wholesale:'Solicitar mayoreo', submit_application:'Enviar solicitud', standing_orders:'Pedidos fijos', standing_copy:'Cuentas premium pueden guardar pedidos como “60 bolillos cada viernes a las 7:30 AM.”',
     partners_eyebrow:'Comunidad', partners_title:'Los negocios que compran de la panadería se pueden promover aquí.', partners_copy:'La app exige consentimiento antes de publicar negocios reales. Las tarjetas demo quedan marcadas.', basket:'Canasta', promo_code:'Código promo', subtotal:'Subtotal', checkout:'Pagar', login:'Entrar', register:'Registro', login_title:'Entrar', login_note:'Las credenciales demo están en README. Las contraseñas no se autollenan.', register_title:'Crear cuenta', create_account:'Crear cuenta', checkout_title:'Pedido para recoger', contact_info:'Contacto', pickup_info:'Recoger', pay_pickup:'Pagar al recoger', deposit_pending:'Depósito pendiente', place_order:'Enviar pedido', quote_dialog_title:'Solicitud de cotización', quote_item:'Artículo', details:'Detalles', submit_quote:'Enviar cotización'
@@ -48,6 +55,7 @@ async function api(path, options = {}){
 }
 
 async function boot(){
+  renderProductSkeletons();
   state.data = await api('/api/bootstrap');
   applyLanguage();
   renderStatus();
@@ -72,7 +80,8 @@ function applyLanguage(){
   document.documentElement.lang = state.lang;
   $$('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
   $('#languageBtn').textContent = state.lang === 'en' ? 'Español' : 'English';
-  renderProducts(); renderCart(); renderPartners(); renderStatus(); renderAccount(); renderQuoteProducts(); renderReviewProducts(); renderCampaigns(); renderVisualChips(); renderBakeryCase(); renderCampaignCapacity();
+  updateSortButton();
+  renderProducts(); renderCart(); renderPartners(); renderStatus(); renderAccount(); renderQuoteProducts(); renderReviewProducts(); renderCampaigns(); renderVisualChips(); renderBakeryCase(); renderCampaignCapacity(); renderFilterSummary();
 }
 
 function renderStatus(){
@@ -85,8 +94,8 @@ function renderStatus(){
 function renderCategories(){
   const wrap = $('#categoryChips');
   const cats = [{key:'all', name_en:'All products', name_es:'Todo'}, ...state.data.categories];
-  wrap.innerHTML = cats.map(cat => `<button class="chip ${state.category === cat.key ? 'active' : ''}" data-category="${cat.key}" type="button">${state.lang === 'es' ? cat.name_es : cat.name_en}</button>`).join('');
-  $$('.chip', wrap).forEach(btn => btn.addEventListener('click', () => { state.category = btn.dataset.category; renderCategories(); renderProducts(); }));
+  wrap.innerHTML = cats.map(cat => `<button class="chip ${state.category === cat.key ? 'active' : ''}" data-category="${cat.key}" type="button" aria-pressed="${state.category === cat.key}">${state.lang === 'es' ? cat.name_es : cat.name_en}</button>`).join('');
+  $$('.chip', wrap).forEach(btn => btn.addEventListener('click', () => { state.category = btn.dataset.category; renderCategories(); renderProducts(); renderFilterSummary(); }));
 }
 
 function renderVisualChips(){
@@ -95,8 +104,21 @@ function renderVisualChips(){
   const labelsEs = {all:'Todas', shell:'Conchas', pig:'Marranitos', heart:'Corazones', ring:'Roscas/aretes', filled:'Rellenos', flaky:'Hojaldres', cookie:'Galletas', slice:'Rebanadas', cake:'Pasteles', roll:'Bolillos', other:'Otros'};
   const shapes = ['all', ...(state.data.visual_shapes || []).map(v => v.visual_shape || 'other')];
   const unique = [...new Set(shapes)].filter(Boolean);
-  wrap.innerHTML = unique.map(shape => `<button class="chip ${state.visual === shape ? 'active' : ''}" data-visual="${esc(shape)}" type="button">${state.lang === 'es' ? (labelsEs[shape] || shape) : (labels[shape] || shape)}</button>`).join('');
-  $$('[data-visual]', wrap).forEach(btn => btn.addEventListener('click', () => { state.visual = btn.dataset.visual; renderVisualChips(); renderProducts(); }));
+  wrap.innerHTML = unique.map(shape => `<button class="chip ${state.visual === shape ? 'active' : ''}" data-visual="${esc(shape)}" type="button" aria-pressed="${state.visual === shape}">${visualLabel(shape)}</button>`).join('');
+  $$('[data-visual]', wrap).forEach(btn => btn.addEventListener('click', () => { state.visual = btn.dataset.visual; renderVisualChips(); renderProducts(); renderFilterSummary(); }));
+}
+
+function visualLabel(shape){
+  const labels = {all:'All shapes', shell:'Shells', pig:'Pigs', heart:'Hearts', ring:'Rings', filled:'Filled', flaky:'Flaky', cookie:'Cookies', slice:'Slices', cake:'Cakes', roll:'Rolls', other:'Other'};
+  const labelsEs = {all:'Todas', shell:'Conchas', pig:'Marranitos', heart:'Corazones', ring:'Roscas/aretes', filled:'Rellenos', flaky:'Hojaldres', cookie:'Galletas', slice:'Rebanadas', cake:'Pasteles', roll:'Bolillos', other:'Otros'};
+  return state.lang === 'es' ? (labelsEs[shape] || shape) : (labels[shape] || shape);
+}
+
+function categoryLabel(key){
+  if(key === 'all') return state.lang === 'es' ? 'Todo' : 'All products';
+  const cat = state.data?.categories?.find(c => c.key === key);
+  if(!cat) return key;
+  return state.lang === 'es' ? cat.name_es : cat.name_en;
 }
 
 function renderBakeryCase(){
@@ -130,9 +152,26 @@ function productSearchBlob(p){
   return normalize([p.name_es,p.name_en,p.description_es,p.description_en,p.search_terms,p.visual_tags,p.visual_shape,p.category_name_en,p.category_name_es,p.subcategory].join(' '));
 }
 
+function sortLabel(){
+  const current = sortOptions.find(opt => opt.key === state.sort) || sortOptions[0];
+  return state.lang === 'es' ? current.label_es : current.label_en;
+}
+
+function updateSortButton(){
+  const btn = $('#sortButton');
+  if(btn) btn.textContent = `${state.lang === 'es' ? 'Orden' : 'Sort'}: ${sortLabel()}`;
+}
+
+function cycleSort(){
+  const index = Math.max(0, sortOptions.findIndex(opt => opt.key === state.sort));
+  state.sort = sortOptions[(index + 1) % sortOptions.length].key;
+  updateSortButton();
+  renderProducts();
+}
+
 function filteredProducts(){
   const q = normalize(state.query);
-  return state.data.products.filter(p => {
+  const products = state.data.products.filter(p => {
     if(state.category !== 'all' && p.category_key !== state.category) return false;
     if(state.visual !== 'all' && (p.visual_shape || 'other') !== state.visual) return false;
     if($('#bulkOnly')?.checked && !p.is_bulk_friendly) return false;
@@ -140,6 +179,51 @@ function filteredProducts(){
     if(q && !productSearchBlob(p).includes(q)) return false;
     return true;
   });
+  return products.sort((a,b) => {
+    if(state.sort === 'price_asc') return Number(a.effective_price ?? 999999) - Number(b.effective_price ?? 999999);
+    if(state.sort === 'price_desc') return Number(b.effective_price ?? -1) - Number(a.effective_price ?? -1);
+    if(state.sort === 'name') return currentName(a).localeCompare(currentName(b), state.lang === 'es' ? 'es' : 'en');
+    return Number(b.can_order || 0) - Number(a.can_order || 0) || Number(b.is_bulk_friendly || 0) - Number(a.is_bulk_friendly || 0) || currentName(a).localeCompare(currentName(b), state.lang === 'es' ? 'es' : 'en');
+  });
+}
+
+function renderProductSkeletons(){
+  const grid = $('#productGrid');
+  if(!grid) return;
+  grid.innerHTML = Array.from({length:6}, (_,idx) => `<article class="product-card skeleton-card" aria-hidden="true"><div class="skeleton-lines"><span></span><span></span><span></span></div><div class="skeleton-image"></div></article>`).join('');
+}
+
+function activeFilterChips(){
+  const chips = [];
+  if(state.query) chips.push({key:'query', label:`"${state.query}"`});
+  if(state.category !== 'all') chips.push({key:'category', label:categoryLabel(state.category)});
+  if(state.visual !== 'all') chips.push({key:'visual', label:visualLabel(state.visual)});
+  if($('#bulkOnly')?.checked) chips.push({key:'bulk', label:state.lang === 'es' ? 'Mayoreo' : 'Bulk friendly'});
+  if($('#orderableOnly')?.checked) chips.push({key:'orderable', label:state.lang === 'es' ? 'Disponible' : 'Orderable now'});
+  return chips;
+}
+
+function renderFilterSummary(){
+  const wrap = $('#filterSummary');
+  const count = $('#filterCount');
+  if(!wrap) return;
+  const chips = activeFilterChips();
+  if(count){
+    count.hidden = chips.length === 0;
+    count.textContent = chips.length;
+  }
+  wrap.innerHTML = chips.map(chip => `<button class="filter-chip" data-remove-filter="${chip.key}" type="button">${esc(chip.label)} <span aria-hidden="true">×</span></button>`).join('');
+  $$('[data-remove-filter]', wrap).forEach(btn => btn.addEventListener('click', () => removeFilter(btn.dataset.removeFilter)));
+}
+
+function removeFilter(key){
+  if(key === 'query'){ state.query = ''; $('#searchInput').value = ''; }
+  if(key === 'category'){ state.category = 'all'; renderCategories(); }
+  if(key === 'visual'){ state.visual = 'all'; renderVisualChips(); }
+  if(key === 'bulk') $('#bulkOnly').checked = false;
+  if(key === 'orderable') $('#orderableOnly').checked = false;
+  renderProducts();
+  renderFilterSummary();
 }
 
 function groupVariants(variants){
@@ -184,10 +268,28 @@ function renderProducts(){
   const tpl = $('#productTemplate');
   const products = filteredProducts();
   $('#productCount').textContent = `${products.length}`;
-  if(!products.length){ grid.innerHTML = `<div class="empty-state">${state.lang === 'es' ? 'No se encontraron productos.' : 'No products found.'}</div>`; return; }
+  renderFilterSummary();
+  if(!products.length){
+    grid.innerHTML = `<div class="empty-state"><b>${state.lang === 'es' ? 'No se encontraron productos.' : 'No products found.'}</b><button id="emptyResetFilters" class="secondary-action" type="button">${state.lang === 'es' ? 'Limpiar filtros' : 'Reset filters'}</button></div>`;
+    $('#emptyResetFilters')?.addEventListener('click', resetFilters);
+    return;
+  }
   grid.innerHTML = '';
   for(const p of products){
     const node = tpl.content.firstElementChild.cloneNode(true);
+    const titleId = `product-title-${String(p.slug).replace(/[^a-z0-9_-]/gi, '-')}`;
+    node.setAttribute('aria-labelledby', titleId);
+    node.tabIndex = 0;
+    node.addEventListener('click', event => {
+      if(event.target.closest('button, select, input, textarea, a')) return;
+      openProductDetails(p);
+    });
+    node.addEventListener('keydown', event => {
+      if((event.key === 'Enter' || event.key === ' ') && !event.target.closest('button, select, input, textarea, a')){
+        event.preventDefault();
+        openProductDetails(p);
+      }
+    });
     const art = $('.product-art', node);
     setProductArt(art, p);
     $('.category-badge', node).textContent = state.lang === 'es' ? p.category_name_es : p.category_name_en;
@@ -195,11 +297,13 @@ function renderProducts(){
     if(p.order_mode === 'quote'){ stock.textContent = state.lang === 'es' ? 'cotización' : 'quote'; stock.classList.add('quote'); }
     else if(p.stock_policy === 'track'){ stock.textContent = p.stock_count < 20 ? `${p.stock_count} left` : 'daily case'; if(p.stock_count < 20) stock.classList.add('low'); }
     else { stock.textContent = state.lang === 'es' ? 'por pedido' : 'made to order'; }
+    $('h3', node).id = titleId;
     $('h3', node).textContent = `${p.name_es} / ${p.name_en}`;
     $('p', node).textContent = currentDescription(p);
     const variantBox = $('.variant-box', node);
     const groups = groupVariants(p.variants || []);
     variantBox.innerHTML = Object.entries(groups).map(([type, variants]) => `<select data-variant-type="${type}"><option value="">${type.replace('_',' ')}</option>${variants.map(v => `<option value="${v.id}" ${v.is_default ? 'selected' : ''}>${state.lang === 'es' ? v.name_es : v.name_en}${Number(v.price_delta) ? ` +${money(v.price_delta)}` : ''}</option>`).join('')}</select>`).join('');
+    $$('select[data-variant-type]', variantBox).forEach(sel => sel.addEventListener('change', () => updateCardCartControl(p, node)));
     const allergenRow = $('.allergen-row', node);
     allergenRow.innerHTML = (p.allergens || []).slice(0,4).map(a => `<span>${state.lang === 'es' ? a.name_es : a.name_en}</span>`).join('');
     const trust = $('.product-trust', node);
@@ -209,11 +313,7 @@ function renderProducts(){
     fav.textContent = p.is_favorite ? (state.lang === 'es' ? '♥ Guardado' : '♥ Saved') : (state.lang === 'es' ? '♡ Guardar' : '♡ Save');
     fav.addEventListener('click', () => toggleFavorite(p));
     $('.details-btn', node).addEventListener('click', () => openProductDetails(p));
-    $('.price', node).textContent = p.order_mode === 'quote' ? (state.lang === 'es' ? 'Cotizar' : 'Quote') : money(p.effective_price);
-    const btn = $('.product-foot button', node);
-    btn.textContent = p.order_mode === 'quote' ? (state.lang === 'es' ? 'Cotizar' : 'Quote') : (state.lang === 'es' ? 'Agregar' : 'Add');
-    if(p.order_mode === 'quote') btn.classList.add('quote');
-    btn.addEventListener('click', () => p.order_mode === 'quote' ? openQuote(p.slug) : addProductFromCard(p, node));
+    updateCardCartControl(p, node);
     const imageStatusLabel = {
       legacyVerified: state.lang === 'es' ? 'Foto real verificada' : 'Verified real photo',
       categoryFallback: state.lang === 'es' ? 'Foto de categoría' : 'Category photo',
@@ -227,6 +327,46 @@ function renderProducts(){
 function selectedVariants(card){
   return $$('select[data-variant-type]', card).map(sel => Number(sel.value)).filter(Boolean);
 }
+function cartItemFor(product, variantIds){
+  const key = cartKey(product.slug, variantIds);
+  return state.cart.find(item => item.key === key);
+}
+function updateCardPrice(product, card){
+  const ids = selectedVariants(card);
+  $('.price', card).textContent = product.order_mode === 'quote' ? (state.lang === 'es' ? 'Cotizar' : 'Quote') : money(Number(product.effective_price || product.base_price || 0) + variantDelta(product, ids));
+}
+function keepCardControlVisible(card){
+  requestAnimationFrame(() => {
+    const control = $('.card-cart-control', card);
+    if(!control) return;
+    const rect = control.getBoundingClientRect();
+    const bar = $('#cartBar');
+    const barTop = bar && !bar.hidden ? bar.getBoundingClientRect().top : window.innerHeight;
+    if(rect.bottom > barTop - 16 || rect.top < Number.parseInt(getComputedStyle(document.documentElement).getPropertyValue('--top-bar-height') || '72', 10)){
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      card.scrollIntoView({block:'center', inline:'nearest', behavior:reduceMotion ? 'auto' : 'smooth'});
+    }
+  });
+}
+function updateCardCartControl(product, card){
+  updateCardPrice(product, card);
+  const control = $('.card-cart-control', card);
+  const ids = selectedVariants(card);
+  if(product.order_mode === 'quote'){
+    control.innerHTML = `<button class="add-button quote" type="button">${state.lang === 'es' ? 'Cotizar' : 'Quote'}</button>`;
+    $('button', control).addEventListener('click', () => openQuote(product.slug));
+    return;
+  }
+  const existing = cartItemFor(product, ids);
+  if(existing){
+    control.innerHTML = `<div class="inline-qty" aria-label="${esc(`Quantity for ${currentName(product)}`)}"><button data-card-dec type="button" aria-label="${esc(`Remove one ${currentName(product)}`)}">−</button><span>${existing.quantity}</span><button data-card-inc type="button" aria-label="${esc(`Add one more ${currentName(product)}`)}">+</button></div>`;
+    $('[data-card-inc]', control).addEventListener('click', () => { existing.quantity++; saveCart(); updateCardCartControl(product, card); keepCardControlVisible(card); announceCart(`${currentName(product)} quantity ${existing.quantity}.`); });
+    $('[data-card-dec]', control).addEventListener('click', () => { existing.quantity--; if(existing.quantity <= 0) state.cart = state.cart.filter(item => item !== existing); saveCart(); updateCardCartControl(product, card); keepCardControlVisible(card); announceCart(existing.quantity > 0 ? `${currentName(product)} quantity ${existing.quantity}.` : `${currentName(product)} removed from cart.`); });
+  } else {
+    control.innerHTML = `<button class="add-button" type="button" aria-label="${esc(`Add ${currentName(product)} to cart`)}">${state.lang === 'es' ? 'Agregar' : 'Add'}</button>`;
+    $('button', control).addEventListener('click', () => { addProductFromCard(product, card); updateCardCartControl(product, card); keepCardControlVisible(card); });
+  }
+}
 function variantLabel(product, ids){
   const labels = [];
   for(const id of ids){ const v = product.variants.find(x => Number(x.id) === Number(id)); if(v) labels.push(`${v.variant_type}: ${state.lang === 'es' ? v.name_es : v.name_en}`); }
@@ -237,21 +377,47 @@ function variantDelta(product, ids){
 }
 function addProductFromCard(product, card){ addToCart(product.slug, 1, selectedVariants(card)); }
 function cartKey(slug, variantIds){ return `${slug}|${[...variantIds].sort((a,b)=>a-b).join(',')}`; }
+function cartTotals(){
+  let subtotal = 0;
+  let count = 0;
+  for(const item of state.cart){
+    const p = state.data?.products?.find(x => x.slug === item.slug);
+    if(!p) continue;
+    const unit = Number(p.effective_price || p.base_price || 0) + variantDelta(p, item.variant_ids || []);
+    subtotal += unit * item.quantity;
+    count += item.quantity;
+  }
+  return {count, subtotal};
+}
+function announceCart(message){
+  const live = $('#cartLive');
+  if(live) live.textContent = message;
+}
 function addToCart(slug, qty = 1, variantIds = []){
   const p = state.data.products.find(x => x.slug === slug); if(!p) return;
   const key = cartKey(slug, variantIds);
   const existing = state.cart.find(item => item.key === key);
   if(existing) existing.quantity += qty; else state.cart.push({key, slug, quantity: qty, variant_ids: variantIds, variant_label: variantLabel(p, variantIds)});
-  saveCart(); openCart();
+  saveCart();
+  const totals = cartTotals();
+  announceCart(`${state.lang === 'es' ? 'Agregado' : 'Added'} ${currentName(p)}. ${totals.count} ${totals.count === 1 ? 'item' : 'items'} in cart. ${money(totals.subtotal)} total.`);
 }
 function addBundle(slug){
   const b = state.data.bundles.find(x => x.slug === slug); if(!b) return;
   const items = JSON.parse(b.items_json || '{}');
   Object.entries(items).forEach(([productSlug, qty]) => addToCart(productSlug, Number(qty), []));
+  renderProducts();
 }
 function renderCart(){
-  const count = state.cart.reduce((s,i)=>s+i.quantity,0);
+  const totals = cartTotals();
+  const count = totals.count;
   $('#cartCount').textContent = count;
+  const bar = $('#cartBar');
+  if(bar){
+    bar.hidden = count === 0;
+    $('#cartBarCount').textContent = `${count} ${count === 1 ? 'item' : 'items'}`;
+    $('#cartBarSubtotal').textContent = money(totals.subtotal);
+  }
   const wrap = $('#cartItems');
   if(!state.cart.length){ wrap.innerHTML = `<div class="empty-state">${state.lang === 'es' ? 'Tu canasta está vacía.' : 'Your basket is empty.'}</div>`; $('#cartSubtotal').textContent = money(0); return; }
   let subtotal = 0;
@@ -263,12 +429,59 @@ function renderCart(){
     return `<article class="cart-line"><div class="cart-line-top"><div><strong>${p.name_es}</strong><br><small>${p.name_en}${item.variant_label ? ' • ' + item.variant_label : ''}</small></div><b>${money(unit * item.quantity)}</b></div><div class="qty-row"><button data-dec="${idx}">−</button><span>${item.quantity}</span><button data-inc="${idx}">+</button><button data-remove="${idx}">${state.lang === 'es' ? 'quitar' : 'remove'}</button></div></article>`;
   }).join('');
   $('#cartSubtotal').textContent = money(subtotal);
-  $$('[data-inc]', wrap).forEach(b => b.addEventListener('click', () => { state.cart[Number(b.dataset.inc)].quantity++; saveCart(); }));
-  $$('[data-dec]', wrap).forEach(b => b.addEventListener('click', () => { const i = state.cart[Number(b.dataset.dec)]; i.quantity--; if(i.quantity <= 0) state.cart.splice(Number(b.dataset.dec),1); saveCart(); }));
-  $$('[data-remove]', wrap).forEach(b => b.addEventListener('click', () => { state.cart.splice(Number(b.dataset.remove),1); saveCart(); }));
+  $$('[data-inc]', wrap).forEach(b => b.addEventListener('click', () => { state.cart[Number(b.dataset.inc)].quantity++; saveCart(); renderProducts(); }));
+  $$('[data-dec]', wrap).forEach(b => b.addEventListener('click', () => { const i = state.cart[Number(b.dataset.dec)]; i.quantity--; if(i.quantity <= 0) state.cart.splice(Number(b.dataset.dec),1); saveCart(); renderProducts(); }));
+  $$('[data-remove]', wrap).forEach(b => b.addEventListener('click', () => { state.cart.splice(Number(b.dataset.remove),1); saveCart(); renderProducts(); }));
 }
 function openCart(){ $('#cartDrawer').classList.add('open'); $('#drawerShade').classList.add('open'); $('#cartDrawer').setAttribute('aria-hidden','false'); }
 function closeCart(){ $('#cartDrawer').classList.remove('open'); $('#drawerShade').classList.remove('open'); $('#cartDrawer').setAttribute('aria-hidden','true'); }
+
+let filterTrigger = null;
+function openFilters(){
+  const sheet = $('#filterSheet');
+  const backdrop = $('#filterSheetBackdrop');
+  filterTrigger = document.activeElement;
+  backdrop.hidden = false;
+  sheet.setAttribute('aria-hidden', 'false');
+  sheet.classList.add('open');
+  backdrop.classList.add('open');
+  document.body.classList.add('sheet-open');
+  $('#closeFilters')?.focus();
+}
+function closeFilters(){
+  const sheet = $('#filterSheet');
+  const backdrop = $('#filterSheetBackdrop');
+  sheet.classList.remove('open');
+  backdrop.classList.remove('open');
+  document.body.classList.remove('sheet-open');
+  sheet.setAttribute('aria-hidden', 'true');
+  backdrop.hidden = true;
+  if(filterTrigger && typeof filterTrigger.focus === 'function') filterTrigger.focus();
+}
+function resetFilters(){
+  state.category = 'all';
+  state.visual = 'all';
+  state.query = '';
+  $('#searchInput').value = '';
+  $('#bulkOnly').checked = false;
+  $('#orderableOnly').checked = false;
+  renderCategories();
+  renderVisualChips();
+  renderProducts();
+  renderFilterSummary();
+}
+function trapFilterFocus(event){
+  const sheet = $('#filterSheet');
+  if(sheet.getAttribute('aria-hidden') === 'true') return;
+  if(event.key === 'Escape'){ closeFilters(); return; }
+  if(event.key !== 'Tab') return;
+  const focusable = $$('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])', sheet).filter(el => !el.disabled && el.offsetParent !== null);
+  if(!focusable.length) return;
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  if(event.shiftKey && document.activeElement === first){ event.preventDefault(); last.focus(); }
+  else if(!event.shiftKey && document.activeElement === last){ event.preventDefault(); first.focus(); }
+}
 
 function renderPartners(){
   const wrap = $('#partnerGrid');
@@ -438,8 +651,17 @@ async function logout(){ await api('/api/auth/logout', {method:'POST', body:'{}'
 function bindEvents(){
   $('#languageBtn').addEventListener('click', () => { state.lang = state.lang === 'en' ? 'es' : 'en'; localStorage.setItem('jb_lang', state.lang); applyLanguage(); renderCategories(); renderVisualChips(); });
   $('#cartButton').addEventListener('click', openCart); $('#closeCart').addEventListener('click', closeCart); $('#drawerShade').addEventListener('click', closeCart);
-  $('#searchInput').addEventListener('input', e => { state.query = e.target.value; renderProducts(); });
-  $('#bulkOnly').addEventListener('change', renderProducts); $('#orderableOnly').addEventListener('change', renderProducts);
+  $('#cartBarButton')?.addEventListener('click', openCart);
+  $('#searchInput').addEventListener('input', e => { state.query = e.target.value; renderProducts(); renderFilterSummary(); });
+  $('#bulkOnly').addEventListener('change', () => { renderProducts(); renderFilterSummary(); });
+  $('#orderableOnly').addEventListener('change', () => { renderProducts(); renderFilterSummary(); });
+  $('#openFilters')?.addEventListener('click', openFilters);
+  $('#closeFilters')?.addEventListener('click', closeFilters);
+  $('#filterSheetBackdrop')?.addEventListener('click', closeFilters);
+  $('#resetFilters')?.addEventListener('click', resetFilters);
+  $('#applyFilters')?.addEventListener('click', closeFilters);
+  $('#sortButton')?.addEventListener('click', cycleSort);
+  document.addEventListener('keydown', trapFilterFocus);
   $('#checkoutToggle').addEventListener('click', () => { updateCheckoutReview(); fillCheckoutFromUser(); $('#checkoutDialog').showModal(); });
   $('#checkoutForm').addEventListener('submit', e => { e.preventDefault(); submitCheckout(e.currentTarget); });
   $('#quoteForm').addEventListener('submit', e => { e.preventDefault(); submitQuote(e.currentTarget); });

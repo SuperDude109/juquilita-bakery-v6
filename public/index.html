@@ -31,8 +31,10 @@
   }
   </script>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile-ordering.css">
 </head>
 <body>
+  <a class="skip-link" href="#menu">Skip to menu</a>
   <div class="grain"></div>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Juquilita Bakery home">
@@ -57,8 +59,8 @@
     <section class="hero section-shell">
       <div class="hero-copy">
         <p class="eyebrow" data-i18n="eyebrow">Oaxacan breads • cakes • wholesale orders</p>
-        <h1 data-i18n="hero_title">Order Mexican bread without guessing what is available.</h1>
-        <p class="hero-text" data-i18n="hero_text">Browse by the way the bread looks, see real pickup windows, submit cake quotes, and create recurring shop orders.</p>
+        <h1 data-i18n="hero_title">Juquilita Bakery</h1>
+        <p class="hero-text" data-i18n="hero_text">Order pan dulce, cakes, desserts, and seasonal bread for pickup in Morristown.</p>
         <div class="hero-actions">
           <a href="#menu" class="primary-action" data-i18n="shop_now">Shop the case</a>
           <button id="openQuoteHero" class="secondary-action" type="button" data-i18n="request_quote">Request a quote</button>
@@ -81,21 +83,20 @@
     </section>
 
     <section id="menu" class="section-shell menu-layout">
-      <aside class="filters-panel">
-        <div class="panel-title"><span data-i18n="find_bread">Find your bread</span><small id="productCount"></small></div>
-        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" autocomplete="off" placeholder="concha, pig bread, pink cookie, bolillo"></label>
-        <div id="categoryChips" class="chip-grid"></div>
-        <div class="panel-title small-title"><span>Shop by shape</span></div>
-        <div id="visualChips" class="chip-grid visual-chip-grid"></div>
-        <label class="checkline"><input id="bulkOnly" type="checkbox"> <span data-i18n="bulk_friendly">Bulk friendly only</span></label>
-        <label class="checkline"><input id="orderableOnly" type="checkbox"> <span data-i18n="orderable_now">Orderable now only</span></label>
-        <div class="mini-note" data-i18n="search_note">Search accepts English, Spanish, visual words, and common misspellings.</div>
-      </aside>
-
       <div class="menu-main">
+        <div class="menu-controls" aria-label="Menu search and filters">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" autocomplete="off" placeholder="Search menu"></label>
+          <div class="quick-actions">
+            <button id="openFilters" class="quick-action" type="button" aria-haspopup="dialog" aria-controls="filterSheet">Filters <span id="filterCount" class="filter-count" hidden>0</span></button>
+            <button id="sortButton" class="quick-action" type="button">Sort: Popular</button>
+          </div>
+          <nav id="categoryChips" class="category-rail" aria-label="Menu categories"></nav>
+          <div id="filterSummary" class="filter-summary" aria-live="polite"></div>
+        </div>
+
         <div class="section-heading">
           <p class="eyebrow" data-i18n="catalog_eyebrow">Expanded catalog</p>
-          <h2 data-i18n="catalog_title">Specific products, variants, and quote-only items</h2>
+          <h2 data-i18n="catalog_title">Menu</h2>
           <p data-i18n="catalog_copy">Prices use the public menu where available. Items with variable decoration or seasonal sizing use quote requests.</p>
         </div>
         <div id="promoRail" class="promo-rail"></div>
@@ -104,6 +105,32 @@
         <div id="campaignCapacity" class="campaign-capacity"></div>
         <div id="productGrid" class="product-grid" aria-live="polite"></div>
       </div>
+
+      <div id="filterSheetBackdrop" class="sheet-backdrop" hidden></div>
+      <aside id="filterSheet" class="filters-panel filter-sheet" role="dialog" aria-modal="true" aria-labelledby="filterSheetTitle" aria-hidden="true">
+        <div class="sheet-handle" aria-hidden="true"></div>
+        <div class="sheet-header">
+          <div>
+            <h2 id="filterSheetTitle" data-i18n="find_bread">Find your bread</h2>
+            <small id="productCount"></small>
+          </div>
+          <button id="closeFilters" class="icon-button" type="button" aria-label="Close filters">×</button>
+        </div>
+        <div class="filter-row">
+          <div>
+            <b>Shape</b>
+            <small>Shells, cookies, filled, flaky, cakes, and more</small>
+          </div>
+        </div>
+        <div id="visualChips" class="chip-grid visual-chip-grid"></div>
+        <label class="checkline"><input id="bulkOnly" type="checkbox"> <span data-i18n="bulk_friendly">Bulk friendly only</span></label>
+        <label class="checkline"><input id="orderableOnly" type="checkbox"> <span data-i18n="orderable_now">Orderable now only</span></label>
+        <div class="mini-note" data-i18n="search_note">Search accepts English, Spanish, visual words, and common misspellings.</div>
+        <div class="sheet-actions">
+          <button id="resetFilters" class="secondary-action" type="button">Reset filters</button>
+          <button id="applyFilters" class="primary-action" type="button">Apply filters</button>
+        </div>
+      </aside>
     </section>
 
     <section id="quotes" class="section-shell split-section">
@@ -228,6 +255,14 @@
       <div id="partnerGrid" class="partner-grid"></div>
     </section>
   </main>
+
+  <div id="cartLive" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+  <div id="cartBar" class="cart-bar" hidden>
+    <button id="cartBarButton" type="button" aria-label="View cart">
+      <span><b id="cartBarCount">0 items</b><small id="cartBarSubtotal">$0.00</small></span>
+      <strong>View cart</strong>
+    </button>
+  </div>
 
   <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
     <div class="cart-header"><h2 data-i18n="basket">Basket</h2><button id="closeCart" type="button">×</button></div>
@@ -368,7 +403,7 @@
         <div class="allergen-row"></div>
         <div class="product-trust"></div>
         <div class="product-actions"><button class="favorite-btn" type="button">♡ Save</button><button class="details-btn" type="button">Details</button></div>
-        <div class="product-foot"><b class="price"></b><button type="button"></button></div>
+        <div class="product-foot"><b class="price"></b><div class="card-cart-control"></div></div>
         <small class="source-line"></small>
       </div>
     </article>
