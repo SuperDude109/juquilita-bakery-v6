@@ -1,0 +1,16 @@
+[Unit]
+Description=Juquilita Bakery v5 app
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/juquilita_bakery_v5
+EnvironmentFile=/opt/juquilita_bakery_v5/.env
+ExecStart=/usr/bin/python3 -u server.py --port 8000
+Restart=always
+RestartSec=3
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target

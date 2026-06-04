@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Compile Python sources
+        run: |
+          python -m py_compile \
+            server.py \
+            seeds.py \
+            product_image_mapping.py \
+            scripts/validate_product_images.py \
+            scripts/validate_prices.py \
+            tests/smoke_test.py
+
+      - name: Run smoke test
+        run: python tests/smoke_test.py
+
+      - name: Validate product images
+        run: python scripts/validate_product_images.py
+
+      - name: Validate product prices
+        run: python scripts/validate_prices.py

@@ -1,0 +1,4815 @@
+{
+  "source": "juquilita_relabel_output",
+  "source_package": "/Users/tt/Desktop/juquilita_relabel_output",
+  "source_pages": [
+    "https://www.juquilitabakerypyp.com/",
+    "https://www.juquilitabakerypyp.com/new-index-1/"
+  ],
+  "imported_at": "2026-06-03T23:27:39Z",
+  "image_count": 218,
+  "matched_product_count": 92,
+  "images": [
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/4bcf79b0-3994-42bc-a64e-f133fffff108/Juquilita+Bakery+%282%29.png",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/"
+      ],
+      "local_url": "/imported/website/001-juquilita-bakery-logo.png",
+      "label": "Juquilita Bakery logo",
+      "alt_text": "Juquilita Bakery logo with baker mascot holding bread and wheat.",
+      "all_labels": [
+        "Juquilita Bakery (2).png",
+        "Juquilita Bakery logo"
+      ],
+      "product_slug": "",
+      "width": 739,
+      "height": 745,
+      "format": "png",
+      "sort_order": 1,
+      "confidence": "high",
+      "basis": "visual/filename",
+      "original_filename": "001-juquilita-bakery-2-png.png",
+      "new_filename": "001-juquilita-bakery-logo.png"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775872861-DDRCGZT7P2TMOP6G7MEU/IMG_3856.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/",
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/002-strawberry-and-chocolate-fruit-topped-cake.jpg",
+      "label": "Strawberry and chocolate fruit-topped cake",
+      "alt_text": "Round cake topped with strawberries, chocolate garnish, and whipped cream.",
+      "all_labels": [
+        "IMG_3856.jpeg",
+        "Strawberry and chocolate fruit-topped cake"
+      ],
+      "product_slug": "",
+      "width": 1497,
+      "height": 1599,
+      "format": "jpg",
+      "sort_order": 2,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "002-img-3856-jpeg.jpg",
+      "new_filename": "002-strawberry-and-chocolate-fruit-topped-cake.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1573241813833-BM7PLNN8PPGPH0P4L40F/0525191728_3.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/"
+      ],
+      "local_url": "/imported/website/003-blue-tiered-cake-and-dessert-table.jpg",
+      "label": "Blue tiered cake and dessert table",
+      "alt_text": "Blue event dessert table with a tall tiered cake and matching side cakes.",
+      "all_labels": [
+        "0525191728_3.jpg",
+        "Blue tiered cake and dessert table"
+      ],
+      "product_slug": "",
+      "width": 1086,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 3,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "003-0525191728-3-jpg.jpg",
+      "new_filename": "003-blue-tiered-cake-and-dessert-table.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775596871-QD0K2PI2GD42G94KJXXP/IMG_1687.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/",
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/004-rosca-de-reyes-with-green-yellow-and-red-topping.jpg",
+      "label": "Rosca de Reyes with green, yellow, and red topping",
+      "alt_text": "Close-up of Rosca de Reyes bread decorated with green, yellow, and red topping.",
+      "all_labels": [
+        "IMG_1687.jpeg",
+        "Rosca de Reyes with green, yellow, and red topping"
+      ],
+      "product_slug": "rosca-reyes",
+      "width": 1600,
+      "height": 1163,
+      "format": "jpg",
+      "sort_order": 4,
+      "confidence": "medium",
+      "basis": "visual/page context",
+      "original_filename": "004-img-1687-jpeg.jpg",
+      "new_filename": "004-rosca-de-reyes-with-green-yellow-and-red-topping.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775518332-BBUWJ94V1SFCFBPMG914/IMG_1940.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/",
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/005-tres-leches-sheet-cake-slices-with-strawberries.jpg",
+      "label": "Tres leches sheet cake slices with strawberries",
+      "alt_text": "Tres leches cake slices topped with whipped cream, strawberries, and chocolate drizzle.",
+      "all_labels": [
+        "IMG_1940.jpeg",
+        "Tres leches sheet cake slices with strawberries"
+      ],
+      "product_slug": "tres-leches-rebanada",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 5,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "005-img-1940-jpeg.jpg",
+      "new_filename": "005-tres-leches-sheet-cake-slices-with-strawberries.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775451584-8CPY5ZJ8RJI6OH8X54ZC/IMG_2436.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/",
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/006-refrigerated-dessert-display-case.jpg",
+      "label": "Refrigerated dessert display case",
+      "alt_text": "Bakery display case filled with assorted refrigerated fruit desserts and pastries.",
+      "all_labels": [
+        "IMG_2436.jpeg",
+        "Refrigerated dessert display case"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 902,
+      "format": "jpg",
+      "sort_order": 6,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "006-img-2436-jpeg.jpg",
+      "new_filename": "006-refrigerated-dessert-display-case.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1573310487380-4O3LLCW3PUT96EVEZ5QT/IMG-4445.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/"
+      ],
+      "local_url": "/imported/website/007-chocolate-cream-cupcakes.jpg",
+      "label": "Chocolate cream cupcakes",
+      "alt_text": "Chocolate cupcakes or mini cakes topped with white cream.",
+      "all_labels": [
+        "IMG-4445.jpg",
+        "Chocolate cream cupcakes"
+      ],
+      "product_slug": "mini-cake-tres-leches",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 7,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "007-img-4445-jpg.jpg",
+      "new_filename": "007-chocolate-cream-cupcakes.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775870973-H4PJOFKABI8Z0C0QVAA4/IMG_2969.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/",
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/008-fresh-fruit-tart.jpg",
+      "label": "Fresh fruit tart",
+      "alt_text": "Fruit tart topped with strawberries, blueberries, banana, and cream.",
+      "all_labels": [
+        "IMG_2969.jpeg",
+        "Fresh fruit tart"
+      ],
+      "product_slug": "tarta-fruta",
+      "width": 1481,
+      "height": 1440,
+      "format": "jpg",
+      "sort_order": 8,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "008-img-2969-jpeg.jpg",
+      "new_filename": "008-fresh-fruit-tart.jpg"
+    },
+    {
+      "source_url": "https://www.restaurantji.com/badges/index.php?id=3877593&badge=badge-1-template.png",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/009-restaurantji-recommended-badge.png",
+      "label": "Restaurantji recommended badge",
+      "alt_text": "Restaurantji recommended badge for Juquilita Bakery.",
+      "all_labels": [
+        "Juquilita Bakery is a standout choice on Restaurantji - a convenient, all-in-one local dining guide with reviews, menus and photos.",
+        "Restaurantji recommended badge"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1600,
+      "format": "png",
+      "sort_order": 9,
+      "confidence": "high",
+      "basis": "visual/filename",
+      "original_filename": "009-juquilita-bakery-is-a-standout-choice-on-restaurantji-a-convenient-all-in-one-lo.png",
+      "new_filename": "009-restaurantji-recommended-badge.png"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/4fb828b6-2e76-4200-9c26-5b21e5c57121/Juquilita+Bakery+%282%29.png",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/010-juquilita-bakery-logo.png",
+      "label": "Juquilita Bakery logo",
+      "alt_text": "Juquilita Bakery logo with baker mascot holding bread and wheat.",
+      "all_labels": [
+        "Juquilita+Bakery+(2).png",
+        "Juquilita Bakery logo"
+      ],
+      "product_slug": "",
+      "width": 739,
+      "height": 745,
+      "format": "png",
+      "sort_order": 10,
+      "confidence": "high",
+      "basis": "visual/filename",
+      "original_filename": "010-juquilita-bakery-2-png-2.png",
+      "new_filename": "010-juquilita-bakery-logo.png"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/0ee549bb-86d8-40d9-a200-bad9258014ac/IMG_1728.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/011-pan-de-muerto-munecos-with-pan-de-yema.jpg",
+      "label": "Pan de Muerto muñecos with pan de yema",
+      "alt_text": "Photo of Pan de Muerto muñecos with pan de yema from Juquilita Bakery.",
+      "all_labels": [
+        "Pan de Muerto ( Muñecos) Pan de Yema",
+        "Pan de Muerto muñecos with pan de yema"
+      ],
+      "product_slug": "pan-muerto-yema-carita",
+      "width": 1600,
+      "height": 1570,
+      "format": "jpg",
+      "sort_order": 11,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "011-pan-de-muerto-munecos-pan-de-yema.jpg",
+      "new_filename": "011-pan-de-muerto-munecos-with-pan-de-yema.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1548820039806-SYXQ53JI8JNCH5OFI5RD/Pan%2Bde%2BMuerto",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/012-assorted-pan-de-muerto-breads.jpg",
+      "label": "Assorted Pan de Muerto breads",
+      "alt_text": "Assorted Pan de Muerto breads, including sugar-coated and Oaxacan-style pieces.",
+      "all_labels": [
+        "image.jpg",
+        "Assorted Pan de Muerto breads"
+      ],
+      "product_slug": "pan-muerto-yema-carita",
+      "width": 740,
+      "height": 601,
+      "format": "jpg",
+      "sort_order": 12,
+      "confidence": "medium",
+      "basis": "visual/page context",
+      "original_filename": "012-image-jpg.jpg",
+      "new_filename": "012-assorted-pan-de-muerto-breads.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549222085546-0BK6SYLJV629DFQYGY6N/IMG_1588.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/013-blue-formal-cake-table.jpg",
+      "label": "Blue formal cake table",
+      "alt_text": "Blue formal event cake table with matching decorated cakes.",
+      "all_labels": [
+        "IMG_1588.JPG",
+        "Blue formal cake table"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 13,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "013-img-1588-jpg.jpg",
+      "new_filename": "013-blue-formal-cake-table.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549222296998-FD7E01L9E412V23AU72G/IMG_0207.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/014-white-25th-anniversary-tier-cake.jpg",
+      "label": "White 25th anniversary tier cake",
+      "alt_text": "White tiered 25th anniversary cake with piped decoration.",
+      "all_labels": [
+        "IMG_0207.JPG",
+        "White 25th anniversary tier cake"
+      ],
+      "product_slug": "pastel-decorado",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 14,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "014-img-0207-jpg.jpg",
+      "new_filename": "014-white-25th-anniversary-tier-cake.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549222294134-RHA3F45AM32R4LNFUY0L/IMG_0491.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/015-blue-and-yellow-tiered-celebration-cake-display.jpg",
+      "label": "Blue and yellow tiered celebration cake display",
+      "alt_text": "Blue and yellow tiered cake with matching decorated cakes on a display table.",
+      "all_labels": [
+        "IMG_0491.JPG",
+        "Blue and yellow tiered celebration cake display"
+      ],
+      "product_slug": "pastel-decorado",
+      "width": 1600,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 15,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "015-img-0491-jpg.jpg",
+      "new_filename": "015-blue-and-yellow-tiered-celebration-cake-display.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549222298901-1C3NOPCPGWW15JMJ2M21/IMG_0587.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/016-pink-baptism-cake-display.jpg",
+      "label": "Pink baptism cake display",
+      "alt_text": "Pink baptism tier cake with floral decoration and matching side cakes.",
+      "all_labels": [
+        "IMG_0587.JPG",
+        "Pink baptism cake display"
+      ],
+      "product_slug": "pastel-decorado",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 16,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "016-img-0587-jpg.jpg",
+      "new_filename": "016-pink-baptism-cake-display.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549222301155-LO41QRLRWSUOP0QGJJQH/IMG_0589.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/017-blue-baptism-cake-display.jpg",
+      "label": "Blue baptism cake display",
+      "alt_text": "Blue baptism tier cake with matching decorated side cakes.",
+      "all_labels": [
+        "IMG_0589.JPG",
+        "Blue baptism cake display"
+      ],
+      "product_slug": "pastel-decorado",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 17,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "017-img-0589-jpg.jpg",
+      "new_filename": "017-blue-baptism-cake-display.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549222307500-7MP87NJR9Y5CESLGLSF7/IMG_1588.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/018-blue-formal-cake-table-duplicate.jpg",
+      "label": "Blue formal cake table duplicate",
+      "alt_text": "Blue formal event cake table with matching decorated cakes.",
+      "all_labels": [
+        "IMG_1588.JPG",
+        "Blue formal cake table duplicate"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 18,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "018-img-1588-jpg-2.jpg",
+      "new_filename": "018-blue-formal-cake-table-duplicate.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549222307391-BP56NCLGYK8IMHYPPTOQ/IMG_1735.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/019-pink-tiered-celebration-cake-display.jpg",
+      "label": "Pink tiered celebration cake display",
+      "alt_text": "Pink tiered celebration cake display with matching side cakes.",
+      "all_labels": [
+        "IMG_1735.JPG",
+        "Pink tiered celebration cake display"
+      ],
+      "product_slug": "pastel-decorado",
+      "width": 1600,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 19,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "019-img-1735-jpg.jpg",
+      "new_filename": "019-pink-tiered-celebration-cake-display.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549172749803-79H2G7NHGAV5OPWEHG1Q/IMG_2805.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/020-assorted-bread-display-case.jpg",
+      "label": "Assorted bread display case",
+      "alt_text": "Bakery display case with assorted breads and pastries.",
+      "all_labels": [
+        "IMG_2805.JPG",
+        "Assorted bread display case"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 20,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "020-img-2805-jpg.jpg",
+      "new_filename": "020-assorted-bread-display-case.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560793371469-QEH1U3SYHGTX5L1W4T95/IMG_3543.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/021-bolillos.jpg",
+      "label": "Bolillos",
+      "alt_text": "Photo of Bolillos from Juquilita Bakery.",
+      "all_labels": [
+        "Bolillos",
+        "Bolillos"
+      ],
+      "product_slug": "bolillo",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 21,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "021-bolillos.jpg",
+      "new_filename": "021-bolillos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137997695-YABSJ3NSXOV6JL4TJSNO/IMG_3544.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/022-telera.jpg",
+      "label": "Telera",
+      "alt_text": "Photo of Telera from Juquilita Bakery.",
+      "all_labels": [
+        "Telera",
+        "Telera"
+      ],
+      "product_slug": "telera",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 22,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "022-telera.jpg",
+      "new_filename": "022-telera.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137965975-31RDN7KLK6FAG2DMN72L/IMG_3531.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/023-polvorones-de-azucar.jpg",
+      "label": "Polvorones de azúcar",
+      "alt_text": "Photo of Polvorones de azúcar from Juquilita Bakery.",
+      "all_labels": [
+        "Polvorones - Polvorones de Azucar",
+        "Polvorones de azúcar"
+      ],
+      "product_slug": "polvoron-azucar",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 23,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "023-polvorones-polvorones-de-azucar.jpg",
+      "new_filename": "023-polvorones-de-azucar.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137970816-1KK6G9CAQABBMIWCHH5M/IMG_3532.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/024-pink-sugar-polvorones.jpg",
+      "label": "Pink sugar polvorones",
+      "alt_text": "Photo of Pink sugar polvorones from Juquilita Bakery.",
+      "all_labels": [
+        "Polvorones ( Mexican sugar cookies) - Polvorones con azucar rosa",
+        "Pink sugar polvorones"
+      ],
+      "product_slug": "polvoron-rosa",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 24,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "024-polvorones-mexican-sugar-cookies-polvorones-con-azucar-rosa.jpg",
+      "new_filename": "024-pink-sugar-polvorones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137973351-5V0T6IISB27ZI49HAR25/IMG_3533.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/025-lima-strawberry-jam-polvorones.jpg",
+      "label": "Lima strawberry jam polvorones",
+      "alt_text": "Photo of Lima strawberry jam polvorones from Juquilita Bakery.",
+      "all_labels": [
+        "Lima (Polvorones /sugar cookie with strawberry jam) - Polvorones con fresa arriba",
+        "Lima strawberry jam polvorones"
+      ],
+      "product_slug": "lima-fresa",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 25,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "025-lima-polvorones-sugar-cookie-with-strawberry-jam-polvorones-con-fresa-arriba.jpg",
+      "new_filename": "025-lima-strawberry-jam-polvorones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138049234-MXSQXXUOCQM8D1XFPA5N/IMG_5947.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/026-zurrapa-three-color-polvorones.jpg",
+      "label": "Zurrapa three-color polvorones",
+      "alt_text": "Photo of Zurrapa three-color polvorones from Juquilita Bakery.",
+      "all_labels": [
+        "Zurrapa - Polvorones de 3 colores",
+        "Zurrapa three-color polvorones"
+      ],
+      "product_slug": "zurrapa",
+      "width": 1600,
+      "height": 1293,
+      "format": "jpg",
+      "sort_order": 26,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "026-zurrapa-polvorones-de-3-colores.jpg",
+      "new_filename": "026-zurrapa-three-color-polvorones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1588350552136-8HIPSIO0Y75WHO1DYPRU/IMG_3536.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/027-sprinkled-polvorones.jpg",
+      "label": "Sprinkled polvorones",
+      "alt_text": "Photo of Sprinkled polvorones from Juquilita Bakery.",
+      "all_labels": [
+        "Sprinkled Polvorones - Polvorones de grajea",
+        "Sprinkled polvorones"
+      ],
+      "product_slug": "polvoron-grajea",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 27,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "027-sprinkled-polvorones-polvorones-de-grajea.jpg",
+      "new_filename": "027-sprinkled-polvorones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171793688-E4P2VNEYY5DITM9TWGPC/0115191104b_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/028-smiley-face-cookies.jpg",
+      "label": "Smiley face cookies",
+      "alt_text": "Photo of Smiley face cookies from Juquilita Bakery.",
+      "all_labels": [
+        "Smiley cookies - Galletas de carita",
+        "Smiley face cookies"
+      ],
+      "product_slug": "galleta-carita",
+      "width": 1409,
+      "height": 1599,
+      "format": "jpg",
+      "sort_order": 28,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "028-smiley-cookies-galletas-de-carita.jpg",
+      "new_filename": "028-smiley-face-cookies.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171798259-PJSJLSJM6OMXAV5QEFO5/0115191122_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/029-heart-shaped-sprinkle-cookies.jpg",
+      "label": "Heart-shaped sprinkle cookies",
+      "alt_text": "Photo of Heart-shaped sprinkle cookies from Juquilita Bakery.",
+      "all_labels": [
+        "Heart shaped sprinkled cookies - Galletas de corazon",
+        "Heart-shaped sprinkle cookies"
+      ],
+      "product_slug": "galleta-corazon",
+      "width": 1600,
+      "height": 1333,
+      "format": "jpg",
+      "sort_order": 29,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "029-heart-shaped-sprinkled-cookies-galletas-de-corazon.jpg",
+      "new_filename": "029-heart-shaped-sprinkle-cookies.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797251043-0R4JTRMM0L8Z3F1EWDAM/0614191537c.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/030-strawberry-jam-thumbprint-polvorones.jpg",
+      "label": "Strawberry jam thumbprint polvorones",
+      "alt_text": "Round sugar cookies with strawberry jam centers.",
+      "all_labels": [
+        "0614191537c.jpg",
+        "Strawberry jam thumbprint polvorones"
+      ],
+      "product_slug": "lima-fresa",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 30,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "030-0614191537c-jpg.jpg",
+      "new_filename": "030-strawberry-jam-thumbprint-polvorones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797264099-QD5TYVI33ZT3IEQDDAHA/0614191537b.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/031-chocolate-chip-polvoron.jpg",
+      "label": "Chocolate chip polvorón",
+      "alt_text": "Photo of Chocolate chip polvorón from Juquilita Bakery.",
+      "all_labels": [
+        "Polvoron de pedasos de chocolate (sugar cookie with chocolate)",
+        "Chocolate chip polvorón"
+      ],
+      "product_slug": "polvoron-chocolate",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 31,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "031-polvoron-de-pedasos-de-chocolate-sugar-cookie-with-chocolate.jpg",
+      "new_filename": "031-chocolate-chip-polvoron.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797228633-U06VZWONBFRN169CVXAM/0614191537e.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/032-round-rainbow-sprinkle-cookies.jpg",
+      "label": "Round rainbow sprinkle cookies",
+      "alt_text": "Round cookies fully covered with rainbow sprinkles.",
+      "all_labels": [
+        "0614191537e.jpg",
+        "Round rainbow sprinkle cookies"
+      ],
+      "product_slug": "galleta-grajea",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 32,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "032-0614191537e-jpg.jpg",
+      "new_filename": "032-round-rainbow-sprinkle-cookies.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171800685-KYHIXHKIHILC34IXKBS6/0115191123_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/033-sprinkled-cookies.jpg",
+      "label": "Sprinkled cookies",
+      "alt_text": "Photo of Sprinkled cookies from Juquilita Bakery.",
+      "all_labels": [
+        "Sprinkled cookies - Galletas de grajea (chispas)",
+        "Sprinkled cookies"
+      ],
+      "product_slug": "galleta-grajea",
+      "width": 1600,
+      "height": 1216,
+      "format": "jpg",
+      "sort_order": 33,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "033-sprinkled-cookies-galletas-de-grajea-chispas.jpg",
+      "new_filename": "033-sprinkled-cookies.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797250831-MHGA76QWZMZ5AXKW5HXS/0614191537d.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/034-pecan-polvorones.jpg",
+      "label": "Pecan polvorones",
+      "alt_text": "Photo of Pecan polvorones from Juquilita Bakery.",
+      "all_labels": [
+        "Polvorones de nuez (small sugar cookie with pecans)",
+        "Pecan polvorones"
+      ],
+      "product_slug": "polvoron-nuez",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 34,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "034-polvorones-de-nuez-small-sugar-cookie-with-pecans.jpg",
+      "new_filename": "034-pecan-polvorones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797233737-22W8I4RRZQHW6P59FSXJ/0614191537f.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/035-chocolate-and-rainbow-sprinkle-cookies.jpg",
+      "label": "Chocolate and rainbow sprinkle cookies",
+      "alt_text": "Mixed tray of cookies covered with chocolate sprinkles and rainbow sprinkles.",
+      "all_labels": [
+        "0614191537f.jpg",
+        "Chocolate and rainbow sprinkle cookies"
+      ],
+      "product_slug": "galleta-grajea",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 35,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "035-0614191537f-jpg.jpg",
+      "new_filename": "035-chocolate-and-rainbow-sprinkle-cookies.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167730771-84Q2LU0EXH5LSFYZIOE0/0115190919_2+%281%29.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/036-sandia-watermelon-shaped-cookies.jpg",
+      "label": "Sandía watermelon-shaped cookies",
+      "alt_text": "Photo of Sandía watermelon-shaped cookies from Juquilita Bakery.",
+      "all_labels": [
+        "Sandia (watermelon shaped cookies)",
+        "Sandía watermelon-shaped cookies"
+      ],
+      "product_slug": "sandia-cookie",
+      "width": 733,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 36,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "036-sandia-watermelon-shaped-cookies.jpg",
+      "new_filename": "036-sandia-watermelon-shaped-cookies.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560793344185-2692QZCQNN9BE506D87C/IMG_3541.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/037-conchas.jpg",
+      "label": "Conchas",
+      "alt_text": "Photo of Conchas from Juquilita Bakery.",
+      "all_labels": [
+        "Conchas",
+        "Conchas"
+      ],
+      "product_slug": "concha",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 37,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "037-conchas.jpg",
+      "new_filename": "037-conchas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137992883-CCGTDX09TJI5A4Y9YI2S/IMG_3542.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/038-conchas-alternate.jpg",
+      "label": "Conchas alternate",
+      "alt_text": "Photo of Conchas alternate from Juquilita Bakery.",
+      "all_labels": [
+        "Conchas",
+        "Conchas alternate"
+      ],
+      "product_slug": "concha",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 38,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "038-conchas-2.jpg",
+      "new_filename": "038-conchas-alternate.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167125068-Y0ISUL3AZZ2BD7R94HR4/IMG_5961.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/039-small-colorful-conchas.jpg",
+      "label": "Small colorful conchas",
+      "alt_text": "Small conchas with yellow and pink sugar topping.",
+      "all_labels": [
+        "IMG_5961.JPG",
+        "Small colorful conchas"
+      ],
+      "product_slug": "concha",
+      "width": 1579,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 39,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "039-img-5961-jpg.jpg",
+      "new_filename": "039-small-colorful-conchas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167125329-EIQBFYW60MOYDVA1D72X/IMG_5960.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/040-assorted-colorful-conchas.jpg",
+      "label": "Assorted colorful conchas",
+      "alt_text": "Assorted conchas with yellow, pink, and chocolate sugar topping.",
+      "all_labels": [
+        "IMG_5960.JPG",
+        "Assorted colorful conchas"
+      ],
+      "product_slug": "concha",
+      "width": 1600,
+      "height": 1585,
+      "format": "jpg",
+      "sort_order": 40,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "040-img-5960-jpg.jpg",
+      "new_filename": "040-assorted-colorful-conchas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167129738-PMYCI0H9M8QCY4UN71U9/IMG_5959.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/041-vanilla-conchas.jpg",
+      "label": "Vanilla conchas",
+      "alt_text": "Conchas with white vanilla sugar topping.",
+      "all_labels": [
+        "IMG_5959.JPG",
+        "Vanilla conchas"
+      ],
+      "product_slug": "concha",
+      "width": 1600,
+      "height": 1327,
+      "format": "jpg",
+      "sort_order": 41,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "041-img-5959-jpg.jpg",
+      "new_filename": "041-vanilla-conchas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167130546-JDGUIU27SW1ZB3B1MFA7/IMG_5957.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/042-chocolate-chilindrinas.jpg",
+      "label": "Chocolate chilindrinas",
+      "alt_text": "Photo of Chocolate chilindrinas from Juquilita Bakery.",
+      "all_labels": [
+        "Chilindrinas de chocolate",
+        "Chocolate chilindrinas"
+      ],
+      "product_slug": "chilindrina-chocolate",
+      "width": 1572,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 42,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "042-chilindrinas-de-chocolate.jpg",
+      "new_filename": "042-chocolate-chilindrinas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137979434-ERKD6QDXDBRRTZ5NMVOQ/IMG_3534.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/043-bisquit.jpg",
+      "label": "Bisquit",
+      "alt_text": "Photo of Bisquit from Juquilita Bakery.",
+      "all_labels": [
+        "Bisquit",
+        "Bisquit"
+      ],
+      "product_slug": "bisquit",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 43,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "043-bisquit.jpg",
+      "new_filename": "043-bisquit.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137981734-CJGPT4EZ7EFOG7IY53G5/IMG_3535.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/044-magdalenas-with-sprinkles.jpg",
+      "label": "Magdalenas with sprinkles",
+      "alt_text": "Photo of Magdalenas with sprinkles from Juquilita Bakery.",
+      "all_labels": [
+        "Magdalenas with Sprinkles",
+        "Magdalenas with sprinkles"
+      ],
+      "product_slug": "magdalena-grajea",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 44,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "044-magdalenas-with-sprinkles.jpg",
+      "new_filename": "044-magdalenas-with-sprinkles.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171758894-A07Y2UL7YA2PS9QGY1Z5/0115191046_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/045-plain-magdalenas.jpg",
+      "label": "Plain magdalenas",
+      "alt_text": "Photo of Plain magdalenas from Juquilita Bakery.",
+      "all_labels": [
+        "Magdalenas (Plain)",
+        "Plain magdalenas"
+      ],
+      "product_slug": "magdalena-simple",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 45,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "045-magdalenas-plain.jpg",
+      "new_filename": "045-plain-magdalenas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137988530-L2DNEMA7UZ57YCH73ZXP/IMG_3540.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/046-marranitos.jpg",
+      "label": "Marranitos",
+      "alt_text": "Photo of Marranitos from Juquilita Bakery.",
+      "all_labels": [
+        "Marranitos",
+        "Marranitos"
+      ],
+      "product_slug": "marranito",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 46,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "046-marranitos.jpg",
+      "new_filename": "046-marranitos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138027179-5GRLI56U5F65WO4NH4NF/IMG_3566.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/047-piedras.jpg",
+      "label": "Piedras",
+      "alt_text": "Photo of Piedras from Juquilita Bakery.",
+      "all_labels": [
+        "Piedras",
+        "Piedras"
+      ],
+      "product_slug": "piedra",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 47,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "047-piedras.jpg",
+      "new_filename": "047-piedras.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138020133-LKM5PH85KZLGBM1MATGN/IMG_3565.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/048-ladrillos.jpg",
+      "label": "Ladrillos",
+      "alt_text": "Photo of Ladrillos from Juquilita Bakery.",
+      "all_labels": [
+        "Ladrillos",
+        "Ladrillos"
+      ],
+      "product_slug": "ladrillo",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 48,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "048-ladrillos.jpg",
+      "new_filename": "048-ladrillos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167072859-4HTCQX93OLPJ3OSU5SM6/IMG_5987.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/049-cuerno.jpg",
+      "label": "Cuerno",
+      "alt_text": "Photo of Cuerno from Juquilita Bakery.",
+      "all_labels": [
+        "Cuerno",
+        "Cuerno"
+      ],
+      "product_slug": "cuerno",
+      "width": 1600,
+      "height": 1323,
+      "format": "jpg",
+      "sort_order": 49,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "049-cuerno.jpg",
+      "new_filename": "049-cuerno.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167080145-6C9AHFYT4ELGQPA5LOQY/IMG_5983.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/050-aretes.jpg",
+      "label": "Aretes",
+      "alt_text": "Photo of Aretes from Juquilita Bakery.",
+      "all_labels": [
+        "Aretes",
+        "Aretes"
+      ],
+      "product_slug": "arete",
+      "width": 1600,
+      "height": 1417,
+      "format": "jpg",
+      "sort_order": 50,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "050-aretes.jpg",
+      "new_filename": "050-aretes.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167080322-SG3W708XAJAOLYZDB1RH/IMG_5982.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/051-pink-aretes.jpg",
+      "label": "Pink aretes",
+      "alt_text": "Photo of Pink aretes from Juquilita Bakery.",
+      "all_labels": [
+        "Aretes (pink)",
+        "Pink aretes"
+      ],
+      "product_slug": "arete-rosa",
+      "width": 1600,
+      "height": 1272,
+      "format": "jpg",
+      "sort_order": 51,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "051-aretes-pink.jpg",
+      "new_filename": "051-pink-aretes.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167101321-BZNALE95PS1FU7ZQZIWY/IMG_5971.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/052-sesame-monos.jpg",
+      "label": "Sesame moños",
+      "alt_text": "Photo of Sesame moños from Juquilita Bakery.",
+      "all_labels": [
+        "Moños con ajonjolin (Bows with sesame on top)",
+        "Sesame moños"
+      ],
+      "product_slug": "mono-ajonjolin",
+      "width": 1600,
+      "height": 1488,
+      "format": "jpg",
+      "sort_order": 52,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "052-monos-con-ajonjolin-bows-with-sesame-on-top.jpg",
+      "new_filename": "052-sesame-monos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167104486-27PXAFSBXEOIBTJPYGP4/IMG_5968.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/053-sesame-yoyos.jpg",
+      "label": "Sesame yoyos",
+      "alt_text": "Photo of Sesame yoyos from Juquilita Bakery.",
+      "all_labels": [
+        "Yoyos de ajonjolin",
+        "Sesame yoyos"
+      ],
+      "product_slug": "yoyo-ajonjolin",
+      "width": 1600,
+      "height": 1194,
+      "format": "jpg",
+      "sort_order": 53,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "053-yoyos-de-ajonjolin.jpg",
+      "new_filename": "053-sesame-yoyos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167101078-9FQIIUGXQHRZ5MRD7SX1/IMG_5970.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/054-sprinkle-yoyos.jpg",
+      "label": "Sprinkle yoyos",
+      "alt_text": "Photo of Sprinkle yoyos from Juquilita Bakery.",
+      "all_labels": [
+        "Yoyos de Grajea (yoyo with sprinkles)",
+        "Sprinkle yoyos"
+      ],
+      "product_slug": "yoyo-grajea",
+      "width": 1600,
+      "height": 1189,
+      "format": "jpg",
+      "sort_order": 54,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "054-yoyos-de-grajea-yoyo-with-sprinkles.jpg",
+      "new_filename": "054-sprinkle-yoyos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138049609-5NZ4GUQ76YG6BN1P3PM5/IMG_5948.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/055-yellow-crumb-topped-round-sweet-bread.jpg",
+      "label": "Yellow crumb-topped round sweet bread",
+      "alt_text": "Round sweet bread with yellow crumb topping.",
+      "all_labels": [
+        "IMG_5948.JPG",
+        "Yellow crumb-topped round sweet bread"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1442,
+      "format": "jpg",
+      "sort_order": 55,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "055-img-5948-jpg.jpg",
+      "new_filename": "055-yellow-crumb-topped-round-sweet-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138052640-7V081540QBZDVQ0LII1H/IMG_5949.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/056-long-folded-sweet-bread.jpg",
+      "label": "Long folded sweet bread",
+      "alt_text": "Long folded sweet bread with a golden crust.",
+      "all_labels": [
+        "IMG_5949.JPG",
+        "Long folded sweet bread"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1477,
+      "format": "jpg",
+      "sort_order": 56,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "056-img-5949-jpg.jpg",
+      "new_filename": "056-long-folded-sweet-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138053003-AK0K7WX1JM99WWOTJ5WJ/IMG_5950.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/057-twisted-ring-sweet-bread.jpg",
+      "label": "Twisted ring sweet bread",
+      "alt_text": "Twisted ring-shaped sweet bread pieces.",
+      "all_labels": [
+        "IMG_5950.JPG",
+        "Twisted ring sweet bread"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1429,
+      "format": "jpg",
+      "sort_order": 57,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "057-img-5950-jpg.jpg",
+      "new_filename": "057-twisted-ring-sweet-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167120157-PKSI83XZW4NLDKSFOLL6/IMG_5962.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/058-pink-tinted-oval-sweet-rolls.jpg",
+      "label": "Pink-tinted oval sweet rolls",
+      "alt_text": "Oval sweet rolls with pink tinted tops.",
+      "all_labels": [
+        "IMG_5962.JPG",
+        "Pink-tinted oval sweet rolls"
+      ],
+      "product_slug": "",
+      "width": 1541,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 58,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "058-img-5962-jpg.jpg",
+      "new_filename": "058-pink-tinted-oval-sweet-rolls.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167114228-G2LY1WZ1Y8JTUN0FIW6F/IMG_5964.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/059-pink-tinted-hand-shaped-sweet-bread.jpg",
+      "label": "Pink-tinted hand-shaped sweet bread",
+      "alt_text": "Sweet bread shaped like a hand or flower with pink tinted tops.",
+      "all_labels": [
+        "IMG_5964.JPG",
+        "Pink-tinted hand-shaped sweet bread"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1545,
+      "format": "jpg",
+      "sort_order": 59,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "059-img-5964-jpg.jpg",
+      "new_filename": "059-pink-tinted-hand-shaped-sweet-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167119987-UYEJLWKMC57XPCP0AB1A/IMG_5963.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/060-pink-tinted-shell-shaped-sweet-bread.jpg",
+      "label": "Pink-tinted shell-shaped sweet bread",
+      "alt_text": "Shell-shaped sweet bread with pink tinted ridges.",
+      "all_labels": [
+        "IMG_5963.JPG",
+        "Pink-tinted shell-shaped sweet bread"
+      ],
+      "product_slug": "",
+      "width": 1328,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 60,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "060-img-5963-jpg.jpg",
+      "new_filename": "060-pink-tinted-shell-shaped-sweet-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138093225-FGHYDF1M2K1PP5ORXTM0/IMG_6014.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/061-coconut-pastry-with-strawberry-jam-center.jpg",
+      "label": "Coconut pastry with strawberry jam center",
+      "alt_text": "Coconut-coated pastry with a strawberry jam center.",
+      "all_labels": [
+        "IMG_6014.JPG",
+        "Coconut pastry with strawberry jam center"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1473,
+      "format": "jpg",
+      "sort_order": 61,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "061-img-6014-jpg.jpg",
+      "new_filename": "061-coconut-pastry-with-strawberry-jam-center.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138095161-X9YGMKRZZUJ48XQ9H9EH/IMG_6015.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/062-coconut-pastry-with-bavarian-cream-center.jpg",
+      "label": "Coconut pastry with Bavarian cream center",
+      "alt_text": "Coconut-coated pastry with a Bavarian cream center.",
+      "all_labels": [
+        "IMG_6015.JPG",
+        "Coconut pastry with Bavarian cream center"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1478,
+      "format": "jpg",
+      "sort_order": 62,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "062-img-6015-jpg.jpg",
+      "new_filename": "062-coconut-pastry-with-bavarian-cream-center.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138092110-26CA5CCNFDV3XRUWR6MX/IMG_6013.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/063-sweet-roll-with-strawberry-jam-center.jpg",
+      "label": "Sweet roll with strawberry jam center",
+      "alt_text": "Oval sweet roll with a strawberry jam center.",
+      "all_labels": [
+        "IMG_6013.JPG",
+        "Sweet roll with strawberry jam center"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1449,
+      "format": "jpg",
+      "sort_order": 63,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "063-img-6013-jpg.jpg",
+      "new_filename": "063-sweet-roll-with-strawberry-jam-center.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138090773-VLFKVTAXIFJLKZYDYYG9/IMG_6012.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/064-sweet-roll-with-bavarian-cream-center.jpg",
+      "label": "Sweet roll with Bavarian cream center",
+      "alt_text": "Oval sweet roll with a Bavarian cream center.",
+      "all_labels": [
+        "IMG_6012.JPG",
+        "Sweet roll with Bavarian cream center"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1447,
+      "format": "jpg",
+      "sort_order": 64,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "064-img-6012-jpg.jpg",
+      "new_filename": "064-sweet-roll-with-bavarian-cream-center.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138055837-8PDBQ396FYTGE9GIK44M/IMG_5951.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/065-braided-sweet-bread-with-sprinkles-and-cream.jpg",
+      "label": "Braided sweet bread with sprinkles and cream",
+      "alt_text": "Braided sweet bread topped with cream and rainbow sprinkles.",
+      "all_labels": [
+        "IMG_5951.JPG",
+        "Braided sweet bread with sprinkles and cream"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1580,
+      "format": "jpg",
+      "sort_order": 65,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "065-img-5951-jpg.jpg",
+      "new_filename": "065-braided-sweet-bread-with-sprinkles-and-cream.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138056398-LHCAACEANA4FQ96NMP0V/IMG_5952.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/066-pink-tinted-braided-sweet-bread-with-strawberry-filling.jpg",
+      "label": "Pink-tinted braided sweet bread with strawberry filling",
+      "alt_text": "Braided sweet bread with pink tint and strawberry filling.",
+      "all_labels": [
+        "IMG_5952.JPG",
+        "Pink-tinted braided sweet bread with strawberry filling"
+      ],
+      "product_slug": "",
+      "width": 1576,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 66,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "066-img-5952-jpg.jpg",
+      "new_filename": "066-pink-tinted-braided-sweet-bread-with-strawberry-filling.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138059903-CEM3YPVUGPB32BH1YE38/IMG_5953.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/067-rehilete-esponjado.jpg",
+      "label": "Rehilete esponjado",
+      "alt_text": "Photo of Rehilete esponjado from Juquilita Bakery.",
+      "all_labels": [
+        "Rehilete Esponjado",
+        "Rehilete esponjado"
+      ],
+      "product_slug": "rehilete-esponjado",
+      "width": 1600,
+      "height": 1576,
+      "format": "jpg",
+      "sort_order": 67,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "067-rehilete-esponjado.jpg",
+      "new_filename": "067-rehilete-esponjado.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138059740-UEDFA85BA4SYPRS873WF/IMG_5991.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/068-round-sprinkle-coated-sweet-bread.jpg",
+      "label": "Round sprinkle-coated sweet bread",
+      "alt_text": "Round sweet breads covered with rainbow sprinkles.",
+      "all_labels": [
+        "IMG_5991.JPG",
+        "Round sprinkle-coated sweet bread"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1458,
+      "format": "jpg",
+      "sort_order": 68,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "068-img-5991-jpg.jpg",
+      "new_filename": "068-round-sprinkle-coated-sweet-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138063427-7OT16JO64RD91AZ2AF87/IMG_5992.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/069-cinnamon-sugar-round-sweet-bread.jpg",
+      "label": "Cinnamon sugar round sweet bread",
+      "alt_text": "Round sweet breads coated with cinnamon sugar.",
+      "all_labels": [
+        "IMG_5992.JPG",
+        "Cinnamon sugar round sweet bread"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1363,
+      "format": "jpg",
+      "sort_order": 69,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "069-img-5992-jpg.jpg",
+      "new_filename": "069-cinnamon-sugar-round-sweet-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167087922-46P58IXDQBSZ9V495S27/IMG_5976.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/070-shell-shaped-sweet-bread-sandwich.jpg",
+      "label": "Shell-shaped sweet bread sandwich",
+      "alt_text": "Shell-shaped sweet bread pieces with a split center.",
+      "all_labels": [
+        "IMG_5976.JPG",
+        "Shell-shaped sweet bread sandwich"
+      ],
+      "product_slug": "",
+      "width": 1074,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 70,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "070-img-5976-jpg.jpg",
+      "new_filename": "070-shell-shaped-sweet-bread-sandwich.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1648215697535-8Q1ELU3MBDHW30GRYJ4E/IMG_5975.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/071-nopal.jpg",
+      "label": "Nopal",
+      "alt_text": "Photo of Nopal from Juquilita Bakery.",
+      "all_labels": [
+        "Nopal",
+        "Nopal"
+      ],
+      "product_slug": "nopal",
+      "width": 1169,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 71,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "071-nopal.jpg",
+      "new_filename": "071-nopal.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165003086-E60UT38XW4SCMDM3TMSR/0115191059_2+%281%29.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/072-large-sesame-topped-sweet-bread.jpg",
+      "label": "Large sesame-topped sweet bread",
+      "alt_text": "Large oval sweet bread topped with sesame seeds.",
+      "all_labels": [
+        "0115191059_2 (1).jpg",
+        "Large sesame-topped sweet bread"
+      ],
+      "product_slug": "pastel-medio",
+      "width": 1600,
+      "height": 1290,
+      "format": "jpg",
+      "sort_order": 72,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "072-0115191059-2-1-jpg.jpg",
+      "new_filename": "072-large-sesame-topped-sweet-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138113804-MV2C8E2Z2GJDGWA05A17/IMG_6023.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/073-borrachos.jpg",
+      "label": "Borrachos",
+      "alt_text": "Photo of Borrachos from Juquilita Bakery.",
+      "all_labels": [
+        "Borrachos",
+        "Borrachos"
+      ],
+      "product_slug": "borracho",
+      "width": 1199,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 73,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "073-borrachos.jpg",
+      "new_filename": "073-borrachos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138113744-GGK003H1YNHA75YR8K1T/IMG_6022.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/074-chocolate-borracho.jpg",
+      "label": "Chocolate borracho",
+      "alt_text": "Photo of Chocolate borracho from Juquilita Bakery.",
+      "all_labels": [
+        "Borracho de chocolate",
+        "Chocolate borracho"
+      ],
+      "product_slug": "borracho-chocolate",
+      "width": 1015,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 74,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "074-borracho-de-chocolate.jpg",
+      "new_filename": "074-chocolate-borracho.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167109215-PHIUMQ493W2QIJRRQLSB/IMG_5967.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/075-nubes.jpg",
+      "label": "Nubes",
+      "alt_text": "Photo of Nubes from Juquilita Bakery.",
+      "all_labels": [
+        "Nubes",
+        "Nubes"
+      ],
+      "product_slug": "nube",
+      "width": 1600,
+      "height": 1332,
+      "format": "jpg",
+      "sort_order": 75,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "075-nubes.jpg",
+      "new_filename": "075-nubes.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167114569-ODCPNXM5JVMU3P39J1JH/IMG_5965.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/076-plain-oval-sweet-rolls.jpg",
+      "label": "Plain oval sweet rolls",
+      "alt_text": "Plain oval sweet rolls with light scoring on top.",
+      "all_labels": [
+        "IMG_5965.JPG",
+        "Plain oval sweet rolls"
+      ],
+      "product_slug": "",
+      "width": 1471,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 76,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "076-img-5965-jpg.jpg",
+      "new_filename": "076-plain-oval-sweet-rolls.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138042247-QKZO07JL202DLNIRP6WN/IMG_5945.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/077-bigotes.jpg",
+      "label": "Bigotes",
+      "alt_text": "Photo of Bigotes from Juquilita Bakery.",
+      "all_labels": [
+        "Bigotes",
+        "Bigotes"
+      ],
+      "product_slug": "bigote",
+      "width": 1600,
+      "height": 1386,
+      "format": "jpg",
+      "sort_order": 77,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "077-bigotes.jpg",
+      "new_filename": "077-bigotes.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167109581-VWJSGJXT66KO0A4HZLG3/IMG_5966.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/078-corbata-or-mono-bowtie-bread.jpg",
+      "label": "Corbata or moño bowtie bread",
+      "alt_text": "Photo of Corbata or moño bowtie bread from Juquilita Bakery.",
+      "all_labels": [
+        "Corbata o moño (bowtie) - Fluffy bread with margarine and sugar sprinkled on top",
+        "Corbata or moño bowtie bread"
+      ],
+      "product_slug": "corbata-mono",
+      "width": 1478,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 78,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "078-corbata-o-mono-bowtie-fluffy-bread-with-margarine-and-sugar-sprinkled-on-top.jpg",
+      "new_filename": "078-corbata-or-mono-bowtie-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138008067-O7TCPPAJXAM3RKXMFQYL/IMG_3549.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/079-cinnamon-sugar-cream-center-pastries.jpg",
+      "label": "Cinnamon sugar cream-center pastries",
+      "alt_text": "Round cinnamon sugar pastries with cream centers.",
+      "all_labels": [
+        "IMG_3549.JPG",
+        "Cinnamon sugar cream-center pastries"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1249,
+      "format": "jpg",
+      "sort_order": 79,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "079-img-3549-jpg.jpg",
+      "new_filename": "079-cinnamon-sugar-cream-center-pastries.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138119737-NA3DXDN6E1S2BTWUMDQ0/IMG_6025.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/080-chirimoyas.jpg",
+      "label": "Chirimoyas",
+      "alt_text": "Photo of Chirimoyas from Juquilita Bakery.",
+      "all_labels": [
+        "Chirimoyas",
+        "Chirimoyas"
+      ],
+      "product_slug": "chirimoya",
+      "width": 1468,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 80,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "080-chirimoyas.jpg",
+      "new_filename": "080-chirimoyas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138125356-KT2KT5I05DURGMIS3WJX/IMG_6027.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/081-pink-conchas.jpg",
+      "label": "Pink conchas",
+      "alt_text": "Pink sugar-topped conchas in a display tray.",
+      "all_labels": [
+        "IMG_6027.JPG",
+        "Pink conchas"
+      ],
+      "product_slug": "concha",
+      "width": 1283,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 81,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "081-img-6027-jpg.jpg",
+      "new_filename": "081-pink-conchas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138118400-LS8F2SG2CU0GKA99FSSJ/IMG_6024.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/082-dark-sugar-coated-sweet-breads-with-cream-centers.jpg",
+      "label": "Dark sugar-coated sweet breads with cream centers",
+      "alt_text": "Dark sugar-coated sweet breads with light cream centers in a bakery tray.",
+      "all_labels": [
+        "IMG_6024.JPG",
+        "Dark sugar-coated sweet breads with cream centers"
+      ],
+      "product_slug": "",
+      "width": 997,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 82,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "082-img-6024-jpg.jpg",
+      "new_filename": "082-dark-sugar-coated-sweet-breads-with-cream-centers.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165038531-DEHBOI4Z7UNFOLMI3LBW/0115191025c_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/083-alcatraz.jpg",
+      "label": "Alcatraz",
+      "alt_text": "Photo of Alcatraz from Juquilita Bakery.",
+      "all_labels": [
+        "Alcatraz",
+        "Alcatraz"
+      ],
+      "product_slug": "alcatraz",
+      "width": 1134,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 83,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "083-alcatraz.jpg",
+      "new_filename": "083-alcatraz.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165045012-Z7QGR83Y8F8JCLJCYXK3/0115191025a_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/084-boquitas.jpg",
+      "label": "Boquitas",
+      "alt_text": "Photo of Boquitas from Juquilita Bakery.",
+      "all_labels": [
+        "Boquitas",
+        "Boquitas"
+      ],
+      "product_slug": "boquita",
+      "width": 821,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 84,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "084-boquitas.jpg",
+      "new_filename": "084-boquitas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138009968-TYRLY0FX3N8KOYQEWVKT/IMG_3548.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/085-troncos.jpg",
+      "label": "Troncos",
+      "alt_text": "Photo of Troncos from Juquilita Bakery.",
+      "all_labels": [
+        "Troncos",
+        "Troncos"
+      ],
+      "product_slug": "tronco",
+      "width": 1477,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 85,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "085-troncos.jpg",
+      "new_filename": "085-troncos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165030378-B62JX7JJ4457AYAJNY2U/0115191026c_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/086-oval-cream-filled-sweet-bread.jpg",
+      "label": "Oval cream-filled sweet bread",
+      "alt_text": "Oval sweet bread with white cream filling visible in the center.",
+      "all_labels": [
+        "0115191026c_2.jpg",
+        "Oval cream-filled sweet bread"
+      ],
+      "product_slug": "",
+      "width": 677,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 86,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "086-0115191026c-2-jpg.jpg",
+      "new_filename": "086-oval-cream-filled-sweet-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165026019-7HFF4M40F359DYIN2U8A/0115191026d_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/087-elotitos.jpg",
+      "label": "Elotitos",
+      "alt_text": "Photo of Elotitos from Juquilita Bakery.",
+      "all_labels": [
+        "Elotitos",
+        "Elotitos"
+      ],
+      "product_slug": "elotito",
+      "width": 693,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 87,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "087-elotitos.jpg",
+      "new_filename": "087-elotitos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165045397-QZS99E9EC6OWCRBDKA6I/0115191025_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/088-long-oval-sweet-bread-with-white-topping.jpg",
+      "label": "Long oval sweet bread with white topping",
+      "alt_text": "Long oval sweet bread with a white topping pattern.",
+      "all_labels": [
+        "0115191025_2.jpg",
+        "Long oval sweet bread with white topping"
+      ],
+      "product_slug": "",
+      "width": 964,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 88,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "088-0115191025-2-jpg.jpg",
+      "new_filename": "088-long-oval-sweet-bread-with-white-topping.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165025800-2SSPNIDJ3H2ZO0PI4XJ2/0115191026e_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/089-powdered-gusano-bread.jpg",
+      "label": "Powdered gusano bread",
+      "alt_text": "Photo of Powdered gusano bread from Juquilita Bakery.",
+      "all_labels": [
+        "Gusano Polveado",
+        "Powdered gusano bread"
+      ],
+      "product_slug": "gusano-polveado",
+      "width": 1186,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 89,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "089-gusano-polveado.jpg",
+      "new_filename": "089-powdered-gusano-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797311995-ZPEKUN6KPAALEBGZ662M/0614191537.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/090-powdered-coiled-sweet-breads.jpg",
+      "label": "Powdered coiled sweet breads",
+      "alt_text": "Coiled sweet breads dusted with sugar.",
+      "all_labels": [
+        "0614191537.jpg",
+        "Powdered coiled sweet breads"
+      ],
+      "product_slug": "",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 90,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "090-0614191537-jpg.jpg",
+      "new_filename": "090-powdered-coiled-sweet-breads.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165030485-TMBACAI8B0AQ7F4LQPRP/0115191026d_3.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/091-lenguas.jpg",
+      "label": "Lenguas",
+      "alt_text": "Photo of Lenguas from Juquilita Bakery.",
+      "all_labels": [
+        "Lenguas",
+        "Lenguas"
+      ],
+      "product_slug": "lengua",
+      "width": 615,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 91,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "091-lenguas.jpg",
+      "new_filename": "091-lenguas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165038441-IL4N5GK725KC1ZA854L4/0115191025b_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/092-lenguas-alternate.jpg",
+      "label": "Lenguas alternate",
+      "alt_text": "Photo of Lenguas alternate from Juquilita Bakery.",
+      "all_labels": [
+        "Lenguas",
+        "Lenguas alternate"
+      ],
+      "product_slug": "lengua",
+      "width": 1128,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 92,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "092-lenguas-2.jpg",
+      "new_filename": "092-lenguas-alternate.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165012567-R2BRTG8A9B8W8XSDGO6O/0115191031b_2+%281%29.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/093-piez.jpg",
+      "label": "Piez",
+      "alt_text": "Photo of Piez from Juquilita Bakery.",
+      "all_labels": [
+        "Piez",
+        "Piez"
+      ],
+      "product_slug": "piez",
+      "width": 1123,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 93,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "093-piez.jpg",
+      "new_filename": "093-piez.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165012952-DM57K374S9W63LDUP11C/0115191031a_2+%281%29.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/094-chocolate-piez.jpg",
+      "label": "Chocolate piez",
+      "alt_text": "Photo of Chocolate piez from Juquilita Bakery.",
+      "all_labels": [
+        "Piez de chocolate",
+        "Chocolate piez"
+      ],
+      "product_slug": "piez-chocolate",
+      "width": 1088,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 94,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "094-piez-de-chocolate.jpg",
+      "new_filename": "094-chocolate-piez.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165022621-CV1R1LM2EUFZ5NXL5JKJ/0115191031_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/095-chocolate-powdered-cuernitos.jpg",
+      "label": "Chocolate powdered cuernitos",
+      "alt_text": "Photo of Chocolate powdered cuernitos from Juquilita Bakery.",
+      "all_labels": [
+        "Cuernitos polveadas de chocolate",
+        "Chocolate powdered cuernitos"
+      ],
+      "product_slug": "cuernito-chocolate",
+      "width": 1600,
+      "height": 1382,
+      "format": "jpg",
+      "sort_order": 95,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "095-cuernitos-polveadas-de-chocolate.jpg",
+      "new_filename": "095-chocolate-powdered-cuernitos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165003659-R5NHS8ELJ7QMHONE9Y4L/0115191037b_2+%281%29.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/096-chocolate-panadero.jpg",
+      "label": "Chocolate panadero",
+      "alt_text": "Photo of Chocolate panadero from Juquilita Bakery.",
+      "all_labels": [
+        "Panadero de Chocolate",
+        "Chocolate panadero"
+      ],
+      "product_slug": "panadero-chocolate",
+      "width": 924,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 96,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "096-panadero-de-chocolate.jpg",
+      "new_filename": "096-chocolate-panadero.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165005779-OG1RWJI7383D2NWUFPY6/0115191037_2+%281%29.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/097-panadero.jpg",
+      "label": "Panadero",
+      "alt_text": "Photo of Panadero from Juquilita Bakery.",
+      "all_labels": [
+        "Panadero",
+        "Panadero"
+      ],
+      "product_slug": "panadero",
+      "width": 943,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 97,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "097-panadero.jpg",
+      "new_filename": "097-panadero.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797275706-ILJPLZF8NOYBWOJCJFUV/0614191536.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/098-powdered-nueces.jpg",
+      "label": "Powdered nueces",
+      "alt_text": "Photo of Powdered nueces from Juquilita Bakery.",
+      "all_labels": [
+        "Nueces polveadas",
+        "Powdered nueces"
+      ],
+      "product_slug": "nueces-polveadas",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 98,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "098-nueces-polveadas.jpg",
+      "new_filename": "098-powdered-nueces.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1569642391141-P7NLLU29V452OKO5JGPV/IMG_5984.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/099-powdered-nueces-alternate.jpg",
+      "label": "Powdered nueces alternate",
+      "alt_text": "Photo of Powdered nueces alternate from Juquilita Bakery.",
+      "all_labels": [
+        "Nueces polveadas",
+        "Powdered nueces alternate"
+      ],
+      "product_slug": "nueces-polveadas",
+      "width": 1600,
+      "height": 1236,
+      "format": "jpg",
+      "sort_order": 99,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "099-nueces-polveadas-2.jpg",
+      "new_filename": "099-powdered-nueces-alternate.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797307672-E62NMRBWX3HSFIR0FEYZ/0614191537a.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/100-plain-nueces.jpg",
+      "label": "Plain nueces",
+      "alt_text": "Photo of Plain nueces from Juquilita Bakery.",
+      "all_labels": [
+        "Nueces normal",
+        "Plain nueces"
+      ],
+      "product_slug": "nueces-normal",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 100,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "100-nueces-normal.jpg",
+      "new_filename": "100-plain-nueces.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167083362-MNNLY6G9HVVTSB47DBUD/IMG_5981.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/101-bavarian-cream-empanadas.jpg",
+      "label": "Bavarian cream empanadas",
+      "alt_text": "Photo of Bavarian cream empanadas from Juquilita Bakery.",
+      "all_labels": [
+        "Empanadas de crema Bavaria (Bavarian cream filled empanadas)",
+        "Bavarian cream empanadas"
+      ],
+      "product_slug": "empanada-bavaria",
+      "width": 1600,
+      "height": 1155,
+      "format": "jpg",
+      "sort_order": 101,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "101-empanadas-de-crema-bavaria-bavarian-cream-filled-empanadas.jpg",
+      "new_filename": "101-bavarian-cream-empanadas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167087736-KBNF0QU7IO6LU67FQ1E6/IMG_5979.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/102-pumpkin-empanadas.jpg",
+      "label": "Pumpkin empanadas",
+      "alt_text": "Photo of Pumpkin empanadas from Juquilita Bakery.",
+      "all_labels": [
+        "Empanadas de Calabaza (pumpkin empanadas)",
+        "Pumpkin empanadas"
+      ],
+      "product_slug": "empanada-calabaza",
+      "width": 1600,
+      "height": 1127,
+      "format": "jpg",
+      "sort_order": 102,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "102-empanadas-de-calabaza-pumpkin-empanadas.jpg",
+      "new_filename": "102-pumpkin-empanadas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167096249-X2F5MVCKAP3C0AIMJOJR/IMG_5972.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/103-apple-empanadas.jpg",
+      "label": "Apple empanadas",
+      "alt_text": "Photo of Apple empanadas from Juquilita Bakery.",
+      "all_labels": [
+        "Empanadas de Manzana (Apple empanadas)",
+        "Apple empanadas"
+      ],
+      "product_slug": "empanada-manzana",
+      "width": 1600,
+      "height": 1446,
+      "format": "jpg",
+      "sort_order": 103,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "103-empanadas-de-manzana-apple-empanadas.jpg",
+      "new_filename": "103-apple-empanadas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167096058-Y4IQPPWKWUSCMYUC7D6X/IMG_5973.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/104-pineapple-empanadas.jpg",
+      "label": "Pineapple empanadas",
+      "alt_text": "Photo of Pineapple empanadas from Juquilita Bakery.",
+      "all_labels": [
+        "Empanadas de Piña (Pineapple empanadas)",
+        "Pineapple empanadas"
+      ],
+      "product_slug": "empanada-pina",
+      "width": 1600,
+      "height": 1231,
+      "format": "jpg",
+      "sort_order": 104,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "104-empanadas-de-pina-pineapple-empanadas.jpg",
+      "new_filename": "104-pineapple-empanadas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167076197-PZBGS8MY6GCNTDLBEKXX/IMG_5985.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/105-strawberry-taquitos.jpg",
+      "label": "Strawberry taquitos",
+      "alt_text": "Photo of Strawberry taquitos from Juquilita Bakery.",
+      "all_labels": [
+        "Taquitos de fresa (strawberry filled)",
+        "Strawberry taquitos"
+      ],
+      "product_slug": "taquito-fresa",
+      "width": 1553,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 105,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "105-taquitos-de-fresa-strawberry-filled.jpg",
+      "new_filename": "105-strawberry-taquitos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167072913-K0WCVEISBIBJH39Y4TIM/IMG_5986.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/106-bavarian-cream-taquitos.jpg",
+      "label": "Bavarian cream taquitos",
+      "alt_text": "Photo of Bavarian cream taquitos from Juquilita Bakery.",
+      "all_labels": [
+        "Taquitos de crema bavaria (Bavarian cream filled)",
+        "Bavarian cream taquitos"
+      ],
+      "product_slug": "taquito-bavaria",
+      "width": 1329,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 106,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "106-taquitos-de-crema-bavaria-bavarian-cream-filled.jpg",
+      "new_filename": "106-bavarian-cream-taquitos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171684536-O7UMTTL14FY3XTS7NLJ2/IMG_4450.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/107-cajeta-empanaditas.jpg",
+      "label": "Cajeta empanaditas",
+      "alt_text": "Photo of Cajeta empanaditas from Juquilita Bakery.",
+      "all_labels": [
+        "Empanaditas de cajeta - Cajeta is sweet caramalised goat’s milk, most people know it as Dulce de Leche",
+        "Cajeta empanaditas"
+      ],
+      "product_slug": "empanadita-cajeta",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 107,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "107-empanaditas-de-cajeta-cajeta-is-sweet-caramalised-goat-s-milk-most-people-know-i.jpg",
+      "new_filename": "107-cajeta-empanaditas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171576975-P7Y49BE03NITODWS2SL7/0115190924.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/108-pineapple-empanaditas.jpg",
+      "label": "Pineapple empanaditas",
+      "alt_text": "Photo of Pineapple empanaditas from Juquilita Bakery.",
+      "all_labels": [
+        "Empanaditas de piña (Pineapple filled)",
+        "Pineapple empanaditas"
+      ],
+      "product_slug": "empanadita-pina",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 108,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "108-empanaditas-de-pina-pineapple-filled.jpg",
+      "new_filename": "108-pineapple-empanaditas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138079927-N0G71A86VB176T7IM88M/IMG_6004.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/109-mantecadas-with-sprinkles.jpg",
+      "label": "Mantecadas with sprinkles",
+      "alt_text": "Photo of Mantecadas with sprinkles from Juquilita Bakery.",
+      "all_labels": [
+        "Mantecadas con grajea (vanilla cupcake with sprinkles)",
+        "Mantecadas with sprinkles"
+      ],
+      "product_slug": "magdalena-grajea",
+      "width": 1600,
+      "height": 1526,
+      "format": "jpg",
+      "sort_order": 109,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "109-mantecadas-con-grajea-vanilla-cupcake-with-sprinkles.jpg",
+      "new_filename": "109-mantecadas-with-sprinkles.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797180142-Z8AKDHTU6MTCFN6EUG34/0115190925.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/110-sugared-folded-turnover-pastries.jpg",
+      "label": "Sugared folded turnover pastries",
+      "alt_text": "Folded turnover-style pastries dusted with sugar.",
+      "all_labels": [
+        "0115190925.jpg",
+        "Sugared folded turnover pastries"
+      ],
+      "product_slug": "",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 110,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "110-0115190925-jpg.jpg",
+      "new_filename": "110-sugared-folded-turnover-pastries.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138081054-TAOXVNRM394080UMVMUS/IMG_6005.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/111-mantecadas-with-pecan.jpg",
+      "label": "Mantecadas with pecan",
+      "alt_text": "Photo of Mantecadas with pecan from Juquilita Bakery.",
+      "all_labels": [
+        "Mantecadas con nuez (vanilla cupcake with pecan)",
+        "Mantecadas with pecan"
+      ],
+      "product_slug": "mantecada-nuez",
+      "width": 1597,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 111,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "111-mantecadas-con-nuez-vanilla-cupcake-with-pecan.jpg",
+      "new_filename": "111-mantecadas-with-pecan.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138082706-GGKRYU3NTUBEZHMUGN2N/IMG_6006.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/112-chinos-de-nuez.jpg",
+      "label": "Chinos de nuez",
+      "alt_text": "Photo of Chinos de nuez from Juquilita Bakery.",
+      "all_labels": [
+        "Chinos de nuez",
+        "Chinos de nuez"
+      ],
+      "product_slug": "polvoron-nuez",
+      "width": 1570,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 112,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "112-chinos-de-nuez.jpg",
+      "new_filename": "112-chinos-de-nuez.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138083579-C6BNFPQT7QLHV0YL8K7I/IMG_6007.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/113-mantecadas-with-chocolate-sprinkles.jpg",
+      "label": "Mantecadas with chocolate sprinkles",
+      "alt_text": "Photo of Mantecadas with chocolate sprinkles from Juquilita Bakery.",
+      "all_labels": [
+        "Mantecadas con grajea de chocolate (vanilla cupcake with chocolate sprinkles)",
+        "Mantecadas with chocolate sprinkles"
+      ],
+      "product_slug": "mantecada-chocolate",
+      "width": 1559,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 113,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "113-mantecadas-con-grajea-de-chocolate-vanilla-cupcake-with-chocolate-sprinkles.jpg",
+      "new_filename": "113-mantecadas-with-chocolate-sprinkles.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138087065-6AL03ND2LAEWYIYM6N6I/IMG_6010.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/114-vanilla-cupcakes-with-rainbow-sprinkles.jpg",
+      "label": "Vanilla cupcakes with rainbow sprinkles",
+      "alt_text": "Vanilla cupcakes topped with rainbow sprinkles.",
+      "all_labels": [
+        "IMG_6010.JPG",
+        "Vanilla cupcakes with rainbow sprinkles"
+      ],
+      "product_slug": "mini-cake-tres-leches",
+      "width": 1600,
+      "height": 1482,
+      "format": "jpg",
+      "sort_order": 114,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "114-img-6010-jpg.jpg",
+      "new_filename": "114-vanilla-cupcakes-with-rainbow-sprinkles.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138085586-BBMYFE28E7APEY7DJSIQ/IMG_6008.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/115-plain-vanilla-cupcakes.jpg",
+      "label": "Plain vanilla cupcakes",
+      "alt_text": "Plain vanilla cupcakes in red paper liners.",
+      "all_labels": [
+        "IMG_6008.JPG",
+        "Plain vanilla cupcakes"
+      ],
+      "product_slug": "mini-cake-tres-leches",
+      "width": 1600,
+      "height": 1520,
+      "format": "jpg",
+      "sort_order": 115,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "115-img-6008-jpg.jpg",
+      "new_filename": "115-plain-vanilla-cupcakes.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171708382-9CZBW05JFDKWHUYEA3WT/0115190911_2+%281%29.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/116-ojos-de-buey.jpg",
+      "label": "Ojos de Buey",
+      "alt_text": "Photo of Ojos de Buey from Juquilita Bakery.",
+      "all_labels": [
+        "Ojos de Buey (Eyes)",
+        "Ojos de Buey"
+      ],
+      "product_slug": "ojos-buey",
+      "width": 1600,
+      "height": 1555,
+      "format": "jpg",
+      "sort_order": 116,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "116-ojos-de-buey-eyes.jpg",
+      "new_filename": "116-ojos-de-buey.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138140692-ICLBX720JFRPK52ASJUF/IMG-4446.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/117-ninos-envueltos.jpg",
+      "label": "Niños envueltos",
+      "alt_text": "Photo of Niños envueltos from Juquilita Bakery.",
+      "all_labels": [
+        "Niños envueltos",
+        "Niños envueltos"
+      ],
+      "product_slug": "nino-envuelto",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 117,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "117-ninos-envueltos.jpg",
+      "new_filename": "117-ninos-envueltos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171464809-LVQOGWZJO57H3YICGLUJ/IMG_5607.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/118-nino-envuelto.jpg",
+      "label": "Niño envuelto",
+      "alt_text": "Photo of Niño envuelto from Juquilita Bakery.",
+      "all_labels": [
+        "Niño envuelto",
+        "Niño envuelto"
+      ],
+      "product_slug": "nino-envuelto",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 118,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "118-nino-envuelto.jpg",
+      "new_filename": "118-nino-envuelto.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138158513-WZYB435REO7O3P4PPSA1/IMG-4451.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/119-mechudos.jpg",
+      "label": "Mechudos",
+      "alt_text": "Photo of Mechudos from Juquilita Bakery.",
+      "all_labels": [
+        "Mechudos",
+        "Mechudos"
+      ],
+      "product_slug": "mechudo",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 119,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "119-mechudos.jpg",
+      "new_filename": "119-mechudos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138150566-9RGLOZ33H43KWCE8K7EJ/IMG-4447.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/120-tomatillos.jpg",
+      "label": "Tomatillos",
+      "alt_text": "Photo of Tomatillos from Juquilita Bakery.",
+      "all_labels": [
+        "Tomatillos",
+        "Tomatillos"
+      ],
+      "product_slug": "tomatillo",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 120,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "120-tomatillos.jpg",
+      "new_filename": "120-tomatillos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138138944-MQ54WLV751LRWQIC13EY/IMG-4445.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/121-pinguino-cakes.jpg",
+      "label": "Pingüino cakes",
+      "alt_text": "Photo of Pingüino cakes from Juquilita Bakery.",
+      "all_labels": [
+        "Pingüino (penguins)",
+        "Pingüino cakes"
+      ],
+      "product_slug": "pinguino",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 121,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "121-pinguino-penguins.jpg",
+      "new_filename": "121-pinguino-cakes.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138003796-P2N8BG0IYCW01OH02X9Z/IMG_3547.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/122-cubiletes-de-queso.jpg",
+      "label": "Cubiletes de queso",
+      "alt_text": "Photo of Cubiletes de queso from Juquilita Bakery.",
+      "all_labels": [
+        "Cubiletes de queso (Mexican cheese pie/cheesecake)",
+        "Cubiletes de queso"
+      ],
+      "product_slug": "cubilete-queso",
+      "width": 1443,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 122,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "122-cubiletes-de-queso-mexican-cheese-pie-cheesecake.jpg",
+      "new_filename": "122-cubiletes-de-queso.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138016813-0K68G6L6C37WHQ93CNBM/IMG_3564.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/123-budin-mexican-bread-pudding.jpg",
+      "label": "Budín Mexican bread pudding",
+      "alt_text": "Photo of Budín Mexican bread pudding from Juquilita Bakery.",
+      "all_labels": [
+        "Budin (Mexican Bread pudding)",
+        "Budín Mexican bread pudding"
+      ],
+      "product_slug": "budin-clasico",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 123,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "123-budin-mexican-bread-pudding.jpg",
+      "new_filename": "123-budin-mexican-bread-pudding.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549168978527-H92T1S03JPPOEBUICVR2/0115190926a_HDR_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/124-churros.jpg",
+      "label": "Churros",
+      "alt_text": "Photo of Churros from Juquilita Bakery.",
+      "all_labels": [
+        "Churros - Fried and coated with cinnamon sugar",
+        "Churros"
+      ],
+      "product_slug": "churro-simple",
+      "width": 1233,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 124,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "124-churros-fried-and-coated-with-cinnamon-sugar.jpg",
+      "new_filename": "124-churros.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138045664-MJVBENXVLDFFLPX6S2QZ/IMG_5946.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/125-besos-and-yo-yos.jpg",
+      "label": "Besos and yo-yos",
+      "alt_text": "Photo of Besos and yo-yos from Juquilita Bakery.",
+      "all_labels": [
+        "Besos/Yo-yo's (Kisses or Yo-yo's",
+        "Besos and yo-yos"
+      ],
+      "product_slug": "beso-yoyo",
+      "width": 1600,
+      "height": 1519,
+      "format": "jpg",
+      "sort_order": 125,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "125-besos-yo-yo-s-kisses-or-yo-yo-s.jpg",
+      "new_filename": "125-besos-and-yo-yos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138153132-LSAS9XGA174WHPGM8F9V/IMG-4448.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/126-coconut-covered-kisses-with-jelly.jpg",
+      "label": "Coconut-covered kisses with jelly",
+      "alt_text": "Round coconut-covered kisses or yo-yos with red jelly centers.",
+      "all_labels": [
+        "IMG-4448.jpg",
+        "Coconut-covered kisses with jelly"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 126,
+      "confidence": "medium",
+      "basis": "visual/page context",
+      "original_filename": "126-img-4448-jpg.jpg",
+      "new_filename": "126-coconut-covered-kisses-with-jelly.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138108059-S9F8FKSSEH7QUOT5SWWX/IMG_6021.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/127-rebanada-con-mantequilla.jpg",
+      "label": "Rebanada con mantequilla",
+      "alt_text": "Photo of Rebanada con mantequilla from Juquilita Bakery.",
+      "all_labels": [
+        "Rebanada con mantequilla (slice with butter and sugar)",
+        "Rebanada con mantequilla"
+      ],
+      "product_slug": "rebanada-mantequilla",
+      "width": 1488,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 127,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "127-rebanada-con-mantequilla-slice-with-butter-and-sugar.jpg",
+      "new_filename": "127-rebanada-con-mantequilla.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138063069-UBZHKDH61UJ6C1LMW6TR/IMG_5993.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/128-manitas-de-fresa.jpg",
+      "label": "Manitas de fresa",
+      "alt_text": "Photo of Manitas de fresa from Juquilita Bakery.",
+      "all_labels": [
+        "Manitas de fresa (strawberry filled hands)",
+        "Manitas de fresa"
+      ],
+      "product_slug": "taquito-fresa",
+      "width": 1600,
+      "height": 1258,
+      "format": "jpg",
+      "sort_order": 128,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "128-manitas-de-fresa-strawberry-filled-hands.jpg",
+      "new_filename": "128-manitas-de-fresa.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138065844-OUTYYYA99H63NEW5739L/IMG_5994.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/129-manitas-de-pina.jpg",
+      "label": "Manitas de piña",
+      "alt_text": "Photo of Manitas de piña from Juquilita Bakery.",
+      "all_labels": [
+        "Manitas de piña (Pineapple filled hands)",
+        "Manitas de piña"
+      ],
+      "product_slug": "empanada-pina",
+      "width": 1538,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 129,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "129-manitas-de-pina-pineapple-filled-hands.jpg",
+      "new_filename": "129-manitas-de-pina.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138101538-0DVOL9EZILMT2YJBBJ4S/IMG_6017.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/130-sugar-donuts.jpg",
+      "label": "Sugar donuts",
+      "alt_text": "Photo of Sugar donuts from Juquilita Bakery.",
+      "all_labels": [
+        "Donas de azucar( sugar donuts)",
+        "Sugar donuts"
+      ],
+      "product_slug": "dona-azucar",
+      "width": 1465,
+      "height": 1599,
+      "format": "jpg",
+      "sort_order": 130,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "130-donas-de-azucar-sugar-donuts.jpg",
+      "new_filename": "130-sugar-donuts.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138104586-25RB3GAKTKQXAOGDQSKX/IMG_6018.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/131-trenzas.jpg",
+      "label": "Trenzas",
+      "alt_text": "Photo of Trenzas from Juquilita Bakery.",
+      "all_labels": [
+        "Trenzas",
+        "Trenzas"
+      ],
+      "product_slug": "trenza",
+      "width": 1367,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 131,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "131-trenzas.jpg",
+      "new_filename": "131-trenzas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138107629-T9G4PN297GA8M34O7EG6/IMG_6019.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/132-bavarian-cream-filled-donuts.jpg",
+      "label": "Bavarian cream filled donuts",
+      "alt_text": "Photo of Bavarian cream filled donuts from Juquilita Bakery.",
+      "all_labels": [
+        "Donas Rellenas - Bavarian cream filled donuts",
+        "Bavarian cream filled donuts"
+      ],
+      "product_slug": "dona-rellena-bavaria",
+      "width": 1503,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 132,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "132-donas-rellenas-bavarian-cream-filled-donuts.jpg",
+      "new_filename": "132-bavarian-cream-filled-donuts.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138126279-IXJNS5TLR99R4C9F4FHW/IMG_6032.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/133-chocolate-covered-donuts.jpg",
+      "label": "Chocolate covered donuts",
+      "alt_text": "Photo of Chocolate covered donuts from Juquilita Bakery.",
+      "all_labels": [
+        "Donas de chocolate ( chocolate covered donuts)",
+        "Chocolate covered donuts"
+      ],
+      "product_slug": "dona-chocolate",
+      "width": 1600,
+      "height": 1537,
+      "format": "jpg",
+      "sort_order": 133,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "133-donas-de-chocolate-chocolate-covered-donuts.jpg",
+      "new_filename": "133-chocolate-covered-donuts.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167070370-8EL1S87RA3AGCFLI022A/IMG_5988.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/134-cream-cheese-bigotes.jpg",
+      "label": "Cream cheese bigotes",
+      "alt_text": "Photo of Cream cheese bigotes from Juquilita Bakery.",
+      "all_labels": [
+        "Bigotes de queso ( cream cheese filled Mustache)",
+        "Cream cheese bigotes"
+      ],
+      "product_slug": "bigote",
+      "width": 1600,
+      "height": 1542,
+      "format": "jpg",
+      "sort_order": 134,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "134-bigotes-de-queso-cream-cheese-filled-mustache.jpg",
+      "new_filename": "134-cream-cheese-bigotes.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167070158-T3BL51NBVGYUFRSVAWTP/IMG_5989.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/135-danish-cuerno-croissant.jpg",
+      "label": "Danish cuerno croissant",
+      "alt_text": "Photo of Danish cuerno croissant from Juquilita Bakery.",
+      "all_labels": [
+        "Cuerno de Danes (Danish style croissant)",
+        "Danish cuerno croissant"
+      ],
+      "product_slug": "cuerno-danes",
+      "width": 1441,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 135,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "135-cuerno-de-danes-danish-style-croissant.jpg",
+      "new_filename": "135-danish-cuerno-croissant.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138088652-8THQVNZ5YF4OA8N62DXI/IMG_6011.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/136-danish-cones-with-bavarian-cream.jpg",
+      "label": "Danish cones with Bavarian cream",
+      "alt_text": "Photo of Danish cones with Bavarian cream from Juquilita Bakery.",
+      "all_labels": [
+        "Conos de Danes relleno de Crema Bavaria ( Danish style cones with Bavarian cream)",
+        "Danish cones with Bavarian cream"
+      ],
+      "product_slug": "cono-danes-bavaria",
+      "width": 1476,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 136,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "136-conos-de-danes-relleno-de-crema-bavaria-danish-style-cones-with-bavarian-cream.jpg",
+      "new_filename": "136-danish-cones-with-bavarian-cream.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138077823-A4UQCNCDJJ4HHM9LN5Y7/IMG_6002.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/137-orejas-elephant-ears.jpg",
+      "label": "Orejas elephant ears",
+      "alt_text": "Photo of Orejas elephant ears from Juquilita Bakery.",
+      "all_labels": [
+        "Orejas (Elephant ears)",
+        "Orejas elephant ears"
+      ],
+      "product_slug": "oreja",
+      "width": 1562,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 137,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "137-orejas-elephant-ears.jpg",
+      "new_filename": "137-orejas-elephant-ears.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138131730-B8CCHF5TNVRGP6T4XFJ2/IMG_6034.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/138-bavarian-cream-barquillos.jpg",
+      "label": "Bavarian cream barquillos",
+      "alt_text": "Photo of Bavarian cream barquillos from Juquilita Bakery.",
+      "all_labels": [
+        "Barquillos de Crema Bavaria ( Puff pastry cones with Bavarian Cream)",
+        "Bavarian cream barquillos"
+      ],
+      "product_slug": "barquillo-bavaria",
+      "width": 1523,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 138,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "138-barquillos-de-crema-bavaria-puff-pastry-cones-with-bavarian-cream.jpg",
+      "new_filename": "138-bavarian-cream-barquillos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171628488-MKGFXN6MTMTF5IEOK2G0/IMG_5617+%281%29.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/139-banderilla.jpg",
+      "label": "Banderilla",
+      "alt_text": "Photo of Banderilla from Juquilita Bakery.",
+      "all_labels": [
+        "Banderilla",
+        "Banderilla"
+      ],
+      "product_slug": "banderilla",
+      "width": 903,
+      "height": 1599,
+      "format": "jpg",
+      "sort_order": 139,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "139-banderilla.jpg",
+      "new_filename": "139-banderilla.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138196264-UJWV6DA0CD6WMWSTONHU/IMG-5614.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/140-golden-apple-or-strawberry-turnovers.jpg",
+      "label": "Golden apple or strawberry turnovers",
+      "alt_text": "Photo of Golden apple or strawberry turnovers from Juquilita Bakery.",
+      "all_labels": [
+        "Empanadas Doradas (Apple or Strawberry turnovers) - De fresa o de manzana",
+        "Golden apple or strawberry turnovers"
+      ],
+      "product_slug": "dorado-fresa-manzana",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 140,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "140-empanadas-doradas-apple-or-strawberry-turnovers-de-fresa-o-de-manzana.jpg",
+      "new_filename": "140-golden-apple-or-strawberry-turnovers.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171810276-9DRHCT6Z4JX2UDUVUMSI/0115191156c_2.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/141-golden-rolled-puff-pastry-sticks.jpg",
+      "label": "Golden rolled puff pastry sticks",
+      "alt_text": "Two golden rolled puff pastry sticks.",
+      "all_labels": [
+        "0115191156c_2.jpg",
+        "Golden rolled puff pastry sticks"
+      ],
+      "product_slug": "banderilla",
+      "width": 1467,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 141,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "141-0115191156c-2-jpg.jpg",
+      "new_filename": "141-golden-rolled-puff-pastry-sticks.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138072686-0248BVBFJSAMWXYBI3WY/IMG_5999.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/142-strawberry-canastas.jpg",
+      "label": "Strawberry canastas",
+      "alt_text": "Basket-shaped pastries filled with strawberry jam.",
+      "all_labels": [
+        "IMG_5999.JPG",
+        "Strawberry canastas"
+      ],
+      "product_slug": "canasta",
+      "width": 1581,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 142,
+      "confidence": "medium",
+      "basis": "visual/page context",
+      "original_filename": "142-img-5999-jpg.jpg",
+      "new_filename": "142-strawberry-canastas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138097019-GE77UY2C0P8MUO8ASGM8/IMG_6016.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/143-pineapple-canastas.jpg",
+      "label": "Pineapple canastas",
+      "alt_text": "Basket-shaped pastries filled with pineapple filling.",
+      "all_labels": [
+        "IMG_6016.JPG",
+        "Pineapple canastas"
+      ],
+      "product_slug": "canasta",
+      "width": 1600,
+      "height": 1181,
+      "format": "jpg",
+      "sort_order": 143,
+      "confidence": "medium",
+      "basis": "visual/page context",
+      "original_filename": "143-img-6016-jpg.jpg",
+      "new_filename": "143-pineapple-canastas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138069448-4IZKJZB0LV607WCGAHCA/IMG_5996.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/144-canastas-baskets.jpg",
+      "label": "Canastas baskets",
+      "alt_text": "Photo of Canastas baskets from Juquilita Bakery.",
+      "all_labels": [
+        "Canastas (Baskets) - Fresa, pina, o manzana",
+        "Canastas baskets"
+      ],
+      "product_slug": "canasta",
+      "width": 1600,
+      "height": 1569,
+      "format": "jpg",
+      "sort_order": 144,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "144-canastas-baskets-fresa-pina-o-manzana.jpg",
+      "new_filename": "144-canastas-baskets.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138069773-C3Q7TLDJKHEPFYME7G7W/IMG_5997.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/145-lattice-top-fruit-turnovers.jpg",
+      "label": "Lattice-top fruit turnovers",
+      "alt_text": "Round fruit turnovers with a lattice top crust.",
+      "all_labels": [
+        "IMG_5997.JPG",
+        "Lattice-top fruit turnovers"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1478,
+      "format": "jpg",
+      "sort_order": 145,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "145-img-5997-jpg.jpg",
+      "new_filename": "145-lattice-top-fruit-turnovers.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138123487-Q04MTTUEN7O3JPNJ48G3/IMG_6028.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/146-round-pineapple-fruit-turnovers.jpg",
+      "label": "Round pineapple fruit turnovers",
+      "alt_text": "Round golden fruit turnovers with pineapple filling.",
+      "all_labels": [
+        "IMG_6028.JPG",
+        "Round pineapple fruit turnovers"
+      ],
+      "product_slug": "empanada-pina",
+      "width": 1600,
+      "height": 1456,
+      "format": "jpg",
+      "sort_order": 146,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "146-img-6028-jpg.jpg",
+      "new_filename": "146-round-pineapple-fruit-turnovers.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138190509-0UKJZNW8WJYPCFK5G5D2/IMG-5613.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/147-golden-pineapple-or-guava-and-cheese-taquitos.jpg",
+      "label": "Golden pineapple or guava and cheese taquitos",
+      "alt_text": "Photo of Golden pineapple or guava and cheese taquitos from Juquilita Bakery.",
+      "all_labels": [
+        "Taquitos dorados de pina o guayaba con queso - Puff pastry with Pineapple or strawberry cream cheese filling",
+        "Golden pineapple or guava and cheese taquitos"
+      ],
+      "product_slug": "taquito-dorado-guayaba-queso",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 147,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "147-taquitos-dorados-de-pina-o-guayaba-con-queso-puff-pastry-with-pineapple-or-straw.jpg",
+      "new_filename": "147-golden-pineapple-or-guava-and-cheese-taquitos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138045667-CO6Z8F8QN6A9TYHP5NRR/IMG_5608.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/148-manteconchas.jpg",
+      "label": "Manteconchas",
+      "alt_text": "Photo of Manteconchas from Juquilita Bakery.",
+      "all_labels": [
+        "Manteconchas",
+        "Manteconchas"
+      ],
+      "product_slug": "manteconcha",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 148,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "148-manteconchas.jpg",
+      "new_filename": "148-manteconchas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549170632759-XHR8U0JI0EXJ2MBD7FXJ/IMG_6037.PNG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/149-strawberry-flautas.jpg",
+      "label": "Strawberry flautas",
+      "alt_text": "Photo of Strawberry flautas from Juquilita Bakery.",
+      "all_labels": [
+        "Flautas de Fresa",
+        "Strawberry flautas"
+      ],
+      "product_slug": "flauta-fresa",
+      "width": 900,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 149,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "149-flautas-de-fresa.jpg",
+      "new_filename": "149-strawberry-flautas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549170643590-YNQZ6CIXWNSYZIGH5TTP/IMG_6036.PNG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/150-pineapple-flautas.jpg",
+      "label": "Pineapple flautas",
+      "alt_text": "Photo of Pineapple flautas from Juquilita Bakery.",
+      "all_labels": [
+        "Flautas de Piña",
+        "Pineapple flautas"
+      ],
+      "product_slug": "flauta-pina",
+      "width": 900,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 150,
+      "confidence": "high",
+      "basis": "page label",
+      "original_filename": "150-flautas-de-pina.jpg",
+      "new_filename": "150-pineapple-flautas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138180660-DSE50JNGKVMYGMQ8AZTK/IMG-5610.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/151-golden-folded-sweet-bread.jpg",
+      "label": "Golden folded sweet bread",
+      "alt_text": "Golden folded sweet bread pieces stacked in a tray.",
+      "all_labels": [
+        "IMG-5610.jpg",
+        "Golden folded sweet bread"
+      ],
+      "product_slug": "",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 151,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "151-img-5610-jpg.jpg",
+      "new_filename": "151-golden-folded-sweet-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138187759-V109XV6PJTRPWDSEJK7M/IMG-5612.jpg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/152-large-folded-bread-pocket.jpg",
+      "label": "Large folded bread pocket",
+      "alt_text": "Large folded bread pocket or turnover on a tray.",
+      "all_labels": [
+        "IMG-5612.jpg",
+        "Large folded bread pocket"
+      ],
+      "product_slug": "",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 152,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "152-img-5612-jpg.jpg",
+      "new_filename": "152-large-folded-bread-pocket.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138134512-UF3H2QWXZAHN2JPRRATK/IMG-0042.JPG",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/153-pan-de-muerto-bread-trays.jpg",
+      "label": "Pan de Muerto bread trays",
+      "alt_text": "Bakery trays with Pan de Muerto breads.",
+      "all_labels": [
+        "IMG-0042.JPG",
+        "Pan de Muerto bread trays"
+      ],
+      "product_slug": "pan-muerto-yema-carita",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 153,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "153-img-0042-jpg.jpg",
+      "new_filename": "153-pan-de-muerto-bread-trays.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775371134-CTIXBIVCERVNQV842F89/IMG_2838.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/154-powdered-sugar-filled-empanadas.jpg",
+      "label": "Powdered sugar filled empanadas",
+      "alt_text": "Triangular filled empanadas dusted with sugar.",
+      "all_labels": [
+        "IMG_2838.jpeg",
+        "Powdered sugar filled empanadas"
+      ],
+      "product_slug": "",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 154,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "154-img-2838-jpeg.jpg",
+      "new_filename": "154-powdered-sugar-filled-empanadas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775371224-6DXWUZJL2BU4OID19ZSW/IMG_2837.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/155-powdered-sugar-empanadas-with-vents.jpg",
+      "label": "Powdered sugar empanadas with vents",
+      "alt_text": "Filled empanadas dusted with sugar and small vent marks.",
+      "all_labels": [
+        "IMG_2837.jpeg",
+        "Powdered sugar empanadas with vents"
+      ],
+      "product_slug": "",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 155,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "155-img-2837-jpeg.jpg",
+      "new_filename": "155-powdered-sugar-empanadas-with-vents.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775377433-C9NOCON5D0AYNOMTIIM8/IMG_2836.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/156-crimped-filled-empanadas.jpg",
+      "label": "Crimped filled empanadas",
+      "alt_text": "Crimped filled empanadas dusted with sugar.",
+      "all_labels": [
+        "IMG_2836.jpeg",
+        "Crimped filled empanadas"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1523,
+      "format": "jpg",
+      "sort_order": 156,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "156-img-2836-jpeg.jpg",
+      "new_filename": "156-crimped-filled-empanadas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775376513-X0XD1LH1Q3BJRWLVD19X/IMG_2835.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/157-spiral-puff-pastry.jpg",
+      "label": "Spiral puff pastry",
+      "alt_text": "Large spiral puff pastry with sugar crystals.",
+      "all_labels": [
+        "IMG_2835.jpeg",
+        "Spiral puff pastry"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1565,
+      "format": "jpg",
+      "sort_order": 157,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "157-img-2835-jpeg.jpg",
+      "new_filename": "157-spiral-puff-pastry.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775381814-O2YLI46CIS67NAXCV2R0/IMG_2834.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/158-coconut-pastries-with-jam-and-bavarian-cream.jpg",
+      "label": "Coconut pastries with jam and Bavarian cream",
+      "alt_text": "Coconut-coated pastries with strawberry jam and Bavarian cream centers.",
+      "all_labels": [
+        "IMG_2834.jpeg",
+        "Coconut pastries with jam and Bavarian cream"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 757,
+      "format": "jpg",
+      "sort_order": 158,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "158-img-2834-jpeg.jpg",
+      "new_filename": "158-coconut-pastries-with-jam-and-bavarian-cream.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775382460-0VLFFKQH03HFU2EBYGXH/IMG_2833.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/159-banderilla-style-puff-pastries.jpg",
+      "label": "Banderilla-style puff pastries",
+      "alt_text": "Long rectangular puff pastries stacked in a tray.",
+      "all_labels": [
+        "IMG_2833.jpeg",
+        "Banderilla-style puff pastries"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1438,
+      "format": "jpg",
+      "sort_order": 159,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "159-img-2833-jpeg.jpg",
+      "new_filename": "159-banderilla-style-puff-pastries.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775387854-7C60285OPE8WXTRZHJUE/IMG_2832.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/160-round-yellow-sweet-breads.jpg",
+      "label": "Round yellow sweet breads",
+      "alt_text": "Round yellow sweet breads in a bakery tray.",
+      "all_labels": [
+        "IMG_2832.jpeg",
+        "Round yellow sweet breads"
+      ],
+      "product_slug": "",
+      "width": 1386,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 160,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "160-img-2832-jpeg.jpg",
+      "new_filename": "160-round-yellow-sweet-breads.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775388310-LFXRN7THEZSH1YKW928R/IMG_2831.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/161-plain-round-sugar-cookies.jpg",
+      "label": "Plain round sugar cookies",
+      "alt_text": "Plain round sugar cookies stacked in a tray.",
+      "all_labels": [
+        "IMG_2831.jpeg",
+        "Plain round sugar cookies"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1136,
+      "format": "jpg",
+      "sort_order": 161,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "161-img-2831-jpeg.jpg",
+      "new_filename": "161-plain-round-sugar-cookies.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775391755-9L6686HMK9OUX5SDS8U5/IMG_2830.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/162-decorated-mini-cakes-with-whipped-cream-and-sprinkles.jpg",
+      "label": "Decorated mini cakes with whipped cream and sprinkles",
+      "alt_text": "Decorated mini cakes topped with whipped cream, cherries, and sprinkles.",
+      "all_labels": [
+        "IMG_2830.jpeg",
+        "Decorated mini cakes with whipped cream and sprinkles"
+      ],
+      "product_slug": "mini-cake-tres-leches",
+      "width": 1584,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 162,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "162-img-2830-jpeg.jpg",
+      "new_filename": "162-decorated-mini-cakes-with-whipped-cream-and-sprinkles.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775392339-VQO8MYDFVI8UAM3QZ7LG/IMG_2829.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/163-fruit-tarts-with-strawberries-and-mango.jpg",
+      "label": "Fruit tarts with strawberries and mango",
+      "alt_text": "Fruit tarts topped with strawberries, mango, and cream.",
+      "all_labels": [
+        "IMG_2829.jpeg",
+        "Fruit tarts with strawberries and mango"
+      ],
+      "product_slug": "tarta-fruta",
+      "width": 1514,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 163,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "163-img-2829-jpeg.jpg",
+      "new_filename": "163-fruit-tarts-with-strawberries-and-mango.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775396393-UZ5RM1PJ8P0Y5R2VV4E2/IMG_2828.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/164-tres-leches-slices-with-coconut-and-whipped-cream.jpg",
+      "label": "Tres leches slices with coconut and whipped cream",
+      "alt_text": "Tres leches cake slices topped with coconut, whipped cream, and cherries.",
+      "all_labels": [
+        "IMG_2828.jpeg",
+        "Tres leches slices with coconut and whipped cream"
+      ],
+      "product_slug": "tres-leches-rebanada",
+      "width": 1427,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 164,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "164-img-2828-jpeg.jpg",
+      "new_filename": "164-tres-leches-slices-with-coconut-and-whipped-cream.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775400174-L52XJZDYZUSKQ89VFTZV/IMG_2827.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/165-bread-pudding-sheet-cut-into-squares.jpg",
+      "label": "Bread pudding sheet cut into squares",
+      "alt_text": "Sheet of bread pudding cut into square portions.",
+      "all_labels": [
+        "IMG_2827.jpeg",
+        "Bread pudding sheet cut into squares"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1359,
+      "format": "jpg",
+      "sort_order": 165,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "165-img-2827-jpeg.jpg",
+      "new_filename": "165-bread-pudding-sheet-cut-into-squares.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775400604-MLPYKYZSPFFXSQQHU6JJ/IMG_2826.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/166-bread-pudding-slices-with-raisins.jpg",
+      "label": "Bread pudding slices with raisins",
+      "alt_text": "Bread pudding slices with raisins or fruit mixed in.",
+      "all_labels": [
+        "IMG_2826.jpeg",
+        "Bread pudding slices with raisins"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 846,
+      "format": "jpg",
+      "sort_order": 166,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "166-img-2826-jpeg.jpg",
+      "new_filename": "166-bread-pudding-slices-with-raisins.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775405799-ICLTYPO0LK2N2B5857ML/IMG_2824.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/167-assorted-conchas.jpg",
+      "label": "Assorted conchas",
+      "alt_text": "Assorted conchas with chocolate, vanilla, pink, and plain toppings.",
+      "all_labels": [
+        "IMG_2824.jpeg",
+        "Assorted conchas"
+      ],
+      "product_slug": "",
+      "width": 1421,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 167,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "167-img-2824-jpeg.jpg",
+      "new_filename": "167-assorted-conchas.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775405794-BF8M532F9XK3EIT8W4LD/IMG_2823.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/168-sprinkle-covered-donut-twists.jpg",
+      "label": "Sprinkle-covered donut twists",
+      "alt_text": "Donut twists or braided pastries topped with rainbow sprinkles.",
+      "all_labels": [
+        "IMG_2823.jpeg",
+        "Sprinkle-covered donut twists"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 653,
+      "format": "jpg",
+      "sort_order": 168,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "168-img-2823-jpeg.jpg",
+      "new_filename": "168-sprinkle-covered-donut-twists.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775410539-9T3PYWN2DLQPOGGLUQ4E/IMG_2822.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/169-sugar-dusted-cream-filled-bread.jpg",
+      "label": "Sugar-dusted cream-filled bread",
+      "alt_text": "Long sugar-dusted sweet breads with cream filling.",
+      "all_labels": [
+        "IMG_2822.jpeg",
+        "Sugar-dusted cream-filled bread"
+      ],
+      "product_slug": "",
+      "width": 1033,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 169,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "169-img-2822-jpeg.jpg",
+      "new_filename": "169-sugar-dusted-cream-filled-bread.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775411753-V578GQGRJOH70Z5FXFW9/IMG_2821.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/170-bavarian-cream-filled-oval-rolls.jpg",
+      "label": "Bavarian cream-filled oval rolls",
+      "alt_text": "Oval sweet rolls filled with Bavarian cream.",
+      "all_labels": [
+        "IMG_2821.jpeg",
+        "Bavarian cream-filled oval rolls"
+      ],
+      "product_slug": "",
+      "width": 1094,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 170,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "170-img-2821-jpeg.jpg",
+      "new_filename": "170-bavarian-cream-filled-oval-rolls.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775414436-WSYN3JG16HSBLSL1YNZW/IMG_2820.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/171-cheese-danish-cups.jpg",
+      "label": "Cheese Danish cups",
+      "alt_text": "Round cheese Danish pastries with cream cheese filling.",
+      "all_labels": [
+        "IMG_2820.jpeg",
+        "Cheese Danish cups"
+      ],
+      "product_slug": "",
+      "width": 1024,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 171,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "171-img-2820-jpeg.jpg",
+      "new_filename": "171-cheese-danish-cups.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775416841-7N22L6SM2X9FGSCW8D6Y/IMG_2819.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/172-powdered-sweet-bread-rolls.jpg",
+      "label": "Powdered sweet bread rolls",
+      "alt_text": "Round sweet bread rolls dusted with sugar.",
+      "all_labels": [
+        "IMG_2819.jpeg",
+        "Powdered sweet bread rolls"
+      ],
+      "product_slug": "",
+      "width": 1445,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 172,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "172-img-2819-jpeg.jpg",
+      "new_filename": "172-powdered-sweet-bread-rolls.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775421782-Y00AVUW7A8DEZI4FE70J/IMG_2504.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/173-mini-cakes-with-chocolate-drizzle.jpg",
+      "label": "Mini cakes with chocolate drizzle",
+      "alt_text": "Mini cakes topped with whipped cream and chocolate drizzle.",
+      "all_labels": [
+        "IMG_2504.jpeg",
+        "Mini cakes with chocolate drizzle"
+      ],
+      "product_slug": "mini-cake-tres-leches",
+      "width": 1275,
+      "height": 1599,
+      "format": "jpg",
+      "sort_order": 173,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "173-img-2504-jpeg.jpg",
+      "new_filename": "173-mini-cakes-with-chocolate-drizzle.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775427745-7G07H5HARM5YXG4O1QK3/IMG_2503.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/174-oreo-mini-cakes.jpg",
+      "label": "Oreo mini cakes",
+      "alt_text": "Mini cakes decorated with Oreo cookies and cream frosting.",
+      "all_labels": [
+        "IMG_2503.jpeg",
+        "Oreo mini cakes"
+      ],
+      "product_slug": "mini-cake-tres-leches",
+      "width": 1403,
+      "height": 1599,
+      "format": "jpg",
+      "sort_order": 174,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "174-img-2503-jpeg.jpg",
+      "new_filename": "174-oreo-mini-cakes.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775429325-EAY9UCBZY2X6ITB072FZ/IMG_2502.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/175-oreo-cream-mini-cakes-with-chocolate-drizzle.jpg",
+      "label": "Oreo cream mini cakes with chocolate drizzle",
+      "alt_text": "Oreo mini cakes with cream frosting and chocolate drizzle.",
+      "all_labels": [
+        "IMG_2502.jpeg",
+        "Oreo cream mini cakes with chocolate drizzle"
+      ],
+      "product_slug": "mini-cake-tres-leches",
+      "width": 1309,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 175,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "175-img-2502-jpeg.jpg",
+      "new_filename": "175-oreo-cream-mini-cakes-with-chocolate-drizzle.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775431617-58IYYRYWH9BUDVWFE9JP/IMG_2501.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/176-white-mini-cakes-with-chocolate-chips.jpg",
+      "label": "White mini cakes with chocolate chips",
+      "alt_text": "White mini cakes decorated with chocolate chips and whipped cream.",
+      "all_labels": [
+        "IMG_2501.jpeg",
+        "White mini cakes with chocolate chips"
+      ],
+      "product_slug": "mini-cake-tres-leches",
+      "width": 1600,
+      "height": 1487,
+      "format": "jpg",
+      "sort_order": 176,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "176-img-2501-jpeg.jpg",
+      "new_filename": "176-white-mini-cakes-with-chocolate-chips.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775435772-AX2NQGPQT4T15GRDM2GQ/IMG_2500.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/177-strawberry-cake-slices-with-coconut.jpg",
+      "label": "Strawberry cake slices with coconut",
+      "alt_text": "Cake slices topped with strawberry glaze and coconut.",
+      "all_labels": [
+        "IMG_2500.jpeg",
+        "Strawberry cake slices with coconut"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1103,
+      "format": "jpg",
+      "sort_order": 177,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "177-img-2500-jpeg.jpg",
+      "new_filename": "177-strawberry-cake-slices-with-coconut.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775436455-V9L3CF3G64YTUTK4S2NL/IMG_2499.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/178-chocolate-cake-slices-with-whipped-cream.jpg",
+      "label": "Chocolate cake slices with whipped cream",
+      "alt_text": "Chocolate cake slices topped with whipped cream and wafer sticks.",
+      "all_labels": [
+        "IMG_2499.jpeg",
+        "Chocolate cake slices with whipped cream"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1360,
+      "format": "jpg",
+      "sort_order": 178,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "178-img-2499-jpeg.jpg",
+      "new_filename": "178-chocolate-cake-slices-with-whipped-cream.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775442056-4XKQ7SXFLFO2NIGXJW93/IMG_2484.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/179-yellow-cake-mini-cakes-with-whipped-cream.jpg",
+      "label": "Yellow cake mini cakes with whipped cream",
+      "alt_text": "Yellow cake mini cakes topped with whipped cream.",
+      "all_labels": [
+        "IMG_2484.jpeg",
+        "Yellow cake mini cakes with whipped cream"
+      ],
+      "product_slug": "mini-cake-tres-leches",
+      "width": 1015,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 179,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "179-img-2484-jpeg.jpg",
+      "new_filename": "179-yellow-cake-mini-cakes-with-whipped-cream.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775442286-OL1YIK0OHQBMXY9T2D3D/IMG_2483.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/180-pink-frosted-mini-cakes.jpg",
+      "label": "Pink frosted mini cakes",
+      "alt_text": "Mini cakes topped with pink frosting and wafer pieces.",
+      "all_labels": [
+        "IMG_2483.jpeg",
+        "Pink frosted mini cakes"
+      ],
+      "product_slug": "mini-cake-tres-leches",
+      "width": 1582,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 180,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "180-img-2483-jpeg.jpg",
+      "new_filename": "180-pink-frosted-mini-cakes.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775455865-BJXOM1TOHCT2MFV5SXJR/IMG_2435.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/181-refrigerated-dessert-display-case.jpg",
+      "label": "Refrigerated dessert display case",
+      "alt_text": "Refrigerated bakery display case with assorted fruit desserts and pastries.",
+      "all_labels": [
+        "IMG_2435.jpeg",
+        "Refrigerated dessert display case"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 806,
+      "format": "jpg",
+      "sort_order": 181,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "181-img-2435-jpeg.jpg",
+      "new_filename": "181-refrigerated-dessert-display-case.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775461371-08IN0R3YLU77C70B2IKL/IMG_2048.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/182-stuffed-savory-breads.jpg",
+      "label": "Stuffed savory breads",
+      "alt_text": "Open stuffed savory breads arranged in a tray.",
+      "all_labels": [
+        "IMG_2048.jpeg",
+        "Stuffed savory breads"
+      ],
+      "product_slug": "pan-relleno",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 182,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "182-img-2048-jpeg.jpg",
+      "new_filename": "182-stuffed-savory-breads.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775465365-75S9HX5UNX94JJQNPWV9/IMG_1975.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/183-pan-de-muerto-muneco.jpg",
+      "label": "Pan de Muerto muñeco",
+      "alt_text": "Glossy Oaxacan Pan de Muerto muñeco with painted face.",
+      "all_labels": [
+        "IMG_1975.jpeg",
+        "Pan de Muerto muñeco"
+      ],
+      "product_slug": "pan-muerto-yema-carita",
+      "width": 1593,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 183,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "183-img-1975-jpeg.jpg",
+      "new_filename": "183-pan-de-muerto-muneco.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775475354-VLKA8IV3JUMTYB2ANO2L/IMG_1974.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/184-pan-de-muerto-munecos-display.jpg",
+      "label": "Pan de Muerto muñecos display",
+      "alt_text": "Pan de Muerto muñecos displayed in a case.",
+      "all_labels": [
+        "IMG_1974.jpeg",
+        "Pan de Muerto muñecos display"
+      ],
+      "product_slug": "pan-muerto-yema-carita",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 184,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "184-img-1974-jpeg.jpg",
+      "new_filename": "184-pan-de-muerto-munecos-display.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775475353-AKQKUOV9NZGQAPUMMGHQ/IMG_1973.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/185-chocolate-sweet-bread-halves.jpg",
+      "label": "Chocolate sweet bread halves",
+      "alt_text": "Chocolate sweet bread or cupcake halves with a plain base.",
+      "all_labels": [
+        "IMG_1973.jpeg",
+        "Chocolate sweet bread halves"
+      ],
+      "product_slug": "",
+      "width": 1591,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 185,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "185-img-1973-jpeg.jpg",
+      "new_filename": "185-chocolate-sweet-bread-halves.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775480968-TU7997JGECDUQ1KB0B4H/IMG_1734.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/186-pan-de-yema-muneco-with-sesame.jpg",
+      "label": "Pan de yema muñeco with sesame",
+      "alt_text": "Pan de yema muñeco decorated with sesame seeds and a painted face.",
+      "all_labels": [
+        "IMG_1734.jpeg",
+        "Pan de yema muñeco with sesame"
+      ],
+      "product_slug": "pan-de-yema",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 186,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "186-img-1734-jpeg.jpg",
+      "new_filename": "186-pan-de-yema-muneco-with-sesame.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775482069-1I52TVWZCRW4NGSO89QL/IMG_1733.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/187-pan-de-yema-muneco-with-pink-sugar.jpg",
+      "label": "Pan de yema muñeco with pink sugar",
+      "alt_text": "Pan de yema muñeco decorated with pink sugar and a painted face.",
+      "all_labels": [
+        "IMG_1733.jpeg",
+        "Pan de yema muñeco with pink sugar"
+      ],
+      "product_slug": "pan-de-yema",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 187,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "187-img-1733-jpeg.jpg",
+      "new_filename": "187-pan-de-yema-muneco-with-pink-sugar.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775492434-HWODIAJL0WWUVDITT798/IMG_1732.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/188-decorated-pan-de-yema-figure.jpg",
+      "label": "Decorated Pan de yema figure",
+      "alt_text": "Decorated Pan de yema figure with painted face and colored details.",
+      "all_labels": [
+        "IMG_1732.jpeg",
+        "Decorated Pan de yema figure"
+      ],
+      "product_slug": "pan-de-yema",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 188,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "188-img-1732-jpeg.jpg",
+      "new_filename": "188-decorated-pan-de-yema-figure.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775492435-FB3IOI84F4YESKKIX395/IMG_1731.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/189-decorated-pan-de-yema-figure-with-sesame.jpg",
+      "label": "Decorated Pan de yema figure with sesame",
+      "alt_text": "Decorated Pan de yema figure with sesame seeds and colored details.",
+      "all_labels": [
+        "IMG_1731.jpeg",
+        "Decorated Pan de yema figure with sesame"
+      ],
+      "product_slug": "pan-de-yema",
+      "width": 674,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 189,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "189-img-1731-jpeg.jpg",
+      "new_filename": "189-decorated-pan-de-yema-figure-with-sesame.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775500041-8IX9ZOE4Y5A7AEMQOMAD/IMG_1728.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/190-pair-of-decorated-pan-de-yema-munecos.jpg",
+      "label": "Pair of decorated Pan de yema muñecos",
+      "alt_text": "Two decorated Pan de yema muñecos with painted faces.",
+      "all_labels": [
+        "IMG_1728.jpeg",
+        "Pair of decorated Pan de yema muñecos"
+      ],
+      "product_slug": "pan-de-yema",
+      "width": 1600,
+      "height": 1570,
+      "format": "jpg",
+      "sort_order": 190,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "190-img-1728-jpeg.jpg",
+      "new_filename": "190-pair-of-decorated-pan-de-yema-munecos.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775500026-TRCWXOOZKCZ2652FBOP4/IMG_1727.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/191-round-pan-de-muerto-bread-with-face.jpg",
+      "label": "Round Pan de Muerto bread with face",
+      "alt_text": "Round Pan de Muerto bread with a painted face and sesame topping.",
+      "all_labels": [
+        "IMG_1727.jpeg",
+        "Round Pan de Muerto bread with face"
+      ],
+      "product_slug": "pan-muerto-yema-carita",
+      "width": 1569,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 191,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "191-img-1727-jpeg.jpg",
+      "new_filename": "191-round-pan-de-muerto-bread-with-face.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775508769-KUA9BIDAPWG4R2YYOTXJ/IMG_1718.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/192-small-brown-rolls.jpg",
+      "label": "Small brown rolls",
+      "alt_text": "Small brown bread rolls stacked together.",
+      "all_labels": [
+        "IMG_1718.jpeg",
+        "Small brown rolls"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1194,
+      "format": "jpg",
+      "sort_order": 192,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "192-img-1718-jpeg.jpg",
+      "new_filename": "192-small-brown-rolls.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775509158-FSGMID1BEA3HDTKQQCYA/IMG_1713.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/193-sesame-topped-round-rolls.jpg",
+      "label": "Sesame-topped round rolls",
+      "alt_text": "Round bread rolls topped with sesame seeds.",
+      "all_labels": [
+        "IMG_1713.jpeg",
+        "Sesame-topped round rolls"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1223,
+      "format": "jpg",
+      "sort_order": 193,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "193-img-1713-jpeg.jpg",
+      "new_filename": "193-sesame-topped-round-rolls.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775516844-DSLN9P8LZRXRIP8D984B/IMG_1709.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/194-chocolate-pan-de-yema-rolls-with-sesame.jpg",
+      "label": "Chocolate Pan de yema rolls with sesame",
+      "alt_text": "Chocolate-colored Pan de yema rolls with a sesame stripe.",
+      "all_labels": [
+        "IMG_1709.jpeg",
+        "Chocolate Pan de yema rolls with sesame"
+      ],
+      "product_slug": "pan-de-yema",
+      "width": 1600,
+      "height": 1585,
+      "format": "jpg",
+      "sort_order": 194,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "194-img-1709-jpeg.jpg",
+      "new_filename": "194-chocolate-pan-de-yema-rolls-with-sesame.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775516846-Z0V9MER63LXQUR9L0VB9/IMG_1711.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/195-bear-shaped-sweet-rolls.jpg",
+      "label": "Bear-shaped sweet rolls",
+      "alt_text": "Bear-shaped sweet rolls with small colored decorations.",
+      "all_labels": [
+        "IMG_1711.jpeg",
+        "Bear-shaped sweet rolls"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 875,
+      "format": "jpg",
+      "sort_order": 195,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "195-img-1711-jpeg.jpg",
+      "new_filename": "195-bear-shaped-sweet-rolls.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775518787-VB2JKKPPI49LL9KGKS27/IMG_1939.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/196-tres-leches-cake-slices-with-cherries.jpg",
+      "label": "Tres leches cake slices with cherries",
+      "alt_text": "Tres leches cake slices topped with cherries and chocolate drizzle.",
+      "all_labels": [
+        "IMG_1939.jpeg",
+        "Tres leches cake slices with cherries"
+      ],
+      "product_slug": "tres-leches-rebanada",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 196,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "196-img-1939-jpeg.jpg",
+      "new_filename": "196-tres-leches-cake-slices-with-cherries.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775529619-FITRVSS2HOU61F8HV0U1/68757488560__9954ABFC-83D1-4B4F-9F10-A56C6C2E0625.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/197-pan-de-muerto-display-shelf.jpg",
+      "label": "Pan de Muerto display shelf",
+      "alt_text": "Display shelf with assorted Pan de Muerto breads and decorated faces.",
+      "all_labels": [
+        "68757488560__9954ABFC-83D1-4B4F-9F10-A56C6C2E0625.jpeg",
+        "Pan de Muerto display shelf"
+      ],
+      "product_slug": "pan-muerto-yema-carita",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 197,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "197-68757488560-9954abfc-83d1-4b4f-9f10-a56c6c2e0625-jpeg.jpg",
+      "new_filename": "197-pan-de-muerto-display-shelf.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775527448-NBNROTMI5A9CLQZ70YBM/IMG_1819.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/198-leaf-shaped-sprinkle-cookie.jpg",
+      "label": "Leaf-shaped sprinkle cookie",
+      "alt_text": "Leaf-shaped cookie covered with green, yellow, and blue sprinkles.",
+      "all_labels": [
+        "IMG_1819.jpeg",
+        "Leaf-shaped sprinkle cookie"
+      ],
+      "product_slug": "",
+      "width": 1420,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 198,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "198-img-1819-jpeg.jpg",
+      "new_filename": "198-leaf-shaped-sprinkle-cookie.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775534013-8OO67525ZW5YRGZ4CQQX/IMG_1818.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/199-orange-leaf-shaped-sprinkle-cookie.jpg",
+      "label": "Orange leaf-shaped sprinkle cookie",
+      "alt_text": "Leaf-shaped cookie covered with orange sprinkles.",
+      "all_labels": [
+        "IMG_1818.jpeg",
+        "Orange leaf-shaped sprinkle cookie"
+      ],
+      "product_slug": "",
+      "width": 1516,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 199,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "199-img-1818-jpeg.jpg",
+      "new_filename": "199-orange-leaf-shaped-sprinkle-cookie.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775534846-X7GMC1BZHL1WTF1895VD/IMG_1817.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/200-red-leaf-shaped-sprinkle-cookie.jpg",
+      "label": "Red leaf-shaped sprinkle cookie",
+      "alt_text": "Leaf-shaped cookie covered with red and orange sprinkles.",
+      "all_labels": [
+        "IMG_1817.jpeg",
+        "Red leaf-shaped sprinkle cookie"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1088,
+      "format": "jpg",
+      "sort_order": 200,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "200-img-1817-jpeg.jpg",
+      "new_filename": "200-red-leaf-shaped-sprinkle-cookie.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775538126-5B7ADTV4VNS6TRQ5OFN8/IMG_1718.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/201-tres-leches-sheet-cake-slices.jpg",
+      "label": "Tres leches sheet cake slices",
+      "alt_text": "Tres leches sheet cake slices topped with whipped cream and cherries.",
+      "all_labels": [
+        "IMG_1718.jpeg",
+        "Tres leches sheet cake slices"
+      ],
+      "product_slug": "tres-leches-rebanada",
+      "width": 1600,
+      "height": 1159,
+      "format": "jpg",
+      "sort_order": 201,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "201-img-1718-jpeg-2.jpg",
+      "new_filename": "201-tres-leches-sheet-cake-slices.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775539353-Q89SVUK85MYXJOPDKG3N/IMG_1717.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/202-bavarian-cream-pastry-cones.jpg",
+      "label": "Bavarian cream pastry cones",
+      "alt_text": "Golden pastry cones filled with Bavarian cream.",
+      "all_labels": [
+        "IMG_1717.jpeg",
+        "Bavarian cream pastry cones"
+      ],
+      "product_slug": "barquillo-bavaria",
+      "width": 1600,
+      "height": 588,
+      "format": "jpg",
+      "sort_order": 202,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "202-img-1717-jpeg.jpg",
+      "new_filename": "202-bavarian-cream-pastry-cones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775541520-XJ2XA9II7OVG7RQ7YYWX/IMG_1716.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/203-cream-filled-croissant-cones.jpg",
+      "label": "Cream-filled croissant cones",
+      "alt_text": "Croissant-style pastry cones filled with cream.",
+      "all_labels": [
+        "IMG_1716.jpeg",
+        "Cream-filled croissant cones"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 709,
+      "format": "jpg",
+      "sort_order": 203,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "203-img-1716-jpeg.jpg",
+      "new_filename": "203-cream-filled-croissant-cones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775549818-1YHMNVGWCLTZJXHARSZ3/IMG_1715.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/204-cream-filled-pastry-horn-tray.jpg",
+      "label": "Cream-filled pastry horn tray",
+      "alt_text": "Tray of cream-filled pastry horns and cones.",
+      "all_labels": [
+        "IMG_1715.jpeg",
+        "Cream-filled pastry horn tray"
+      ],
+      "product_slug": "",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 204,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "204-img-1715-jpeg.jpg",
+      "new_filename": "204-cream-filled-pastry-horn-tray.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775549834-PRAFFJK4MHD2BF6GC9XN/IMG_1699.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/205-round-sugar-polvorones.jpg",
+      "label": "Round sugar polvorones",
+      "alt_text": "Large round sugar polvorones stacked in a tray.",
+      "all_labels": [
+        "IMG_1699.jpeg",
+        "Round sugar polvorones"
+      ],
+      "product_slug": "polvoron-azucar",
+      "width": 1600,
+      "height": 1239,
+      "format": "jpg",
+      "sort_order": 205,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "205-img-1699-jpeg.jpg",
+      "new_filename": "205-round-sugar-polvorones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775555379-9E1N9P8SL1LUWDO79SO1/IMG_1698.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/206-pink-streak-sugar-polvorones.jpg",
+      "label": "Pink-streak sugar polvorones",
+      "alt_text": "Round sugar polvorones with pink sugar streaks.",
+      "all_labels": [
+        "IMG_1698.jpeg",
+        "Pink-streak sugar polvorones"
+      ],
+      "product_slug": "polvoron-azucar",
+      "width": 1600,
+      "height": 1042,
+      "format": "jpg",
+      "sort_order": 206,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "206-img-1698-jpeg.jpg",
+      "new_filename": "206-pink-streak-sugar-polvorones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775557027-M0Q3WI73GLEB6HOXKWD7/IMG_1697.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/207-plain-sugar-polvorones.jpg",
+      "label": "Plain sugar polvorones",
+      "alt_text": "Plain round sugar polvorones stacked in rows.",
+      "all_labels": [
+        "IMG_1697.jpeg",
+        "Plain sugar polvorones"
+      ],
+      "product_slug": "polvoron-azucar",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 207,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "207-img-1697-jpeg.jpg",
+      "new_filename": "207-plain-sugar-polvorones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775564244-JQM4IEN2C4Z8O6EG39OC/IMG_1696.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/208-round-sugar-polvorones.jpg",
+      "label": "Round sugar polvorones",
+      "alt_text": "Round sugar polvorones stacked in a tray.",
+      "all_labels": [
+        "IMG_1696.jpeg",
+        "Round sugar polvorones"
+      ],
+      "product_slug": "polvoron-azucar",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 208,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "208-img-1696-jpeg.jpg",
+      "new_filename": "208-round-sugar-polvorones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775564309-3YW7HEAAE1Q6IL1DN7FA/IMG_1695.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/209-pink-streak-sugar-polvorones.jpg",
+      "label": "Pink-streak sugar polvorones",
+      "alt_text": "Round sugar polvorones with pink sugar streaks.",
+      "all_labels": [
+        "IMG_1695.jpeg",
+        "Pink-streak sugar polvorones"
+      ],
+      "product_slug": "polvoron-azucar",
+      "width": 1392,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 209,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "209-img-1695-jpeg.jpg",
+      "new_filename": "209-pink-streak-sugar-polvorones.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775573584-NN4D0LTC5U7DH5RAJK08/IMG_1694.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/210-large-oval-rainbow-sprinkle-cookies.jpg",
+      "label": "Large oval rainbow sprinkle cookies",
+      "alt_text": "Large oval cookies fully covered with rainbow sprinkles.",
+      "all_labels": [
+        "IMG_1694.jpeg",
+        "Large oval rainbow sprinkle cookies"
+      ],
+      "product_slug": "galleta-grajea",
+      "width": 1600,
+      "height": 1562,
+      "format": "jpg",
+      "sort_order": 210,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "210-img-1694-jpeg.jpg",
+      "new_filename": "210-large-oval-rainbow-sprinkle-cookies.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775575384-YFRDK298NJJIKU12YAV8/IMG_1693.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/211-sprinkle-coated-ring-cookies.jpg",
+      "label": "Sprinkle-coated ring cookies",
+      "alt_text": "Ring-shaped cookies covered with rainbow sprinkles.",
+      "all_labels": [
+        "IMG_1693.jpeg",
+        "Sprinkle-coated ring cookies"
+      ],
+      "product_slug": "",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 211,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "211-img-1693-jpeg.jpg",
+      "new_filename": "211-sprinkle-coated-ring-cookies.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775586406-H96RJ5LH74ZQA2CA4K4X/IMG_1692.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/212-round-sprinkle-cookies.jpg",
+      "label": "Round sprinkle cookies",
+      "alt_text": "Round cookies covered with rainbow sprinkles.",
+      "all_labels": [
+        "IMG_1692.jpeg",
+        "Round sprinkle cookies"
+      ],
+      "product_slug": "galleta-grajea",
+      "width": 1600,
+      "height": 1142,
+      "format": "jpg",
+      "sort_order": 212,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "212-img-1692-jpeg.jpg",
+      "new_filename": "212-round-sprinkle-cookies.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775586572-5TRWLDQ4SWPBFJ7LUZDB/IMG_1691.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/213-round-sprinkle-cookies-with-center-ring.jpg",
+      "label": "Round sprinkle cookies with center ring",
+      "alt_text": "Round sprinkle cookies with a visible center ring.",
+      "all_labels": [
+        "IMG_1691.jpeg",
+        "Round sprinkle cookies with center ring"
+      ],
+      "product_slug": "galleta-grajea",
+      "width": 1571,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 213,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "213-img-1691-jpeg.jpg",
+      "new_filename": "213-round-sprinkle-cookies-with-center-ring.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775592345-3PR80BTOSR3HEEJSO6Y3/IMG_1689.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/214-rosca-de-reyes-assortment.jpg",
+      "label": "Rosca de Reyes assortment",
+      "alt_text": "Assorted Rosca de Reyes breads with red, green, yellow, and white toppings.",
+      "all_labels": [
+        "IMG_1689.jpeg",
+        "Rosca de Reyes assortment"
+      ],
+      "product_slug": "rosca-reyes",
+      "width": 1300,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 214,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "214-img-1689-jpeg.jpg",
+      "new_filename": "214-rosca-de-reyes-assortment.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775594649-IYF2N2YKWTW09T4UUY7B/IMG_1688.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/215-rosca-de-reyes-tricolor-loaf.jpg",
+      "label": "Rosca de Reyes tricolor loaf",
+      "alt_text": "Rosca de Reyes loaf with green, white, and red toppings.",
+      "all_labels": [
+        "IMG_1688.jpeg",
+        "Rosca de Reyes tricolor loaf"
+      ],
+      "product_slug": "rosca-reyes",
+      "width": 1600,
+      "height": 1048,
+      "format": "jpg",
+      "sort_order": 215,
+      "confidence": "high",
+      "basis": "visual/page context",
+      "original_filename": "215-img-1688-jpeg.jpg",
+      "new_filename": "215-rosca-de-reyes-tricolor-loaf.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775600415-PNF1P1ZK51H8HS7SN0PJ/IMG_1587.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/216-tres-leches-cake-slices-with-strawberries.jpg",
+      "label": "Tres leches cake slices with strawberries",
+      "alt_text": "Tres leches cake slices topped with strawberries, whipped cream, and chocolate drizzle.",
+      "all_labels": [
+        "IMG_1587.jpeg",
+        "Tres leches cake slices with strawberries"
+      ],
+      "product_slug": "tres-leches-rebanada",
+      "width": 1600,
+      "height": 1200,
+      "format": "jpg",
+      "sort_order": 216,
+      "confidence": "high",
+      "basis": "visual",
+      "original_filename": "216-img-1587-jpeg.jpg",
+      "new_filename": "216-tres-leches-cake-slices-with-strawberries.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775875640-4345ON1R0JJUMVESFYIU/IMG_3855.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/217-round-fruit-topped-celebration-cake.jpg",
+      "label": "Round fruit-topped celebration cake",
+      "alt_text": "Round cake topped with strawberries, peaches, chocolate garnish, and cream.",
+      "all_labels": [
+        "IMG_3855.jpeg",
+        "Round fruit-topped celebration cake"
+      ],
+      "product_slug": "pastel-decorado",
+      "width": 1595,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 217,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "217-img-3855-jpeg.jpg",
+      "new_filename": "217-round-fruit-topped-celebration-cake.jpg"
+    },
+    {
+      "source_url": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775877707-VL0RMY6U0NNNM3XWCN90/IMG_3854.jpeg",
+      "source_pages": [
+        "https://www.juquilitabakerypyp.com/new-index-1/"
+      ],
+      "local_url": "/imported/website/218-round-fruit-topped-celebration-cake-alternate-angle.jpg",
+      "label": "Round fruit-topped celebration cake alternate angle",
+      "alt_text": "Alternate view of a round cake topped with strawberries, peaches, chocolate garnish, and cream.",
+      "all_labels": [
+        "IMG_3854.jpeg",
+        "Round fruit-topped celebration cake alternate angle"
+      ],
+      "product_slug": "pastel-decorado",
+      "width": 1200,
+      "height": 1600,
+      "format": "jpg",
+      "sort_order": 218,
+      "confidence": "medium",
+      "basis": "visual",
+      "original_filename": "218-img-3854-jpeg.jpg",
+      "new_filename": "218-round-fruit-topped-celebration-cake-alternate-angle.jpg"
+    }
+  ],
+  "db_records_applied": 154
+}

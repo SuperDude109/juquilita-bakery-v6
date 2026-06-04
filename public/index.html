@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juquilita Bakery v6 | Panadería y Pastelería</title>
+  <meta name="description" content="Bilingual local bakery ordering for Juquilita Bakery with retail, quote, and wholesale workflows.">
+
+  <meta property="og:title" content="Juquilita Bakery | Panadería y Pastelería">
+  <meta property="og:description" content="Order Mexican and Oaxacan breads, cakes, desserts, and seasonal specialties from Juquilita Bakery in Morristown, Tennessee.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Juquilita Bakery",
+    "alternateName": "Panadería y Pastelería Juquilita Bakery",
+    "telephone": "+1-423-307-8244",
+    "email": "Juquilitabakery@outlook.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "325 South Cumberland Street",
+      "addressLocality": "Morristown",
+      "addressRegion": "TN",
+      "postalCode": "37813",
+      "addressCountry": "US"
+    },
+    "servesCuisine": ["Mexican bakery", "Oaxacan bread", "Pan dulce"],
+    "priceRange": "$"
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Juquilita Bakery home">
+      <span class="brand-mark">JB</span>
+      <span><strong>Juquilita Bakery</strong><small>Panadería y Pastelería</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="#menu" data-i18n="nav_menu">Menu</a>
+      <a href="#wholesale" data-i18n="nav_wholesale">Wholesale</a>
+      <a href="#quotes" data-i18n="nav_quotes">Cakes & seasonal</a>
+      <a href="#campaigns">Pages</a>
+      <a href="#partners" data-i18n="nav_partners">Partners</a>
+    </nav>
+    <div class="header-actions">
+      <button id="languageBtn" class="pill-btn" type="button">Español</button>
+      <button id="accountBtn" class="pill-btn solid" type="button" data-i18n="account">Account</button>
+      <button id="cartButton" class="cart-button" type="button" aria-label="Open cart"><span>🧺</span><b id="cartCount">0</b></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">Oaxacan breads • cakes • wholesale orders</p>
+        <h1 data-i18n="hero_title">Order Mexican bread without guessing what is available.</h1>
+        <p class="hero-text" data-i18n="hero_text">Browse by the way the bread looks, see real pickup windows, submit cake quotes, and create recurring shop orders.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="primary-action" data-i18n="shop_now">Shop the case</a>
+          <button id="openQuoteHero" class="secondary-action" type="button" data-i18n="request_quote">Request a quote</button>
+        </div>
+        <div id="storeStatus" class="status-card" aria-live="polite"></div>
+      </div>
+      <div class="hero-board" aria-hidden="true">
+        <div class="tile concha"><span>🐚</span><b>Conchas</b><small>$0.90</small></div>
+        <div class="tile bolillo"><span>🥖</span><b>Bolillos</b><small>$0.80</small></div>
+        <div class="tile cake"><span>🎂</span><b>Tres leches</b><small>from $21.99</small></div>
+        <div class="tile muerto"><span>💀</span><b>Pan de Muerto</b><small>quote</small></div>
+      </div>
+    </section>
+
+    <section class="pain-strip section-shell" aria-label="Checkout improvements">
+      <article><strong data-i18n="pain_1_title">Find bread visually</strong><span data-i18n="pain_1">Spanish and English names, aliases, shapes, and fillings.</span></article>
+      <article><strong data-i18n="pain_2_title">Avoid bad pickups</strong><span data-i18n="pain_2">Hours, capacity, inventory, and lead times are checked before ordering.</span></article>
+      <article><strong data-i18n="pain_3_title">Wholesale built in</strong><span data-i18n="pain_3">Premium pricing, applications, standing orders, and bulk bundles.</span></article>
+      <article><strong data-i18n="pain_4_title">Quotes are real workflows</strong><span data-i18n="pain_4">Cakes, Rosca, and Pan de Muerto collect the details staff need.</span></article>
+    </section>
+
+    <section id="menu" class="section-shell menu-layout">
+      <aside class="filters-panel">
+        <div class="panel-title"><span data-i18n="find_bread">Find your bread</span><small id="productCount"></small></div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" autocomplete="off" placeholder="concha, pig bread, pink cookie, bolillo"></label>
+        <div id="categoryChips" class="chip-grid"></div>
+        <div class="panel-title small-title"><span>Shop by shape</span></div>
+        <div id="visualChips" class="chip-grid visual-chip-grid"></div>
+        <label class="checkline"><input id="bulkOnly" type="checkbox"> <span data-i18n="bulk_friendly">Bulk friendly only</span></label>
+        <label class="checkline"><input id="orderableOnly" type="checkbox"> <span data-i18n="orderable_now">Orderable now only</span></label>
+        <div class="mini-note" data-i18n="search_note">Search accepts English, Spanish, visual words, and common misspellings.</div>
+      </aside>
+
+      <div class="menu-main">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="catalog_eyebrow">Expanded catalog</p>
+          <h2 data-i18n="catalog_title">Specific products, variants, and quote-only items</h2>
+          <p data-i18n="catalog_copy">Prices use the public menu where available. Items with variable decoration or seasonal sizing use quote requests.</p>
+        </div>
+        <div id="promoRail" class="promo-rail"></div>
+        <div id="bundleRail" class="bundle-rail"></div>
+        <div id="bakeryCaseRail" class="bakery-case-rail"></div>
+        <div id="campaignCapacity" class="campaign-capacity"></div>
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="quotes" class="section-shell split-section">
+      <div>
+        <p class="eyebrow" data-i18n="quote_eyebrow">Cakes and seasonal bread</p>
+        <h2 data-i18n="quote_title">Quote forms collect the missing details before staff call back.</h2>
+        <p data-i18n="quote_copy">Custom cakes, Pan de Muerto, and Rosca de Reyes need sizes, fillings, decoration notes, event dates, and pickup timing.</p>
+        <button class="primary-action" id="openQuoteSection" type="button" data-i18n="start_quote">Start quote request</button>
+      </div>
+      <div class="quote-card-stack">
+        <article><b>🎂 <span data-i18n="cake_quote">Custom cakes</span></b><small data-i18n="cake_quote_desc">Flavor, filling, inscription, reference image, budget, event date.</small></article>
+        <article><b>👑 Rosca de Reyes</b><small data-i18n="rosca_quote_desc">Size, quantity, pickup window, hidden figurine planning.</small></article>
+        <article><b>💀 Pan de Muerto</b><small data-i18n="muerto_quote_desc">White sugar, pink sugar, or Oaxacan yema face style.</small></article>
+      </div>
+    </section>
+
+    <section id="wholesale" class="section-shell wholesale-section">
+      <div class="section-heading centered">
+        <p class="eyebrow" data-i18n="wholesale_eyebrow">Premium customer flow</p>
+        <h2 data-i18n="wholesale_title">For shops that buy bread every week</h2>
+        <p data-i18n="wholesale_copy">Apply for premium pricing, save standing orders, and reorder bulk bread without rebuilding the basket.</p>
+      </div>
+      <div class="wholesale-grid">
+        <form id="wholesaleForm" class="elevated-form">
+          <h3 data-i18n="apply_wholesale">Apply for wholesale</h3>
+          <input name="business_name" placeholder="Business name" required>
+          <input name="contact_name" placeholder="Contact name" required>
+          <input name="email" placeholder="Email" type="email" required>
+          <input name="phone" placeholder="Phone" required>
+          <input name="business_type" placeholder="Restaurant, market, café..." required>
+          <input name="expected_weekly_units" type="number" min="0" placeholder="Expected weekly units">
+          <textarea name="requested_products" placeholder="Bolillos, teleras, conchas, dessert trays..."></textarea>
+          <button class="primary-action" type="submit" data-i18n="submit_application">Submit application</button>
+          <p id="wholesaleMessage" class="form-message"></p>
+        </form>
+        <div class="standing-card">
+          <h3 data-i18n="standing_orders">Standing orders</h3>
+          <p data-i18n="standing_copy">Approved premium accounts can save recurring orders such as “60 bolillos every Friday at 7:30 AM.”</p>
+          <div id="standingOrders"></div>
+          <form id="standingOrderForm" class="admin-form standing-order-form">
+            <input name="name" placeholder="Standing order name">
+            <select name="weekday"><option value="0">Monday</option><option value="1">Tuesday</option><option value="2">Wednesday</option><option value="3">Thursday</option><option value="4">Friday</option><option value="5">Saturday</option><option value="6">Sunday</option></select>
+            <input name="pickup_time" type="time" step="1800">
+            <input name="business_name" placeholder="Business name">
+            <input name="product_slug" placeholder="Product slug, e.g. bolillo">
+            <input name="quantity" type="number" min="1" placeholder="Quantity">
+            <textarea name="notes" placeholder="Recurring order notes"></textarea>
+            <button class="secondary-action" type="submit">Save standing order</button>
+            <p id="standingOrderMessage" class="form-message"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracking" class="section-shell split-section tracking-section">
+      <div>
+        <p class="eyebrow">Order tracking</p>
+        <h2>Check pickup status without calling first.</h2>
+        <p>Use the order code from the receipt and the email used at checkout.</p>
+      </div>
+      <form id="trackOrderForm" class="elevated-form">
+        <input name="code" placeholder="Order code, e.g. JB4-260531-1234" required>
+        <input name="email" type="email" placeholder="Order email" required>
+        <button class="primary-action" type="submit">Track order</button>
+        <div id="trackOrderResult" class="form-message"></div>
+      </form>
+    </section>
+
+
+
+    <section id="selfservice" class="section-shell selfservice-section">
+      <div class="section-heading centered">
+        <p class="eyebrow">Customer self-service</p>
+        <h2>Fix order issues without forcing a phone call.</h2>
+        <p>Customers can request cancellation, edits, rescheduling, substitutions, or leave a review after pickup. The admin still approves changes before production is affected.</p>
+      </div>
+      <div class="selfservice-grid">
+        <form id="orderChangeForm" class="elevated-form">
+          <h3>Request an order change</h3>
+          <input name="order_code" placeholder="Order code" required>
+          <input name="email" type="email" placeholder="Order email" required>
+          <input name="phone" placeholder="Phone, optional">
+          <select name="request_type"><option value="edit">Edit items</option><option value="reschedule">Reschedule pickup</option><option value="substitution">Approve substitution</option><option value="cancel">Cancel order</option></select>
+          <textarea name="reason" placeholder="Explain exactly what needs to change" required></textarea>
+          <button class="primary-action" type="submit">Submit change request</button>
+          <p id="orderChangeMessage" class="form-message"></p>
+        </form>
+        <form id="reviewForm" class="elevated-form">
+          <h3>Leave a product review</h3>
+          <select name="product_slug" id="reviewProduct"></select>
+          <input name="customer_name" placeholder="Name" required>
+          <input name="customer_email" type="email" placeholder="Email" required>
+          <input name="order_code" placeholder="Order code, optional">
+          <select name="rating"><option value="5">5 stars</option><option value="4">4 stars</option><option value="3">3 stars</option><option value="2">2 stars</option><option value="1">1 star</option></select>
+          <input name="title" placeholder="Short title">
+          <textarea name="body" placeholder="What should the bakery know?" required></textarea>
+          <button class="primary-action" type="submit">Submit review</button>
+          <p id="reviewMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="campaigns" class="section-shell campaigns-section">
+      <div class="section-heading">
+        <p class="eyebrow">SEO and seasonal pages</p>
+        <h2>Focused pages for cakes, Oaxacan bread, Rosca, Pan de Muerto, and local search.</h2>
+        <p>Admins can publish pages from the dashboard. These help customers find the right workflow instead of squeezing every question into checkout.</p>
+      </div>
+      <div id="seoPagesGrid" class="campaign-grid"></div>
+      <div class="grid-two compact-blocks">
+        <div><h3>Recent approved reviews</h3><div id="reviewsGrid" class="review-grid"></div></div>
+        <div><h3>Delivery and pickup policy</h3><div id="deliveryZones" class="delivery-grid"></div></div>
+      </div>
+    </section>
+
+    <section id="partners" class="section-shell partners-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="partners_eyebrow">Community shelf</p>
+        <h2 data-i18n="partners_title">Businesses buying from the bakery can be promoted here.</h2>
+        <p data-i18n="partners_copy">The app requires consent before publishing real partner cards. Demo cards remain marked until replaced.</p>
+      </div>
+      <div id="partnerGrid" class="partner-grid"></div>
+    </section>
+  </main>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header"><h2 data-i18n="basket">Basket</h2><button id="closeCart" type="button">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary">
+      <label><span data-i18n="promo_code">Promo code</span><input id="promoCode" placeholder="CONCHA10"></label>
+      <div class="totals"><span data-i18n="subtotal">Subtotal</span><b id="cartSubtotal">$0.00</b></div>
+      <button id="checkoutToggle" class="primary-action full" type="button" data-i18n="checkout">Checkout</button>
+    </div>
+  </aside>
+  <div id="drawerShade" class="drawer-shade"></div>
+
+  <dialog id="accountDialog" class="app-dialog">
+    <form method="dialog" class="dialog-close"><button>×</button></form>
+    <div class="tabs"><button data-tab="login" class="active" type="button" data-i18n="login">Login</button><button data-tab="register" type="button" data-i18n="register">Register</button><button data-tab="reset" type="button">Reset password</button></div>
+    <section data-panel="login" class="tab-panel active">
+      <h2 data-i18n="login_title">Login</h2>
+      <p class="mini-note" data-i18n="login_note">Demo credentials are in the README. Passwords are intentionally not prefilled.</p>
+      <form id="loginForm" class="elevated-form compact">
+        <input name="email" type="email" placeholder="email" autocomplete="username" required>
+        <input name="password" type="password" placeholder="password" autocomplete="current-password" required>
+        <button class="primary-action" type="submit" data-i18n="login">Login</button>
+      </form>
+    </section>
+    <section data-panel="register" class="tab-panel">
+      <h2 data-i18n="register_title">Create customer account</h2>
+      <form id="registerForm" class="elevated-form compact">
+        <input name="name" placeholder="Name" autocomplete="name" required>
+        <input name="email" type="email" placeholder="Email" autocomplete="email" required>
+        <input name="phone" placeholder="Phone" autocomplete="tel" required>
+        <input name="password" type="password" minlength="10" placeholder="Password, 10+ characters" autocomplete="new-password" required>
+        <button class="primary-action" type="submit" data-i18n="create_account">Create account</button>
+      </form>
+    </section>
+    <section data-panel="reset" class="tab-panel">
+      <h2>Password reset</h2>
+      <form id="resetForm" class="elevated-form compact">
+        <input name="email" type="email" placeholder="Account email" autocomplete="email" required>
+        <button class="primary-action" type="submit">Queue reset message</button>
+      </form>
+    </section>
+    <section id="accountPanel" class="account-panel"></section>
+    <p id="authMessage" class="form-message"></p>
+  </dialog>
+
+  <dialog id="checkoutDialog" class="app-dialog wide">
+    <form method="dialog" class="dialog-close"><button>×</button></form>
+    <h2 data-i18n="checkout_title">Pickup checkout</h2>
+    <form id="checkoutForm" class="checkout-form">
+      <fieldset>
+        <legend data-i18n="contact_info">Contact</legend>
+        <input name="name" placeholder="Name" autocomplete="name" required>
+        <input name="email" type="email" placeholder="Email" autocomplete="email" required>
+        <input name="phone" placeholder="Phone" autocomplete="tel" required>
+        <input name="business_name" placeholder="Business name for wholesale orders">
+      </fieldset>
+      <fieldset>
+        <legend data-i18n="pickup_info">Pickup</legend>
+        <input name="pickup_date" type="date" required>
+        <input name="pickup_time" type="time" step="1800" required>
+        <select name="payment_method">
+          <option value="pay_at_pickup" data-i18n="pay_pickup">Pay at pickup</option>
+          <option value="deposit_pending" data-i18n="deposit_pending">Deposit to be collected by staff</option>
+          <option value="deposit_card">Create deposit payment placeholder</option>
+          <option value="full_card">Create full payment placeholder</option>
+        </select>
+        <select name="substitution_preference">
+          <option value="call_me">Call/text me before substitutions</option>
+          <option value="similar_ok">Similar bread is okay</option>
+          <option value="refund_item">Refund unavailable items</option>
+        </select>
+        <select name="customer_language">
+          <option value="en">English notifications</option>
+          <option value="es">Notificaciones en español</option>
+        </select>
+        <textarea name="notes" placeholder="Notes for the bakery"></textarea>
+      </fieldset>
+      <div id="checkoutReview" class="checkout-review"></div>
+      <button class="primary-action full" type="submit" data-i18n="place_order">Place pickup order</button>
+      <p id="checkoutMessage" class="form-message"></p>
+    </form>
+  </dialog>
+
+  <dialog id="quoteDialog" class="app-dialog wide">
+    <form method="dialog" class="dialog-close"><button>×</button></form>
+    <h2 data-i18n="quote_dialog_title">Quote request</h2>
+    <form id="quoteForm" class="checkout-form">
+      <fieldset>
+        <legend data-i18n="quote_item">Item</legend>
+        <select name="product_slug" id="quoteProduct"></select>
+        <input name="event_type" placeholder="Birthday, wedding, Día de Reyes, Día de Muertos">
+        <input name="event_date" type="date">
+        <input name="quantity" type="number" min="1" value="1">
+      </fieldset>
+      <fieldset>
+        <legend data-i18n="contact_info">Contact</legend>
+        <input name="customer_name" placeholder="Name" required>
+        <input name="customer_email" type="email" placeholder="Email" required>
+        <input name="customer_phone" placeholder="Phone" required>
+        <input name="business_name" placeholder="Business name, optional">
+      </fieldset>
+      <fieldset>
+        <legend data-i18n="details">Details</legend>
+        <input name="pickup_date" type="date">
+        <input name="pickup_time" type="time" step="1800">
+        <input name="budget" placeholder="Budget or target range">
+        <input name="flavor" placeholder="Cake flavor or bread style">
+        <input name="filling" placeholder="Filling">
+        <input name="inscription" placeholder="Cake inscription exactly as written">
+        <label class="checkline"><input name="exact_inscription_confirmed" type="checkbox"> I checked the exact spelling for the cake inscription</label>
+        <select name="complexity_tier"><option value="">Decoration complexity</option><option value="simple">Simple</option><option value="decorated">Decorated</option><option value="theme">Theme cake</option><option value="quinceanera">Quinceañera</option><option value="wedding">Wedding</option><option value="tiered">Tiered cake</option></select>
+        <input name="servings" type="number" min="0" placeholder="Estimated servings">
+        <input name="colors" placeholder="Colors">
+        <input name="pickup_handling" placeholder="Pickup handling, refrigeration, box size, etc.">
+        <input name="reference_url" placeholder="Reference image URL, optional">
+        <input name="reference_image_url" placeholder="Uploaded/inspiration image URL, optional">
+        <textarea name="style_notes" placeholder="Decoration notes, colors, size, figurines, packaging, deadlines"></textarea>
+      </fieldset>
+      <button class="primary-action full" type="submit" data-i18n="submit_quote">Submit quote request</button>
+      <p id="quoteMessage" class="form-message"></p>
+    </form>
+  </dialog>
+
+  <template id="productTemplate">
+    <article class="product-card">
+      <div class="product-art">
+        <img class="product-photo" alt="" loading="lazy" decoding="async">
+        <div class="photo-coming-soon" role="img" aria-label="" hidden>
+          <img src="/imported/website/010-juquilita-bakery-logo.png" alt="" aria-hidden="true">
+          <b>Photo coming soon</b>
+        </div>
+      </div>
+      <div class="product-body">
+        <div class="product-top"><span class="category-badge"></span><span class="stock-badge"></span></div>
+        <h3></h3>
+        <p></p>
+        <div class="variant-box"></div>
+        <div class="allergen-row"></div>
+        <div class="product-trust"></div>
+        <div class="product-actions"><button class="favorite-btn" type="button">♡ Save</button><button class="details-btn" type="button">Details</button></div>
+        <div class="product-foot"><b class="price"></b><button type="button"></button></div>
+        <small class="source-line"></small>
+      </div>
+    </article>
+  </template>
+
+  <dialog id="productDialog" class="app-dialog wide">
+    <form method="dialog" class="dialog-close"><button>×</button></form>
+    <div id="productDetails"></div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

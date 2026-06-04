@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reset password | Juquilita Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">JB</span><span><strong>Juquilita Bakery</strong><small>Password reset</small></span></a>
+  </header>
+  <main class="auth-standalone">
+    <section class="elevated-form reset-card">
+      <p class="eyebrow">Secure reset</p>
+      <h1>Choose a new password</h1>
+      <p class="mini-note">Use the reset link sent by the bakery system. The token is checked by the server and expires automatically.</p>
+      <form id="confirmResetForm" class="admin-form">
+        <input name="token" type="hidden">
+        <input name="password" type="password" autocomplete="new-password" minlength="12" placeholder="New password" required>
+        <input name="confirm_password" type="password" autocomplete="new-password" minlength="12" placeholder="Confirm new password" required>
+        <button class="primary-action" type="submit">Reset password</button>
+        <p id="resetMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+  <script>
+    const form = document.getElementById('confirmResetForm');
+    const msg = document.getElementById('resetMessage');
+    form.token.value = new URLSearchParams(location.search).get('token') || '';
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      msg.className = 'form-message';
+      msg.textContent = '';
+      const data = Object.fromEntries(new FormData(form).entries());
+      if(data.password !== data.confirm_password){ msg.className = 'form-message error'; msg.textContent = 'Passwords do not match.'; return; }
+      const res = await fetch('/api/account/password-reset/confirm', {method:'POST', headers:{'Content-Type':'application/json'}, credentials:'same-origin', body:JSON.stringify(data)});
+      const json = await res.json().catch(() => ({}));
+      if(!res.ok || json.ok === false){ msg.className = 'form-message error'; msg.textContent = json.error || 'Reset failed.'; return; }
+      msg.textContent = 'Password updated. You can return to the storefront and log in.';
+      form.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.DS_Store
+
+# Python/runtime
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local IDE state
+.idea/
+.vscode/
+
+# Secrets and machine-local environment
+.env
+.env.*
+!.env.example
+
+# Local app state and generated operations output
+data/*.db
+data/*.db-*
+data/tax_exports/
+backups/
+logs/
+reports/*.csv
+
+# Misc local output
+*.log
+*.tmp

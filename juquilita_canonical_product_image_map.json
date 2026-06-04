@@ -1,0 +1,1172 @@
+[
+  {
+    "canonicalKey": "bolillo__plain-roll",
+    "displayName": "Bolillo / Plain roll",
+    "legacyPageLabel": "Bolillos",
+    "imageFilename": "021-bolillos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560793371469-QEH1U3SYHGTX5L1W4T95/IMG_3543.JPG",
+    "altText": "Photo of Bolillos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "telera__sandwich-roll",
+    "displayName": "Telera / Sandwich roll",
+    "legacyPageLabel": "Telera",
+    "imageFilename": "022-telera.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137997695-YABSJ3NSXOV6JL4TJSNO/IMG_3544.JPG",
+    "altText": "Photo of Telera from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "panbasos__pambazo-bread",
+    "displayName": "Panbasos / Pambazo bread",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Pambazo bread.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "bolinachos__cream-cheese-jalapeno-bread",
+    "displayName": "Bolinachos / Cream cheese jalapeño bread",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Cream cheese jalapeño bread.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "pan-relleno__stuffed-bread",
+    "displayName": "Pan relleno / Stuffed bread",
+    "legacyPageLabel": "Stuffed savory breads",
+    "imageFilename": "182-stuffed-savory-breads.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775461371-08IN0R3YLU77C70B2IKL/IMG_2048.jpeg",
+    "altText": "Open stuffed savory breads arranged in a tray.",
+    "imageStatus": "legacyVerified",
+    "confidence": "medium"
+  },
+  {
+    "canonicalKey": "relleno-de-chorizo__chorizo-stuffed-bread",
+    "displayName": "Relleno de chorizo / Chorizo stuffed bread",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Chorizo stuffed bread.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "pan-amarillo__yellow-bread",
+    "displayName": "Pan amarillo / Yellow bread",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Yellow bread.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "pan-serrano__serrano-bread",
+    "displayName": "Pan serrano / Serrano bread",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Serrano bread.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "pan-de-yema__egg-yolk-bread",
+    "displayName": "Pan de yema / Egg yolk bread",
+    "legacyPageLabel": "Pan de yema muñeco with sesame",
+    "imageFilename": "186-pan-de-yema-muneco-with-sesame.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775480968-TU7997JGECDUQ1KB0B4H/IMG_1734.jpeg",
+    "altText": "Pan de yema muñeco decorated with sesame seeds and a painted face.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "semitas__oaxacan-semitas",
+    "displayName": "Semitas / Oaxacan semitas",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Oaxacan semitas.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "ojaldra__oaxacan-ojaldra",
+    "displayName": "Ojaldra / Oaxacan ojaldra",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Oaxacan ojaldra.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "polvoron-de-azucar__sugar-polvoron",
+    "displayName": "Polvorón de azúcar / Sugar polvorón",
+    "legacyPageLabel": "Polvorones de azúcar",
+    "imageFilename": "023-polvorones-de-azucar.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137965975-31RDN7KLK6FAG2DMN72L/IMG_3531.JPG",
+    "altText": "Photo of Polvorones de azúcar from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "polvoron-con-azucar-rosa__pink-sugar-polvoron",
+    "displayName": "Polvorón con azúcar rosa / Pink sugar polvorón",
+    "legacyPageLabel": "Pink sugar polvorones",
+    "imageFilename": "024-pink-sugar-polvorones.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137970816-1KK6G9CAQABBMIWCHH5M/IMG_3532.JPG",
+    "altText": "Photo of Pink sugar polvorones from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "lima-con-fresa__jam-sugar-cookie",
+    "displayName": "Lima con fresa / Jam sugar cookie",
+    "legacyPageLabel": "Lima strawberry jam polvorones",
+    "imageFilename": "025-lima-strawberry-jam-polvorones.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137973351-5V0T6IISB27ZI49HAR25/IMG_3533.JPG",
+    "altText": "Photo of Lima strawberry jam polvorones from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "zurrapa__three-color-polvoron",
+    "displayName": "Zurrapa / Three-color polvorón",
+    "legacyPageLabel": "Zurrapa three-color polvorones",
+    "imageFilename": "026-zurrapa-three-color-polvorones.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138049234-MXSQXXUOCQM8D1XFPA5N/IMG_5947.JPG",
+    "altText": "Photo of Zurrapa three-color polvorones from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "polvoron-con-gragea__sprinkle-polvoron",
+    "displayName": "Polvorón con gragea / Sprinkle polvorón",
+    "legacyPageLabel": "Sprinkled polvorones",
+    "imageFilename": "027-sprinkled-polvorones.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1588350552136-8HIPSIO0Y75WHO1DYPRU/IMG_3536.jpg",
+    "altText": "Photo of Sprinkled polvorones from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "galleta-de-carita__smiley-cookie",
+    "displayName": "Galleta de carita / Smiley cookie",
+    "legacyPageLabel": "Smiley face cookies",
+    "imageFilename": "028-smiley-face-cookies.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171793688-E4P2VNEYY5DITM9TWGPC/0115191104b_2.jpg",
+    "altText": "Photo of Smiley face cookies from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "galleta-de-corazon__heart-sprinkle-cookie",
+    "displayName": "Galleta de corazón / Heart sprinkle cookie",
+    "legacyPageLabel": "Heart-shaped sprinkle cookies",
+    "imageFilename": "029-heart-shaped-sprinkle-cookies.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171798259-PJSJLSJM6OMXAV5QEFO5/0115191122_2.jpg",
+    "altText": "Photo of Heart-shaped sprinkle cookies from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "polvoron-con-pedazos-de-chocolate__chocolate-chip-sugar-cookie",
+    "displayName": "Polvorón con pedazos de chocolate / Chocolate-chip sugar cookie",
+    "legacyPageLabel": "Chocolate chip polvorón",
+    "imageFilename": "031-chocolate-chip-polvoron.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797264099-QD5TYVI33ZT3IEQDDAHA/0614191537b.jpg",
+    "altText": "Photo of Chocolate chip polvorón from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "galleta-de-gragea__sprinkled-cookie",
+    "displayName": "Galleta de gragea / Sprinkled cookie",
+    "legacyPageLabel": "Round rainbow sprinkle cookies",
+    "imageFilename": "032-round-rainbow-sprinkle-cookies.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797228633-U06VZWONBFRN169CVXAM/0614191537e.jpg",
+    "altText": "Round cookies fully covered with rainbow sprinkles.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "polvoron-de-nuez__pecan-sugar-cookie",
+    "displayName": "Polvorón de nuez / Pecan sugar cookie",
+    "legacyPageLabel": "Pecan polvorones",
+    "imageFilename": "034-pecan-polvorones.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797250831-MHGA76QWZMZ5AXKW5HXS/0614191537d.jpg",
+    "altText": "Photo of Pecan polvorones from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "sandia__watermelon-shaped-cookie",
+    "displayName": "Sandía / Watermelon shaped cookie",
+    "legacyPageLabel": "Sandía watermelon-shaped cookies",
+    "imageFilename": "036-sandia-watermelon-shaped-cookies.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167730771-84Q2LU0EXH5LSFYZIOE0/0115190919_2+%281%29.jpg",
+    "altText": "Photo of Sandía watermelon-shaped cookies from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "concha__concha-sweet-bread",
+    "displayName": "Concha / Concha sweet bread",
+    "legacyPageLabel": "Conchas",
+    "imageFilename": "037-conchas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560793344185-2692QZCQNN9BE506D87C/IMG_3541.JPG",
+    "altText": "Photo of Conchas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "chilindrina-de-chocolate__chocolate-chilindrina",
+    "displayName": "Chilindrina de chocolate / Chocolate chilindrina",
+    "legacyPageLabel": "Chocolate chilindrinas",
+    "imageFilename": "042-chocolate-chilindrinas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167130546-JDGUIU27SW1ZB3B1MFA7/IMG_5957.JPG",
+    "altText": "Photo of Chocolate chilindrinas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "bisquit__sweet-biscuit-bread",
+    "displayName": "Bisquit / Sweet biscuit bread",
+    "legacyPageLabel": "Bisquit",
+    "imageFilename": "043-bisquit.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137979434-ERKD6QDXDBRRTZ5NMVOQ/IMG_3534.JPG",
+    "altText": "Photo of Bisquit from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "magdalena-simple__plain-magdalena",
+    "displayName": "Magdalena simple / Plain magdalena",
+    "legacyPageLabel": "Plain magdalenas",
+    "imageFilename": "045-plain-magdalenas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171758894-A07Y2UL7YA2PS9QGY1Z5/0115191046_2.jpg",
+    "altText": "Photo of Plain magdalenas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "magdalena-con-gragea__sprinkle-magdalena",
+    "displayName": "Magdalena con gragea / Sprinkle magdalena",
+    "legacyPageLabel": "Magdalenas with sprinkles",
+    "imageFilename": "044-magdalenas-with-sprinkles.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137981734-CJGPT4EZ7EFOG7IY53G5/IMG_3535.JPG",
+    "altText": "Photo of Magdalenas with sprinkles from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "marranito__molasses-pig-cookie-bread",
+    "displayName": "Marranito / Molasses pig cookie bread",
+    "legacyPageLabel": "Marranitos",
+    "imageFilename": "046-marranitos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549137988530-L2DNEMA7UZ57YCH73ZXP/IMG_3540.JPG",
+    "altText": "Photo of Marranitos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "rehilete-esponjado__fluffy-pinwheel",
+    "displayName": "Rehilete esponjado / Fluffy pinwheel",
+    "legacyPageLabel": "Rehilete esponjado",
+    "imageFilename": "067-rehilete-esponjado.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138059903-CEM3YPVUGPB32BH1YE38/IMG_5953.JPG",
+    "altText": "Photo of Rehilete esponjado from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "nopal__nopal-sweet-bread",
+    "displayName": "Nopal / Nopal sweet bread",
+    "legacyPageLabel": "Nopal",
+    "imageFilename": "071-nopal.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1648215697535-8Q1ELU3MBDHW30GRYJ4E/IMG_5975.jpg",
+    "altText": "Photo of Nopal from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "borracho__borracho-sweet-bread",
+    "displayName": "Borracho / Borracho sweet bread",
+    "legacyPageLabel": "Borrachos",
+    "imageFilename": "073-borrachos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138113804-MV2C8E2Z2GJDGWA05A17/IMG_6023.JPG",
+    "altText": "Photo of Borrachos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "borracho-de-chocolate__chocolate-borracho",
+    "displayName": "Borracho de chocolate / Chocolate borracho",
+    "legacyPageLabel": "Chocolate borracho",
+    "imageFilename": "074-chocolate-borracho.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138113744-GGK003H1YNHA75YR8K1T/IMG_6022.JPG",
+    "altText": "Photo of Chocolate borracho from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "nube__cloud-bread",
+    "displayName": "Nube / Cloud bread",
+    "legacyPageLabel": "Nubes",
+    "imageFilename": "075-nubes.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167109215-PHIUMQ493W2QIJRRQLSB/IMG_5967.JPG",
+    "altText": "Photo of Nubes from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "bigote__mustache-bread",
+    "displayName": "Bigote / Mustache bread",
+    "legacyPageLabel": "Bigotes",
+    "imageFilename": "077-bigotes.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138042247-QKZO07JL202DLNIRP6WN/IMG_5945.JPG",
+    "altText": "Photo of Bigotes from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "corbata-o-mono__bowtie-bread",
+    "displayName": "Corbata o moño / Bowtie bread",
+    "legacyPageLabel": "Corbata or moño bowtie bread",
+    "imageFilename": "078-corbata-or-mono-bowtie-bread.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167109581-VWJSGJXT66KO0A4HZLG3/IMG_5966.JPG",
+    "altText": "Photo of Corbata or moño bowtie bread from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "chirimoya__chirimoya-bread",
+    "displayName": "Chirimoya / Chirimoya bread",
+    "legacyPageLabel": "Chirimoyas",
+    "imageFilename": "080-chirimoyas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138119737-NA3DXDN6E1S2BTWUMDQ0/IMG_6025.JPG",
+    "altText": "Photo of Chirimoyas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "alcatraz__alcatraz-bread",
+    "displayName": "Alcatraz / Alcatraz bread",
+    "legacyPageLabel": "Alcatraz",
+    "imageFilename": "083-alcatraz.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165038531-DEHBOI4Z7UNFOLMI3LBW/0115191025c_2.jpg",
+    "altText": "Photo of Alcatraz from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "boquita__boquita-bread",
+    "displayName": "Boquita / Boquita bread",
+    "legacyPageLabel": "Boquitas",
+    "imageFilename": "084-boquitas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165045012-Z7QGR83Y8F8JCLJCYXK3/0115191025a_2.jpg",
+    "altText": "Photo of Boquitas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "tronco__log-bread",
+    "displayName": "Tronco / Log bread",
+    "legacyPageLabel": "Troncos",
+    "imageFilename": "085-troncos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138009968-TYRLY0FX3N8KOYQEWVKT/IMG_3548.JPG",
+    "altText": "Photo of Troncos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "elotito__corn-shaped-sweet-bread",
+    "displayName": "Elotito / Corn-shaped sweet bread",
+    "legacyPageLabel": "Elotitos",
+    "imageFilename": "087-elotitos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165026019-7HFF4M40F359DYIN2U8A/0115191026d_2.jpg",
+    "altText": "Photo of Elotitos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "gusano-polveado__powdered-worm-bread",
+    "displayName": "Gusano polveado / Powdered worm bread",
+    "legacyPageLabel": "Powdered gusano bread",
+    "imageFilename": "089-powdered-gusano-bread.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165025800-2SSPNIDJ3H2ZO0PI4XJ2/0115191026e_2.jpg",
+    "altText": "Photo of Powdered gusano bread from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "lengua__tongue-shaped-bread",
+    "displayName": "Lengua / Tongue shaped bread",
+    "legacyPageLabel": "Lenguas",
+    "imageFilename": "091-lenguas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165030485-TMBACAI8B0AQ7F4LQPRP/0115191026d_3.jpg",
+    "altText": "Photo of Lenguas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "panadero__panadero-sweet-bread",
+    "displayName": "Panadero / Panadero sweet bread",
+    "legacyPageLabel": "Panadero",
+    "imageFilename": "097-panadero.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165005779-OG1RWJI7383D2NWUFPY6/0115191037_2+%281%29.jpg",
+    "altText": "Photo of Panadero from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "panadero-de-chocolate__chocolate-panadero",
+    "displayName": "Panadero de chocolate / Chocolate panadero",
+    "legacyPageLabel": "Chocolate panadero",
+    "imageFilename": "096-chocolate-panadero.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165003659-R5NHS8ELJ7QMHONE9Y4L/0115191037b_2+%281%29.jpg",
+    "altText": "Photo of Chocolate panadero from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "nueces-normal__walnut-shaped-bread",
+    "displayName": "Nueces normal / Walnut-shaped bread",
+    "legacyPageLabel": "Plain nueces",
+    "imageFilename": "100-plain-nueces.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797307672-E62NMRBWX3HSFIR0FEYZ/0614191537a.jpg",
+    "altText": "Photo of Plain nueces from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "pan-de-manteca__shortening-bread",
+    "displayName": "Pan de manteca / Shortening bread",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Shortening bread.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "piedra__piedra-bread",
+    "displayName": "Piedra / Piedra bread",
+    "legacyPageLabel": "Piedras",
+    "imageFilename": "047-piedras.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138027179-5GRLI56U5F65WO4NH4NF/IMG_3566.JPG",
+    "altText": "Photo of Piedras from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "ladrillo__brick-bread",
+    "displayName": "Ladrillo / Brick bread",
+    "legacyPageLabel": "Ladrillos",
+    "imageFilename": "048-ladrillos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138020133-LKM5PH85KZLGBM1MATGN/IMG_3565.JPG",
+    "altText": "Photo of Ladrillos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "cuerno__horn-bread",
+    "displayName": "Cuerno / Horn bread",
+    "legacyPageLabel": "Cuerno",
+    "imageFilename": "049-cuerno.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167072859-4HTCQX93OLPJ3OSU5SM6/IMG_5987.JPG",
+    "altText": "Photo of Cuerno from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "arete__ring-bread",
+    "displayName": "Arete / Ring bread",
+    "legacyPageLabel": "Aretes",
+    "imageFilename": "050-aretes.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167080145-6C9AHFYT4ELGQPA5LOQY/IMG_5983.JPG",
+    "altText": "Photo of Aretes from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "arete-rosa__pink-ring-bread",
+    "displayName": "Arete rosa / Pink ring bread",
+    "legacyPageLabel": "Pink aretes",
+    "imageFilename": "051-pink-aretes.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167080322-SG3W708XAJAOLYZDB1RH/IMG_5982.JPG",
+    "altText": "Photo of Pink aretes from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "mono-con-ajonjoli__sesame-bow-bread",
+    "displayName": "Moño con ajonjolí / Sesame bow bread",
+    "legacyPageLabel": "Sesame moños",
+    "imageFilename": "052-sesame-monos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167101321-BZNALE95PS1FU7ZQZIWY/IMG_5971.JPG",
+    "altText": "Photo of Sesame moños from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "yoyo-de-ajonjoli__sesame-yoyo",
+    "displayName": "Yoyo de ajonjolí / Sesame yoyo",
+    "legacyPageLabel": "Sesame yoyos",
+    "imageFilename": "053-sesame-yoyos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167104486-27PXAFSBXEOIBTJPYGP4/IMG_5968.JPG",
+    "altText": "Photo of Sesame yoyos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "yoyo-de-gragea__sprinkle-yoyo",
+    "displayName": "Yoyo de gragea / Sprinkle yoyo",
+    "legacyPageLabel": "Sprinkle yoyos",
+    "imageFilename": "054-sprinkle-yoyos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167101078-9FQIIUGXQHRZ5MRD7SX1/IMG_5970.JPG",
+    "altText": "Photo of Sprinkle yoyos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "piez__piez-bread",
+    "displayName": "Piez / Piez bread",
+    "legacyPageLabel": "Piez",
+    "imageFilename": "093-piez.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165012567-R2BRTG8A9B8W8XSDGO6O/0115191031b_2+%281%29.jpg",
+    "altText": "Photo of Piez from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "piez-de-chocolate__chocolate-piez",
+    "displayName": "Piez de chocolate / Chocolate piez",
+    "legacyPageLabel": "Chocolate piez",
+    "imageFilename": "094-chocolate-piez.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165012952-DM57K374S9W63LDUP11C/0115191031a_2+%281%29.jpg",
+    "altText": "Photo of Chocolate piez from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "cuernito-polveado-de-chocolate__powdered-chocolate-horn",
+    "displayName": "Cuernito polveado de chocolate / Powdered chocolate horn",
+    "legacyPageLabel": "Chocolate powdered cuernitos",
+    "imageFilename": "095-chocolate-powdered-cuernitos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549165022621-CV1R1LM2EUFZ5NXL5JKJ/0115191031_2.jpg",
+    "altText": "Photo of Chocolate powdered cuernitos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "nueces-polveadas__powdered-walnut-bread",
+    "displayName": "Nueces polveadas / Powdered walnut bread",
+    "legacyPageLabel": "Powdered nueces",
+    "imageFilename": "098-powdered-nueces.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1560797275706-ILJPLZF8NOYBWOJCJFUV/0614191536.jpg",
+    "altText": "Photo of Powdered nueces from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "empanada-de-crema-bavaria__bavarian-cream-empanada",
+    "displayName": "Empanada de crema Bavaria / Bavarian cream empanada",
+    "legacyPageLabel": "Bavarian cream empanadas",
+    "imageFilename": "101-bavarian-cream-empanadas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167083362-MNNLY6G9HVVTSB47DBUD/IMG_5981.JPG",
+    "altText": "Photo of Bavarian cream empanadas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "empanada-de-calabaza__pumpkin-empanada",
+    "displayName": "Empanada de calabaza / Pumpkin empanada",
+    "legacyPageLabel": "Pumpkin empanadas",
+    "imageFilename": "102-pumpkin-empanadas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167087736-KBNF0QU7IO6LU67FQ1E6/IMG_5979.JPG",
+    "altText": "Photo of Pumpkin empanadas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "empanada-de-manzana__apple-empanada",
+    "displayName": "Empanada de manzana / Apple empanada",
+    "legacyPageLabel": "Apple empanadas",
+    "imageFilename": "103-apple-empanadas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167096249-X2F5MVCKAP3C0AIMJOJR/IMG_5972.JPG",
+    "altText": "Photo of Apple empanadas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "empanada-de-pina__pineapple-empanada",
+    "displayName": "Empanada de piña / Pineapple empanada",
+    "legacyPageLabel": "Pineapple empanadas",
+    "imageFilename": "104-pineapple-empanadas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167096058-Y4IQPPWKWUSCMYUC7D6X/IMG_5973.JPG",
+    "altText": "Photo of Pineapple empanadas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "taquito-de-fresa__strawberry-filled-taquito",
+    "displayName": "Taquito de fresa / Strawberry filled taquito",
+    "legacyPageLabel": "Strawberry taquitos",
+    "imageFilename": "105-strawberry-taquitos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167076197-PZBGS8MY6GCNTDLBEKXX/IMG_5985.JPG",
+    "altText": "Photo of Strawberry taquitos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "taquito-de-crema-bavaria__bavarian-cream-taquito",
+    "displayName": "Taquito de crema Bavaria / Bavarian cream taquito",
+    "legacyPageLabel": "Bavarian cream taquitos",
+    "imageFilename": "106-bavarian-cream-taquitos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167072913-K0WCVEISBIBJH39Y4TIM/IMG_5986.JPG",
+    "altText": "Photo of Bavarian cream taquitos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "empanadita-de-cajeta__cajeta-mini-empanada",
+    "displayName": "Empanadita de cajeta / Cajeta mini empanada",
+    "legacyPageLabel": "Cajeta empanaditas",
+    "imageFilename": "107-cajeta-empanaditas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171684536-O7UMTTL14FY3XTS7NLJ2/IMG_4450.JPG",
+    "altText": "Photo of Cajeta empanaditas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "empanadita-de-pina__pineapple-mini-empanada",
+    "displayName": "Empanadita de piña / Pineapple mini empanada",
+    "legacyPageLabel": "Pineapple empanaditas",
+    "imageFilename": "108-pineapple-empanaditas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171576975-P7Y49BE03NITODWS2SL7/0115190924.jpg",
+    "altText": "Photo of Pineapple empanaditas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "oreja__elephant-ear-pastry",
+    "displayName": "Oreja / Elephant ear pastry",
+    "legacyPageLabel": "Orejas elephant ears",
+    "imageFilename": "137-orejas-elephant-ears.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138077823-A4UQCNCDJJ4HHM9LN5Y7/IMG_6002.JPG",
+    "altText": "Photo of Orejas elephant ears from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "campechana__campechana-pastry",
+    "displayName": "Campechana / Campechana pastry",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Campechana pastry.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "banderilla__banderilla-pastry",
+    "displayName": "Banderilla / Banderilla pastry",
+    "legacyPageLabel": "Banderilla",
+    "imageFilename": "139-banderilla.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171628488-MKGFXN6MTMTF5IEOK2G0/IMG_5617+%281%29.JPG",
+    "altText": "Photo of Banderilla from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "reganada__reganada-pastry",
+    "displayName": "Regañada / Regañada pastry",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Regañada pastry.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "rebanada-con-mantequilla__butter-sugar-slice",
+    "displayName": "Rebanada con mantequilla / Butter sugar slice",
+    "legacyPageLabel": "Rebanada con mantequilla",
+    "imageFilename": "127-rebanada-con-mantequilla.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138108059-S9F8FKSSEH7QUOT5SWWX/IMG_6021.JPG",
+    "altText": "Photo of Rebanada con mantequilla from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "cuerno-de-danes__danish-croissant",
+    "displayName": "Cuerno de danés / Danish croissant",
+    "legacyPageLabel": "Danish cuerno croissant",
+    "imageFilename": "135-danish-cuerno-croissant.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549167070158-T3BL51NBVGYUFRSVAWTP/IMG_5989.JPG",
+    "altText": "Photo of Danish cuerno croissant from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "cono-danes-con-crema-bavaria__danish-cone-with-bavarian-cream",
+    "displayName": "Cono danés con crema Bavaria / Danish cone with Bavarian cream",
+    "legacyPageLabel": "Danish cones with Bavarian cream",
+    "imageFilename": "136-danish-cones-with-bavarian-cream.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138088652-8THQVNZ5YF4OA8N62DXI/IMG_6011.JPG",
+    "altText": "Photo of Danish cones with Bavarian cream from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "barquillo-de-crema-bavaria__puff-pastry-cone",
+    "displayName": "Barquillo de crema Bavaria / Puff pastry cone",
+    "legacyPageLabel": "Bavarian cream barquillos",
+    "imageFilename": "138-bavarian-cream-barquillos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138131730-B8CCHF5TNVRGP6T4XFJ2/IMG_6034.JPG",
+    "altText": "Photo of Bavarian cream barquillos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "empanada-dorada__apple-or-strawberry-turnover",
+    "displayName": "Empanada dorada / Apple or strawberry turnover",
+    "legacyPageLabel": "Golden apple or strawberry turnovers",
+    "imageFilename": "140-golden-apple-or-strawberry-turnovers.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138196264-UJWV6DA0CD6WMWSTONHU/IMG-5614.jpg",
+    "altText": "Photo of Golden apple or strawberry turnovers from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "canasta__fruit-basket-pastry",
+    "displayName": "Canasta / Fruit basket pastry",
+    "legacyPageLabel": "Strawberry canastas",
+    "imageFilename": "142-strawberry-canastas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138072686-0248BVBFJSAMWXYBI3WY/IMG_5999.JPG",
+    "altText": "Basket-shaped pastries filled with strawberry jam.",
+    "imageStatus": "legacyVerified",
+    "confidence": "medium"
+  },
+  {
+    "canonicalKey": "taquito-dorado-de-guayaba-con-queso__guava-cream-cheese-pastry",
+    "displayName": "Taquito dorado de guayaba con queso / Guava cream cheese pastry",
+    "legacyPageLabel": "Golden pineapple or guava and cheese taquitos",
+    "imageFilename": "147-golden-pineapple-or-guava-and-cheese-taquitos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138190509-0UKJZNW8WJYPCFK5G5D2/IMG-5613.jpg",
+    "altText": "Photo of Golden pineapple or guava and cheese taquitos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "manteconcha__manteconcha",
+    "displayName": "Manteconcha / Manteconcha",
+    "legacyPageLabel": "Manteconchas",
+    "imageFilename": "148-manteconchas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138045667-CO6Z8F8QN6A9TYHP5NRR/IMG_5608.JPG",
+    "altText": "Photo of Manteconchas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "flauta-de-fresa__strawberry-flute-pastry",
+    "displayName": "Flauta de fresa / Strawberry flute pastry",
+    "legacyPageLabel": "Strawberry flautas",
+    "imageFilename": "149-strawberry-flautas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549170632759-XHR8U0JI0EXJ2MBD7FXJ/IMG_6037.PNG",
+    "altText": "Photo of Strawberry flautas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "flauta-de-pina__pineapple-flute-pastry",
+    "displayName": "Flauta de piña / Pineapple flute pastry",
+    "legacyPageLabel": "Pineapple flautas",
+    "imageFilename": "150-pineapple-flautas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549170643590-YNQZ6CIXWNSYZIGH5TTP/IMG_6036.PNG",
+    "altText": "Photo of Pineapple flautas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "mil-hojas-con-crema-bavaria__mil-hojas-with-bavarian-cream",
+    "displayName": "Mil hojas con crema Bavaria / Mil hojas with Bavarian cream",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Mil hojas with Bavarian cream.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "mil-hojas-con-guayaba__mil-hojas-with-guava",
+    "displayName": "Mil hojas con guayaba / Mil hojas with guava",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Mil hojas with guava.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "churro__plain-churro",
+    "displayName": "Churro / Plain churro",
+    "legacyPageLabel": "Churros",
+    "imageFilename": "124-churros.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549168978527-H92T1S03JPPOEBUICVR2/0115190926a_HDR_2.jpg",
+    "altText": "Photo of Churros from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "churro-relleno-de-fresa__strawberry-filled-churro",
+    "displayName": "Churro relleno de fresa / Strawberry filled churro",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Strawberry filled churro.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "churro-relleno-de-chocolate__chocolate-filled-churro",
+    "displayName": "Churro relleno de chocolate / Chocolate filled churro",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Chocolate filled churro.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "churro-relleno-de-cajeta__cajeta-filled-churro",
+    "displayName": "Churro relleno de cajeta / Cajeta filled churro",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Cajeta filled churro.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "dona-de-azucar__sugar-donut",
+    "displayName": "Dona de azúcar / Sugar donut",
+    "legacyPageLabel": "Sugar donuts",
+    "imageFilename": "130-sugar-donuts.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138101538-0DVOL9EZILMT2YJBBJ4S/IMG_6017.JPG",
+    "altText": "Photo of Sugar donuts from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "trenza__donut-twist",
+    "displayName": "Trenza / Donut twist",
+    "legacyPageLabel": "Trenzas",
+    "imageFilename": "131-trenzas.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138104586-25RB3GAKTKQXAOGDQSKX/IMG_6018.JPG",
+    "altText": "Photo of Trenzas from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "dona-glaseada__glazed-donut",
+    "displayName": "Dona glaseada / Glazed donut",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Glazed donut.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "dona-de-chocolate__chocolate-donut",
+    "displayName": "Dona de chocolate / Chocolate donut",
+    "legacyPageLabel": "Chocolate covered donuts",
+    "imageFilename": "133-chocolate-covered-donuts.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138126279-IXJNS5TLR99R4C9F4FHW/IMG_6032.JPG",
+    "altText": "Photo of Chocolate covered donuts from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "dona-rellena-de-crema-bavaria__bavarian-cream-filled-donut",
+    "displayName": "Dona rellena de crema Bavaria / Bavarian cream filled donut",
+    "legacyPageLabel": "Bavarian cream filled donuts",
+    "imageFilename": "132-bavarian-cream-filled-donuts.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138107629-T9G4PN297GA8M34O7EG6/IMG_6019.JPG",
+    "altText": "Photo of Bavarian cream filled donuts from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "budin-clasico__classic-bread-pudding",
+    "displayName": "Budín clásico / Classic bread pudding",
+    "legacyPageLabel": "Budín Mexican bread pudding",
+    "imageFilename": "123-budin-mexican-bread-pudding.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138016813-0K68G6L6C37WHQ93CNBM/IMG_3564.JPG",
+    "altText": "Photo of Budín Mexican bread pudding from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "budin-de-durazno-y-coco__peach-coconut-bread-pudding",
+    "displayName": "Budín de durazno y coco / Peach coconut bread pudding",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Peach coconut bread pudding.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "rebanada-de-tres-leches__tres-leches-cake-slice",
+    "displayName": "Rebanada de tres leches / Tres leches cake slice",
+    "legacyPageLabel": "Tres leches sheet cake slices with strawberries",
+    "imageFilename": "005-tres-leches-sheet-cake-slices-with-strawberries.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775518332-BBUWJ94V1SFCFBPMG914/IMG_1940.jpeg",
+    "altText": "Tres leches cake slices topped with whipped cream, strawberries, and chocolate drizzle.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "flan__caramel-custard",
+    "displayName": "Flan / Caramel custard",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Caramel custard.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "chocoflan__chocoflan-slice",
+    "displayName": "Chocoflan / Chocoflan slice",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Chocoflan slice.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "tarta-de-fruta__fruit-tart",
+    "displayName": "Tarta de fruta / Fruit tart",
+    "legacyPageLabel": "Fresh fruit tart",
+    "imageFilename": "008-fresh-fruit-tart.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775870973-H4PJOFKABI8Z0C0QVAA4/IMG_2969.jpeg",
+    "altText": "Fruit tart topped with strawberries, blueberries, banana, and cream.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "pinguino__penguin-cake",
+    "displayName": "Pingüino / Penguin cake",
+    "legacyPageLabel": "Pingüino cakes",
+    "imageFilename": "121-pinguino-cakes.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138138944-MQ54WLV751LRWQIC13EY/IMG-4445.jpg",
+    "altText": "Photo of Pingüino cakes from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "tomatillo__tomatillo-cake",
+    "displayName": "Tomatillo / Tomatillo cake",
+    "legacyPageLabel": "Tomatillos",
+    "imageFilename": "120-tomatillos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138150566-9RGLOZ33H43KWCE8K7EJ/IMG-4447.jpg",
+    "altText": "Photo of Tomatillos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "mechudo__mechudo-cake",
+    "displayName": "Mechudo / Mechudo cake",
+    "legacyPageLabel": "Mechudos",
+    "imageFilename": "119-mechudos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138158513-WZYB435REO7O3P4PPSA1/IMG-4451.jpg",
+    "altText": "Photo of Mechudos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "nino-envuelto__rolled-cake",
+    "displayName": "Niño envuelto / Rolled cake",
+    "legacyPageLabel": "Niños envueltos",
+    "imageFilename": "117-ninos-envueltos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138140692-ICLBX720JFRPK52ASJUF/IMG-4446.jpg",
+    "altText": "Photo of Niños envueltos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "cubilete-de-queso__mexican-cheese-pie",
+    "displayName": "Cubilete de queso / Mexican cheese pie",
+    "legacyPageLabel": "Cubiletes de queso",
+    "imageFilename": "122-cubiletes-de-queso.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138003796-P2N8BG0IYCW01OH02X9Z/IMG_3547.JPG",
+    "altText": "Photo of Cubiletes de queso from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "beso-yoyo__kiss-or-yoyo-cookie-sandwich",
+    "displayName": "Beso / Yoyo / Kiss or yoyo cookie sandwich",
+    "legacyPageLabel": "Besos and yo-yos",
+    "imageFilename": "125-besos-and-yo-yos.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138045664-MJVBENXVLDFFLPX6S2QZ/IMG_5946.JPG",
+    "altText": "Photo of Besos and yo-yos from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "mantecada-con-nuez__pecan-mantecada",
+    "displayName": "Mantecada con nuez / Pecan mantecada",
+    "legacyPageLabel": "Mantecadas with pecan",
+    "imageFilename": "111-mantecadas-with-pecan.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138081054-TAOXVNRM394080UMVMUS/IMG_6005.JPG",
+    "altText": "Photo of Mantecadas with pecan from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "mantecada-con-gragea-de-chocolate__chocolate-sprinkle-mantecada",
+    "displayName": "Mantecada con gragea de chocolate / Chocolate-sprinkle mantecada",
+    "legacyPageLabel": "Mantecadas with chocolate sprinkles",
+    "imageFilename": "113-mantecadas-with-chocolate-sprinkles.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549138083579-C6BNFPQT7QLHV0YL8K7I/IMG_6007.JPG",
+    "altText": "Photo of Mantecadas with chocolate sprinkles from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "ojos-de-buey__ox-eye-pastry",
+    "displayName": "Ojos de buey / Ox eye pastry",
+    "legacyPageLabel": "Ojos de Buey",
+    "imageFilename": "116-ojos-de-buey.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549171708382-9CZBW05JFDKWHUYEA3WT/0115190911_2+%281%29.jpg",
+    "altText": "Photo of Ojos de Buey from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "mini-cake-tres-leches__mini-tres-leches-cake",
+    "displayName": "Mini cake tres leches / Mini tres leches cake",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Mini tres leches cake.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "pastel-1-4-de-plancha__1-4-sheet-cake",
+    "displayName": "Pastel 1/4 de plancha / 1/4 sheet cake",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for 1/4 sheet cake.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "pastel-1-2-de-plancha__1-2-sheet-cake",
+    "displayName": "Pastel 1/2 de plancha / 1/2 sheet cake",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for 1/2 sheet cake.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "pastel-plancha-completa__full-sheet-cake",
+    "displayName": "Pastel plancha completa / Full sheet cake",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Full sheet cake.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "flan-1-4-de-plancha__quarter-sheet-flan-tray",
+    "displayName": "Flan 1/4 de plancha / Quarter-sheet flan tray",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Quarter-sheet flan tray.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "chocoflan-10-pulgadas__10-inch-chocoflan",
+    "displayName": "Chocoflan 10 pulgadas / 10 inch chocoflan",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for 10 inch chocoflan.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "pastel-decorado-personalizado__custom-decorated-cake",
+    "displayName": "Pastel decorado personalizado / Custom decorated cake",
+    "legacyPageLabel": "White 25th anniversary tier cake",
+    "imageFilename": "014-white-25th-anniversary-tier-cake.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1549222296998-FD7E01L9E412V23AU72G/IMG_0207.JPG",
+    "altText": "White tiered 25th anniversary cake with piped decoration.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "pan-de-muerto-azucar-blanca__white-sugar-pan-de-muerto",
+    "displayName": "Pan de Muerto azúcar blanca / White sugar Pan de Muerto",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for White sugar Pan de Muerto.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "pan-de-muerto-azucar-rosa__pink-sugar-pan-de-muerto",
+    "displayName": "Pan de Muerto azúcar rosa / Pink sugar Pan de Muerto",
+    "legacyPageLabel": "",
+    "imageFilename": "",
+    "sourceUrl": "",
+    "altText": "Photo coming soon for Pink sugar Pan de Muerto.",
+    "imageStatus": "needsOwnerPhoto",
+    "confidence": "low"
+  },
+  {
+    "canonicalKey": "pan-de-muerto-de-yema-con-carita__oaxacan-face-pan-de-muerto",
+    "displayName": "Pan de Muerto de yema con carita / Oaxacan face Pan de Muerto",
+    "legacyPageLabel": "Pan de Muerto muñecos with pan de yema",
+    "imageFilename": "011-pan-de-muerto-munecos-with-pan-de-yema.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/0ee549bb-86d8-40d9-a200-bad9258014ac/IMG_1728.jpg",
+    "altText": "Photo of Pan de Muerto muñecos with pan de yema from Juquilita Bakery.",
+    "imageStatus": "legacyVerified",
+    "confidence": "high"
+  },
+  {
+    "canonicalKey": "rosca-de-reyes__king-cake-ring",
+    "displayName": "Rosca de Reyes / King cake ring",
+    "legacyPageLabel": "Rosca de Reyes with green, yellow, and red topping",
+    "imageFilename": "004-rosca-de-reyes-with-green-yellow-and-red-topping.jpg",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c50e9ee266c07d1c2579e2e/1686775596871-QD0K2PI2GD42G94KJXXP/IMG_1687.jpeg",
+    "altText": "Close-up of Rosca de Reyes bread decorated with green, yellow, and red topping.",
+    "imageStatus": "legacyVerified",
+    "confidence": "medium"
+  }
+]

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment received | Juquilita Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">JB</span><span><strong>Juquilita Bakery</strong><small>Payment confirmation</small></span></a>
+  </header>
+  <main class="auth-standalone">
+    <section class="elevated-form reset-card">
+      <p class="eyebrow">Payment step complete</p>
+      <h1>Thank you</h1>
+      <p>The bakery system has received the payment redirect. Final payment status updates after the provider webhook or staff confirmation posts to the order.</p>
+      <p class="mini-note">Payment reference: <span id="paymentRef"></span></p>
+      <a class="primary-action" href="index.html">Return to storefront</a>
+    </section>
+  </main>
+  <script>document.getElementById('paymentRef').textContent = new URLSearchParams(location.search).get('payment_id') || 'pending';</script>
+</body>
+</html>
